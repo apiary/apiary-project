@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="user_8functions_8php" kind="file">
+    <compoundname>user.functions.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="user_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" prot="public" static="no" mutable="no">
+        <type>global</type>
+        <definition>global $user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" line="4" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="user_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>send_request</definition>
+        <argsstring>($function, $param1, $param2, $param3)</argsstring>
+        <name>send_request</name>
+        <param>
+          <type>$</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param1</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param2</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" line="12" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" bodystart="12" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="user_8functions_8php_1a80e20be8864458fae4976e781b80ad3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>new_drupal_user_html</definition>
+        <argsstring>()</argsstring>
+        <name>new_drupal_user_html</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" line="28" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" bodystart="28" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="user_8functions_8php_1a2816bf52bf7ac797453fa4d08330d0f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>create_drupal_user</definition>
+        <argsstring>()</argsstring>
+        <name>create_drupal_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" line="54" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php" bodystart="54" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Cache-Control:<sp/>no-cache,<sp/>must-revalidate&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>HTTP/1.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Expires:<sp/>Sat,<sp/>26<sp/>Jul<sp/>1997<sp/>05:00:00<sp/>GMT&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Date<sp/>in<sp/>the<sp/>past</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="user_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" refkind="member"><highlight class="normal">global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Workflow.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Workflow_Users.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Permission.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Object_Pool.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/functions.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/search.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="user_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" kindref="member">send_request</ref>($function,<sp/>$param1,<sp/>$param2,<sp/>$param3){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;function<sp/>=<sp/>&quot;.$function.&quot;<sp/>param1<sp/>=<sp/>&quot;.$param1.&quot;<sp/>param2<sp/>=<sp/>&quot;.$param2.&quot;<sp/>param3<sp/>=<sp/>&quot;.$param3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param3<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2,<sp/>$param3);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param2<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($function<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;clear_session&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="user_8functions_8php_1a80e20be8864458fae4976e781b80ad3f" refkind="member"><highlight class="normal">function<sp/><ref refid="user_8functions_8php_1a80e20be8864458fae4976e781b80ad3f" kindref="member">new_drupal_user_html</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral">&lt;div<sp/>id=&quot;drupal_user&quot;&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral">&lt;h3&gt;Create<sp/>New<sp/>Apiary<sp/>Authorized<sp/>Drupal<sp/>User&lt;/h3&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/>&lt;label<sp/>for=&quot;drupal_user_name&quot;&gt;Drupal<sp/>User<sp/>Name:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;drupal_user_name&quot;<sp/>id=&quot;drupal_user_name&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/>&lt;label<sp/>for=&quot;drupal_user_pass&quot;&gt;Drupal<sp/>User<sp/>Password:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;password&quot;<sp/>name=&quot;drupal_user_pass&quot;<sp/>id=&quot;drupal_user_pass&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/>&lt;label<sp/>for=&quot;drupal_user_name&quot;&gt;Drupal<sp/>User<sp/>Email:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;drupal_user_email&quot;<sp/>id=&quot;drupal_user_email&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/>&lt;span&gt;</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;button&quot;<sp/>name=&quot;create_drupal_user_btn&quot;<sp/>onClick=&quot;create_drupal_user(\&apos;true\&apos;,<sp/>\&apos;true\&apos;);&quot;<sp/>value=&quot;Create<sp/>Drupal<sp/>User&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;button&quot;<sp/>name=&quot;create_drupal_user_btn&quot;<sp/>onClick=&quot;create_drupal_user(\&apos;true\&apos;,<sp/>\&apos;false\&apos;);&quot;<sp/>value=&quot;Create<sp/>Drupal<sp/>User<sp/>and<sp/>Close&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;button&quot;<sp/>name=&quot;create_drupal_user_btn&quot;<sp/>onClick=&quot;create_drupal_user(\&apos;false\&apos;,<sp/>\&apos;false\&apos;);&quot;<sp/>value=&quot;Cancel&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/>&lt;/span&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral">&lt;/div&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="user_8functions_8php_1a2816bf52bf7ac797453fa4d08330d0f6" refkind="member"><highlight class="normal">function<sp/><ref refid="user_8functions_8php_1a2816bf52bf7ac797453fa4d08330d0f6" kindref="member">create_drupal_user</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>$user_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/apiaryPermissionsClass.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>$user_name<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(user_access(<ref refid="classapiary_permissions_class_1af44ec5d3163f4fde9dd5974c643d7cba" kindref="member">apiaryPermissionsClass::$ADMINISTER_APIARY</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;mail&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;mail&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$name<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$mail<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;mail&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;pass&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;pass&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$pass<sp/>=$_POST[</highlight><highlight class="stringliteral">&apos;pass&apos;</highlight><highlight class="normal">];<sp/></highlight><highlight class="comment">//using<sp/>drupals<sp/>user_save<sp/>function<sp/>does<sp/>the<sp/>md5<sp/>hash</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$pass<sp/>=<sp/>md5($_POST[&apos;pass&apos;]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$pass<sp/>=<sp/>user_password();<sp/></highlight><highlight class="comment">//drupal<sp/>function<sp/>to<sp/>create<sp/>a<sp/>md5<sp/>hash<sp/>password</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$require_role_to_use_apiary_workflow<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;administrator&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//this<sp/>gets<sp/>assigned<sp/>to<sp/>the<sp/>created<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$results<sp/>=<sp/>db_query(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>rid<sp/>FROM<sp/>{role}<sp/>WHERE<sp/>NAME=&apos;%s&apos;&quot;</highlight><highlight class="normal">,<sp/>$require_role_to_use_apiary_workflow);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$result<sp/>=<sp/>db_fetch_object($results);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$rid<sp/>=<sp/>$result-&gt;rid;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$newuser<sp/>=<sp/>array(</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>$name,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;mail&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>$mail,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>1,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;pass&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>$pass,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;roles&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>array($rid<sp/>=&gt;<sp/>$require_role_to_use_apiary_workflow)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$new_user<sp/>=<sp/>user_save(</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$newuser);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($new_user<sp/>!=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$user_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$user_name<sp/>=<sp/>$name;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;User<sp/>&quot;</highlight><highlight class="normal">.$new_user-&gt;name.</highlight><highlight class="stringliteral">&quot;<sp/>successfully<sp/>created.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;User<sp/>&quot;</highlight><highlight class="normal">.$new_user-&gt;name.</highlight><highlight class="stringliteral">&quot;<sp/>failed<sp/>to<sp/>be<sp/>created.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>e-mail<sp/>address<sp/>was<sp/>provided.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>username<sp/>was<sp/>provided.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>do<sp/>not<sp/>have<sp/>permissions<sp/>to<sp/>create<sp/>new<sp/>users.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;user_name&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$user_name;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;user_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$user_successfully_created;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/user.functions.php"/>
+  </compounddef>
+</doxygen>

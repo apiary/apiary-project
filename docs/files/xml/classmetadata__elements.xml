@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classmetadata__elements" kind="class" prot="public">
+    <compoundname>metadata_elements</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmetadata__elements_1a2ec3a266ee95cda75cdbb71bc9ee1b53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$current_row</definition>
+        <argsstring></argsstring>
+        <name>$current_row</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="3" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmetadata__elements_1a45953ad43c75bab274ae316dd9b71354" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$categories_count</definition>
+        <argsstring></argsstring>
+        <name>$categories_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="3" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmetadata__elements_1a1a4843ada02b238f638d513eda265207" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$data_array</definition>
+        <argsstring></argsstring>
+        <name>$data_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="3" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmetadata__elements_1afc71bc53d6775d8a344893d5ec10f187" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$categories</definition>
+        <argsstring></argsstring>
+        <name>$categories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="3" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmetadata__elements_1a095c5d389db211932136b53f25f39685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>()</argsstring>
+        <name>__construct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="5" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="5" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmetadata__elements_1a324d248a02984dbbd8a9b7c6b8bb9ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_metadata</definition>
+        <argsstring>()</argsstring>
+        <name>get_metadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="61" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="61" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" line="2" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/metadata_elements.php" bodystart="2" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classmetadata__elements_1afc71bc53d6775d8a344893d5ec10f187" prot="public" virt="non-virtual"><scope>metadata_elements</scope><name>$categories</name></member>
+      <member refid="classmetadata__elements_1a45953ad43c75bab274ae316dd9b71354" prot="public" virt="non-virtual"><scope>metadata_elements</scope><name>$categories_count</name></member>
+      <member refid="classmetadata__elements_1a2ec3a266ee95cda75cdbb71bc9ee1b53" prot="public" virt="non-virtual"><scope>metadata_elements</scope><name>$current_row</name></member>
+      <member refid="classmetadata__elements_1a1a4843ada02b238f638d513eda265207" prot="public" virt="non-virtual"><scope>metadata_elements</scope><name>$data_array</name></member>
+      <member refid="classmetadata__elements_1a095c5d389db211932136b53f25f39685" prot="public" virt="non-virtual"><scope>metadata_elements</scope><name>__construct</name></member>
+      <member refid="classmetadata__elements_1a324d248a02984dbbd8a9b7c6b8bb9ecb" prot="public" virt="non-virtual"><scope>metadata_elements</scope><name>get_metadata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
