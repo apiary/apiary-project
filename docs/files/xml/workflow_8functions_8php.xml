@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="workflow_8functions_8php" kind="file">
+    <compoundname>workflow.functions.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="workflow_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" prot="public" static="no" mutable="no">
+        <type>global</type>
+        <definition>global $user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="4" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="workflow_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>send_request</definition>
+        <argsstring>($function, $param1, $param2, $param3)</argsstring>
+        <name>send_request</name>
+        <param>
+          <type>$</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param1</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param2</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="13" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="13" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a8ad99e8c7e97c535f83e28e21d78676c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>remove_workflow</definition>
+        <argsstring>($workflow_id)</argsstring>
+        <name>remove_workflow</name>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="29" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="29" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1ae14d5e0ee58a96811fec24ddef6804ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>workflow</definition>
+        <argsstring>($workflow_id)</argsstring>
+        <name>workflow</name>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="46" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="46" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a35a6c169715d6e28cd5117dd8d167094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>process_workflow</definition>
+        <argsstring>()</argsstring>
+        <name>process_workflow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="127" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="127" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a412560f9041557abc8fd2b5b9f7ac4d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>process_success</definition>
+        <argsstring>($workflow_id, $returnJSON)</argsstring>
+        <name>process_success</name>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>returnJSON</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="173" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1ada0693a0ae920b6a95d5f5b84f153e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>insert_permissions</definition>
+        <argsstring>($workflow_id, $returnJSON)</argsstring>
+        <name>insert_permissions</name>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>returnJSON</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="179" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="179" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a9a63e6239c01d9c01fc82f38324afd21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>insert_users</definition>
+        <argsstring>($workflow_id, $returnJSON)</argsstring>
+        <name>insert_users</name>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>returnJSON</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="211" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="211" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a4189b45f7deb8243fe7a17d35f004ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drupal_user_cbox</definition>
+        <argsstring>($workflow_id, $working_selected_user_csv)</argsstring>
+        <name>drupal_user_cbox</name>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>working_selected_user_csv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="249" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="249" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a7a5d2f34ccc636dbac03a4f428efacad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drupal_user_cbox_option</definition>
+        <argsstring>($user_name, $selected)</argsstring>
+        <name>drupal_user_cbox_option</name>
+        <param>
+          <type>$</type>
+          <declname>user_name</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="275" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1a9506fdd370aef346d27fcea8b4bfb54d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>object_pool_cbox_option</definition>
+        <argsstring>($object_pool_name, $selected)</argsstring>
+        <name>object_pool_cbox_option</name>
+        <param>
+          <type>$</type>
+          <declname>object_pool_name</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="279" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="workflow_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solr_query_xml</definition>
+        <argsstring>($q, $fl= &apos;&apos;, $op= &apos;&apos;, $rows= &apos;&apos;)</argsstring>
+        <name>solr_query_xml</name>
+        <param>
+          <type>$</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>fl</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>op</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>rows</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" line="283" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php" bodystart="283" bodyend="315"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Cache-Control:<sp/>no-cache,<sp/>must-revalidate&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>HTTP/1.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Expires:<sp/>Sat,<sp/>26<sp/>Jul<sp/>1997<sp/>05:00:00<sp/>GMT&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Date<sp/>in<sp/>the<sp/>past</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="workflow_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" refkind="member"><highlight class="normal">global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/apiaryPermissionsClass.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Workflow.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Workflow_Users.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Permission.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Object_Pool.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/functions.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/search.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="workflow_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" kindref="member">send_request</ref>($function,<sp/>$param1,<sp/>$param2,<sp/>$param3){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;function<sp/>=<sp/>&quot;.$function.&quot;<sp/>param1<sp/>=<sp/>&quot;.$param1.&quot;<sp/>param2<sp/>=<sp/>&quot;.$param2.&quot;<sp/>param3<sp/>=<sp/>&quot;.$param3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param3<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2,<sp/>$param3);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param2<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($function<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;clear_session&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="workflow_8functions_8php_1a8ad99e8c7e97c535f83e28e21d78676c" refkind="member"><highlight class="normal">function<sp/><ref refid="workflow_8functions_8php_1a8ad99e8c7e97c535f83e28e21d78676c" kindref="member">remove_workflow</ref>($workflow_id){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!user_access(<ref refid="classapiary_permissions_class_1af44ec5d3163f4fde9dd5974c643d7cba" kindref="member">apiaryPermissionsClass::$ADMINISTER_APIARY</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>do<sp/>not<sp/>have<sp/>permission<sp/>to<sp/>delete<sp/>this<sp/>workflow.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$success<sp/>=<sp/>Workflow::delete($workflow_id);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($success)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Workflow<sp/>successfully<sp/>deleted.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;An<sp/>unknown<sp/>error<sp/>occurred<sp/>attempting<sp/>to<sp/>delete<sp/>this<sp/>workflow.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>$msg;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="workflow_8functions_8php_1ae14d5e0ee58a96811fec24ddef6804ef" refkind="member"><highlight class="normal">function<sp/><ref refid="workflow_8functions_8php_1ae14d5e0ee58a96811fec24ddef6804ef" kindref="member">workflow</ref>($workflow_id)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>$permission_name_list<sp/>=<sp/>Permission::getPermissionNameList();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>$drupal_user_name_list<sp/>=<sp/>Workflow::getDrupalUserList();</highlight><highlight class="comment">//we<sp/>can<sp/>modify<sp/>this<sp/>to<sp/>only<sp/>return<sp/>drupal<sp/>users<sp/>with<sp/>certain<sp/>permissions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>$drupal_user_count<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($drupal_user_name_list);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$object_pool_name_list<sp/>=<sp/>Object_Pool::getObjectPoolNameList();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>$object_pool_count<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($object_pool_name_list);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_name<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_description<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$object_pool_id<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>$create_button_style<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>$update_button_style<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($workflow_id<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow::workflow_id_exists($workflow_id))<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_id<sp/>=<sp/>$workflow_id;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_record<sp/>=<sp/>Workflow::get($workflow_id);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_name<sp/>=<sp/>$workflow_record[</highlight><highlight class="stringliteral">&apos;workflow_name&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_description<sp/>=<sp/>$workflow_record[</highlight><highlight class="stringliteral">&apos;workflow_description&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$object_pool_id<sp/>=<sp/>$workflow_record[</highlight><highlight class="stringliteral">&apos;object_pool_id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$create_button_style<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;<sp/>style=&quot;display:none;&quot;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$selected_permission_list<sp/>=<sp/>Workflow::getPermissionList($workflow_id);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$selected_user_list<sp/>=<sp/>Workflow_Users::getUserList($workflow_id);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$selected_object_pool<sp/>=<sp/>Object_Pool::getNameFromID($object_pool_id);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$update_button_style<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;<sp/>style=&quot;display:none;&quot;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$selected_user_list<sp/>=<sp/>array(<ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>-&gt;name);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>$update_button<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;button&quot;<sp/>id=&quot;update_workflow_btn&quot;<sp/>name=&quot;update_workflow_btn&quot;&apos;</highlight><highlight class="normal">.$update_button_style.</highlight><highlight class="stringliteral">&apos;<sp/>onClick=&quot;update_workflow();&quot;<sp/>value=&quot;Update<sp/>Workflow&quot;<sp/>/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>$create_button<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;button&quot;<sp/>id=&quot;create_workflow_btn&quot;<sp/>name=&quot;create_workflow_btn&quot;&apos;</highlight><highlight class="normal">.$create_button_style.</highlight><highlight class="stringliteral">&apos;<sp/>onClick=&quot;create_workflow();&quot;<sp/>value=&quot;Create<sp/>Workflow&quot;<sp/>/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>$permission_checkboxes<sp/>=<sp/>generateWorkflowPermissionCheckboxes($permission_name_list,<sp/>$selected_permission_list);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>$drupal_user_names_combobox<sp/>=<sp/>generateDrupalUserNamesComboBox($drupal_user_name_list,<sp/>$selected_user_list);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>$object_pool_name_combobox<sp/>=<sp/>generateObjectPoolNameComboBox($object_pool_name_list,<sp/>$selected_object_pool);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>$home_link<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;&lt;h3&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$server_base.</highlight><highlight class="stringliteral">&apos;/drupal&quot;&gt;Home&lt;/a&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.<ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref>.</highlight><highlight class="stringliteral">&apos;/drupal/apiary/admin&quot;&gt;Administer<sp/>Apiary&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>echo<sp/>$home_link.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>id=&quot;workflow_content&quot;&gt;</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral"><sp/><sp/>&lt;h3&gt;Workflow&lt;/h3&gt;</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label<sp/>for=&quot;workflow_name&quot;&gt;Workflow<sp/>Name:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;workflow_name&quot;<sp/>id=&quot;workflow_name&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">.$workflow_name.</highlight><highlight class="stringliteral">&apos;&quot;<sp/>style=&quot;width:100px&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label<sp/>for=&quot;workflow_description&quot;&gt;Workflow<sp/>Description:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="92"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;workflow_description&quot;<sp/>id=&quot;workflow_description&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">.$workflow_description.</highlight><highlight class="stringliteral">&apos;&quot;<sp/>style=&quot;width:100px&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="94"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Permissions:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Users<sp/>with<sp/>access<sp/>to<sp/>this<sp/>workflow<sp/>are<sp/>allowed<sp/>the<sp/>following<sp/>permissions:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral"><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">.$permission_checkboxes.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Select<sp/>users<sp/>allowed<sp/>to<sp/>access<sp/>this<sp/>workflow.&lt;/label&gt;</highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;div<sp/>id=&quot;drupal_users_cbox&quot;&gt;</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">.$drupal_user_names_combobox.</highlight><highlight class="stringliteral">&apos;<sp/>&lt;a<sp/>href=&quot;#&quot;<sp/>class=&quot;overlay_drupal_user&quot;&gt;create<sp/>new<sp/>user&lt;/a&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="105"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Strategy:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;div<sp/>id=&quot;object_pool_cbox&quot;&gt;</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Object<sp/>Pool:<sp/>&lt;/label&gt;&apos;</highlight><highlight class="normal">.$object_pool_name_combobox.</highlight><highlight class="stringliteral">&apos;<sp/>&lt;a<sp/>href=&quot;#&quot;<sp/>class=&quot;overlay_object_pool&quot;&gt;create<sp/>new<sp/>object<sp/>pool&lt;/a&gt;</highlight></codeline>
+<codeline lineno="110"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="111"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Priority&lt;/label&gt;</highlight></codeline>
+<codeline lineno="114"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="115"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;label&gt;Current<sp/>Queue&lt;/label&gt;</highlight></codeline>
+<codeline lineno="116"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="117"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">.$create_button.</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">.$update_button.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral"><sp/><sp/><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="119"><highlight class="stringliteral"><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="120"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>class=&quot;nothing&quot;<sp/>id=&quot;variables&quot;<sp/>name=&quot;variables&quot;<sp/>style=&quot;display:none;&quot;&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;hidden&quot;<sp/>name=&quot;drupal_user_count&quot;<sp/>id=&quot;drupal_user_count&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">.$drupal_user_count.</highlight><highlight class="stringliteral">&apos;&quot;/&gt;</highlight></codeline>
+<codeline lineno="122"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;hidden&quot;<sp/>name=&quot;object_pool_count&quot;<sp/>id=&quot;object_pool_count&quot;<sp/><sp/>value=&quot;&apos;</highlight><highlight class="normal">.$object_pool_count.</highlight><highlight class="stringliteral">&apos;&quot;/&gt;</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="workflow_8functions_8php_1a35a6c169715d6e28cd5117dd8d167094" refkind="member"><highlight class="normal">function<sp/><ref refid="workflow_8functions_8php_1a35a6c169715d6e28cd5117dd8d167094" kindref="member">process_workflow</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>$workflow_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;workflow_name&apos;</highlight><highlight class="normal">])){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>$workflow_name<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;workflow_name&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>$workflow_description<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;workflow_description&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;object_pool_name&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$object_pool_name<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;object_pool_name&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$object_pool_id<sp/>=<sp/>Object_Pool::getIDFromName($object_pool_name);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;workflow_id&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;workflow_id&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;workflow_id&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//updating<sp/>an<sp/>existing<sp/>workflow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//update<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_id<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;workflow_id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow::update($workflow_id,<sp/>$workflow_name,<sp/>$workflow_description,<sp/>$object_pool_id,<sp/>$permission_list,<sp/>$user_list))<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Workflow<sp/>&apos;</highlight><highlight class="normal">.$workflow_name.</highlight><highlight class="stringliteral">&apos;<sp/>successfully<sp/>updated.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Workflow<sp/>&apos;</highlight><highlight class="normal">.$workflow_name.</highlight><highlight class="stringliteral">&apos;<sp/>unable<sp/>to<sp/>be<sp/>updated.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//creating<sp/>new<sp/>workflow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow::create($workflow_name,<sp/>$workflow_description,<sp/>$object_pool_id,<sp/>$permission_list,<sp/>$user_list))<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$workflow_id<sp/>=<sp/>Workflow::getIDFromName($workflow_name);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Workflow<sp/>&apos;</highlight><highlight class="normal">.$workflow_name.</highlight><highlight class="stringliteral">&apos;<sp/>successfully<sp/>created.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Workflow<sp/>&apos;</highlight><highlight class="normal">.$workflow_name.</highlight><highlight class="stringliteral">&apos;<sp/>unable<sp/>to<sp/>be<sp/>created.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$workflow_successfully_created;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($workflow_successfully_created<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_id&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$workflow_id;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON<sp/>=<sp/><ref refid="workflow_8functions_8php_1a412560f9041557abc8fd2b5b9f7ac4d8" kindref="member">process_success</ref>($workflow_id,<sp/>$returnJSON);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$workflow_successfully_created;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;A<sp/>workflow<sp/>name<sp/>must<sp/>be<sp/>set<sp/>to<sp/>create<sp/>a<sp/>workflow.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="workflow_8functions_8php_1a412560f9041557abc8fd2b5b9f7ac4d8" refkind="member"><highlight class="normal"><sp/><sp/>function<sp/><ref refid="workflow_8functions_8php_1a412560f9041557abc8fd2b5b9f7ac4d8" kindref="member">process_success</ref>($workflow_id,<sp/>$returnJSON)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>$returnJSON<sp/>=<sp/><ref refid="workflow_8functions_8php_1ada0693a0ae920b6a95d5f5b84f153e84" kindref="member">insert_permissions</ref>($workflow_id,<sp/>$returnJSON);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>$returnJSON<sp/>=<sp/><ref refid="workflow_8functions_8php_1a9a63e6239c01d9c01fc82f38324afd21" kindref="member">insert_users</ref>($workflow_id,<sp/>$returnJSON);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$returnJSON;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="workflow_8functions_8php_1ada0693a0ae920b6a95d5f5b84f153e84" refkind="member"><highlight class="normal"><sp/><sp/>function<sp/><ref refid="workflow_8functions_8php_1ada0693a0ae920b6a95d5f5b84f153e84" kindref="member">insert_permissions</ref>($workflow_id,<sp/>$returnJSON)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>$permissions<sp/>=<sp/>trim($_POST[</highlight><highlight class="stringliteral">&apos;permissions&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>$permission_list<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">,<sp/>$permissions);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>$permissions_to_insert<sp/>=<sp/>count($permission_list);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>$permissions_inserted<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>$permissions_excluded<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>db_query(</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>{apiary_project_workflow_permission}<sp/>WHERE<sp/>workflow_id=&apos;$workflow_id&apos;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i=0;$i&lt;count($permission_list);$i++)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$permission_name<sp/>=<sp/>$permission_list[$i];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($permission_name<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$permission_id<sp/>=<sp/>Permission::getIDFromName($permission_name);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(db_query(</highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>{apiary_project_workflow_permission}<sp/>(workflow_id,<sp/>permission_id)<sp/>Values(&apos;%s&apos;,&apos;%s&apos;)&quot;</highlight><highlight class="normal">,<sp/>$workflow_id,<sp/>$permission_id))<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$permissions_inserted++;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$permissions_excluded<sp/>.=<sp/>$permission_name;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($permissions_inserted<sp/>==<sp/>$permissions_to_insert)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_permissions_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>All<sp/>permissions<sp/>sucessfully<sp/>set&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_permissions_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_permissions_successfully_entered&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$permissions_inserted;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_permissions_excluded&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$permissions_excluded;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;<sp/>Not<sp/>all<sp/>permissions<sp/>sucessfully<sp/>set,<sp/>only<sp/>&apos;</highlight><highlight class="normal">.$permissions_inserted.</highlight><highlight class="stringliteral">&apos;<sp/>inserted.<sp/>Excluded<sp/>permission<sp/>are<sp/>&apos;</highlight><highlight class="normal">.$permissions_excluded.</highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$returnJSON;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="workflow_8functions_8php_1a9a63e6239c01d9c01fc82f38324afd21" refkind="member"><highlight class="normal"><sp/><sp/>function<sp/><ref refid="workflow_8functions_8php_1a9a63e6239c01d9c01fc82f38324afd21" kindref="member">insert_users</ref>($workflow_id,<sp/>$returnJSON)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;selected_users&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;selected_users&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$selected_users<sp/>=<sp/>trim($_POST[</highlight><highlight class="stringliteral">&apos;selected_users&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$user_list<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">,<sp/>$selected_users);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$user_list<sp/>=<sp/>array($user-&gt;name);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>$users_to_insert<sp/>=<sp/>count($user_list);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>$users_inserted<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>$users_excluded<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>db_query(</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>{apiary_project_workflow_users}<sp/>WHERE<sp/>workflow_id=&apos;$workflow_id&apos;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i=0;$i&lt;count($user_list);$i++)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$user_name<sp/>=<sp/>$user_list[$i];</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($user_name<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$user_id<sp/>=<sp/>Workflow_Users::getUserIDFromName($user_name);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(db_query(</highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>{apiary_project_workflow_users}<sp/>(workflow_id,<sp/>user_id)<sp/>Values(&apos;%s&apos;,&apos;%s&apos;)&quot;</highlight><highlight class="normal">,<sp/>$workflow_id,<sp/>$user_id))<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$users_inserted++;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$users_excluded<sp/>.=<sp/>$user_name;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($users_inserted<sp/>==<sp/>$users_to_insert)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_users_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>All<sp/>users<sp/>sucessfully<sp/>set&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_users_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_users_successfully_entered&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$users_inserted;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;workflow_users_excluded&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$users_excluded;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;<sp/>Not<sp/>all<sp/>users<sp/>sucessfully<sp/>set,<sp/>only<sp/>&apos;</highlight><highlight class="normal">.$users_inserted.</highlight><highlight class="stringliteral">&apos;<sp/>inserted.<sp/>Excluded<sp/>users<sp/>are<sp/>&apos;</highlight><highlight class="normal">.$users_excluded.</highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$returnJSON;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="workflow_8functions_8php_1a4189b45f7deb8243fe7a17d35f004ab3" refkind="member"><highlight class="normal">function<sp/><ref refid="workflow_8functions_8php_1a4189b45f7deb8243fe7a17d35f004ab3" kindref="member">drupal_user_cbox</ref>($workflow_id,<sp/>$working_selected_user_csv)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>$working_selected_user_list<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">,<sp/>$working_selected_user_csv);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>$drupal_user_name_list<sp/>=<sp/>Workflow::getDrupalUserList();</highlight><highlight class="comment">//we<sp/>can<sp/>modify<sp/>this<sp/>to<sp/>only<sp/>return<sp/>drupal<sp/>users<sp/>with<sp/>certain<sp/>permissions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>$drupal_user_count<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($drupal_user_name_list);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($workflow_id<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow::workflow_id_exists($workflow_id))<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$selected_user_list<sp/>=<sp/>Workflow_Users::getUserList($workflow_id);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>$selected_user_list<sp/>=<sp/>array(<ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>-&gt;name);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i=0;<sp/>$i&lt;</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($working_selected_user_list);$i++)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(array_search($working_selected_user_list[$i],<sp/>$selected_user_list)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//do<sp/>not<sp/>do<sp/>anything</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>array_push($selected_user_list,<sp/>$working_selected_user_list[$i]);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>$drupal_user_names_combobox<sp/>=<sp/>generateDrupalUserNamesComboBox($drupal_user_name_list,<sp/>$selected_user_list);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;drupal_user_count&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$drupal_user_count;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;drupal_user_names_combobox&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$drupal_user_names_combobox;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="workflow_8functions_8php_1a7a5d2f34ccc636dbac03a4f428efacad" refkind="member"><highlight class="normal">function<sp/><ref refid="workflow_8functions_8php_1a7a5d2f34ccc636dbac03a4f428efacad" kindref="member">drupal_user_cbox_option</ref>($user_name,<sp/>$selected)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>echo<sp/>generateDrupalUserNamesComboBoxOption($user_name,<sp/>$selected);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="workflow_8functions_8php_1a9506fdd370aef346d27fcea8b4bfb54d" refkind="member"><highlight class="normal">function<sp/><ref refid="workflow_8functions_8php_1a9506fdd370aef346d27fcea8b4bfb54d" kindref="member">object_pool_cbox_option</ref>($object_pool_name,<sp/>$selected)<sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>echo<sp/>generateObjectPoolNameComboBoxOption($object_pool_name,<sp/>$selected);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="workflow_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" kindref="member">solr_query_xml</ref>($q,<sp/>$fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>$solr_search<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>search();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos(</highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>$q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$q);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>$solr_query<sp/>=<sp/>$q;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($fl))<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos(</highlight><highlight class="stringliteral">&apos;fl=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=&apos;</highlight><highlight class="normal">.$fl;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$fl);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($op))<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos(</highlight><highlight class="stringliteral">&apos;op=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;op=&apos;</highlight><highlight class="normal">.$op;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$op);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($rows))<sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos(</highlight><highlight class="stringliteral">&apos;rows=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=&apos;</highlight><highlight class="normal">.$rows;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$rows);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>$solr_results<sp/>=<sp/>$solr_search-&gt;doSearch($solr_query);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_results<sp/>!=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_sxml<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SimpleXMLElement($solr_results);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$solr_sxml;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/workflow.functions.php"/>
+  </compounddef>
+</doxygen>

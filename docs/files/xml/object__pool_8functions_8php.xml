@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="object__pool_8functions_8php" kind="file">
+    <compoundname>object_pool.functions.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="object__pool_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" prot="public" static="no" mutable="no">
+        <type>global</type>
+        <definition>global $user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="4" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="object__pool_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>send_request</definition>
+        <argsstring>($function, $param1, $param2, $param3)</argsstring>
+        <name>send_request</name>
+        <param>
+          <type>$</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param1</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param2</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="7" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="7" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="object__pool_8functions_8php_1ac2bf96ef3ee3177a7a331e3eaa18b370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>new_object_pool_html</definition>
+        <argsstring>()</argsstring>
+        <name>new_object_pool_html</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="23" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="23" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="object__pool_8functions_8php_1ad267a3a87680810fc1161e38bbbb5863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>create_object_pool</definition>
+        <argsstring>()</argsstring>
+        <name>create_object_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="55" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="55" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="object__pool_8functions_8php_1af2286fde26bd201d7b78df9d0b487d14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>view_object_pool_results</definition>
+        <argsstring>($type, $query)</argsstring>
+        <name>view_object_pool_results</name>
+        <param>
+          <type>$</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="77" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="77" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="object__pool_8functions_8php_1a7a6cf388b35d2a99642d870655f6e97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getObjectPoolQueryTypeList</definition>
+        <argsstring>()</argsstring>
+        <name>getObjectPoolQueryTypeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="86" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="object__pool_8functions_8php_1a135a57864bdeae62f22fb61a2feb9c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>generateObjectPoolQueryTypeComboBox</definition>
+        <argsstring>()</argsstring>
+        <name>generateObjectPoolQueryTypeComboBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" line="90" bodyfile="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php" bodystart="90" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Cache-Control:<sp/>no-cache,<sp/>must-revalidate&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>HTTP/1.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Expires:<sp/>Sat,<sp/>26<sp/>Jul<sp/>1997<sp/>05:00:00<sp/>GMT&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Date<sp/>in<sp/>the<sp/>past</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="object__pool_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" refkind="member"><highlight class="normal">global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/functions.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="object__pool_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" kindref="member">send_request</ref>($function,<sp/>$param1,<sp/>$param2,<sp/>$param3){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;function<sp/>=<sp/>&quot;.$function.&quot;<sp/>param1<sp/>=<sp/>&quot;.$param1.&quot;<sp/>param2<sp/>=<sp/>&quot;.$param2.&quot;<sp/>param3<sp/>=<sp/>&quot;.$param3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param3<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2,<sp/>$param3);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param2<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($function<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;clear_session&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="object__pool_8functions_8php_1ac2bf96ef3ee3177a7a331e3eaa18b370" refkind="member"><highlight class="normal">function<sp/><ref refid="object__pool_8functions_8php_1ac2bf96ef3ee3177a7a331e3eaa18b370" kindref="member">new_object_pool_html</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>$object_pool_query_type_combobox<sp/>=<sp/><ref refid="object__pool_8functions_8php_1a135a57864bdeae62f22fb61a2feb9c99" kindref="member">generateObjectPoolQueryTypeComboBox</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>$html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>id=&quot;object_pool&quot;&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral">&lt;h3&gt;Create<sp/>Object<sp/>Pool&lt;/h3&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/>&lt;label<sp/>for=&quot;object_pool_name&quot;&gt;Object<sp/>Pool<sp/>Name:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;object_pool_name&quot;<sp/>id=&quot;object_pool_name&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/>&lt;label<sp/>for=&quot;object_pool_description&quot;&gt;Object<sp/>Pool<sp/>Description:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;object_pool_description&quot;<sp/>id=&quot;object_pool_description&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/>&lt;p/&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/>&lt;label&gt;Object<sp/>Pool<sp/>Query<sp/>Type:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/>&lt;br/&gt;&apos;</highlight><highlight class="normal">.$object_pool_query_type_combobox.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/>&lt;div<sp/>id=&quot;object_pool_query_space&quot;&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/>&lt;label<sp/>for=&quot;object_pool_query&quot;&gt;Object<sp/>Pool<sp/>Query:&lt;/label&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/>&lt;textarea<sp/>type=&quot;text&quot;<sp/>name=&quot;object_pool_query&quot;<sp/>id=&quot;object_pool_query&quot;&gt;&lt;/textarea&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/>&lt;/div&gt;&lt;!--<sp/>object_pool_query_space<sp/>--&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/>&lt;p/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//$html<sp/>.=<sp/>&apos;&lt;a<sp/>href=&quot;javascript:view_object_pool_results();&quot;&gt;[view<sp/>results]&lt;/a&gt;&lt;p/&gt;&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/>$html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;span&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;button&quot;<sp/>name=&quot;create_object_pool_btn&quot;<sp/>onClick=&quot;create_object_pool(\&apos;true\&apos;);&quot;<sp/>value=&quot;Create<sp/>Object<sp/>Pool&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;button&quot;<sp/>name=&quot;create_object_pool_btn&quot;<sp/>onClick=&quot;create_object_pool(\&apos;false\&apos;);&quot;<sp/>value=&quot;Cancel&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral">&lt;/span&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/>&lt;br/&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral">&lt;/div&gt;&lt;!--<sp/>object_pool<sp/>--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">echo<sp/>$html;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="object__pool_8functions_8php_1ad267a3a87680810fc1161e38bbbb5863" refkind="member"><highlight class="normal">function<sp/><ref refid="object__pool_8functions_8php_1ad267a3a87680810fc1161e38bbbb5863" kindref="member">create_object_pool</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>$object_pool_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_POST[</highlight><highlight class="stringliteral">&apos;object_pool_name&apos;</highlight><highlight class="normal">])){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>$object_pool_name<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;object_pool_name&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>$object_pool_description<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;object_pool_description&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>$object_pool_query_type<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;object_pool_query_type&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>$object_pool_query<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;object_pool_query&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>module_load_include(</highlight><highlight class="stringliteral">&apos;php&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;workflow/include/class.Object_Pool&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Object_Pool::create($object_pool_name,<sp/>$object_pool_description,<sp/>$object_pool_query_type,<sp/>$object_pool_query))<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$object_pool_successfully_created<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Object<sp/>Pool<sp/>&quot;</highlight><highlight class="normal">.$object_pool_name.</highlight><highlight class="stringliteral">&quot;<sp/>successfully<sp/>created.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Object<sp/>Pool<sp/>&quot;</highlight><highlight class="normal">.$object_pool_name.</highlight><highlight class="stringliteral">&quot;<sp/>failed<sp/>to<sp/>created.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;object_pool_successfully_created&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$object_pool_successfully_created;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="object__pool_8functions_8php_1af2286fde26bd201d7b78df9d0b487d14" refkind="member"><highlight class="normal">function<sp/><ref refid="object__pool_8functions_8php_1af2286fde26bd201d7b78df9d0b487d14" kindref="member">view_object_pool_results</ref>($type,<sp/>$query)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Resource<sp/>Index<sp/>Query&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;SOLR<sp/>Query&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Specific<sp/>List&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="object__pool_8functions_8php_1a7a6cf388b35d2a99642d870655f6e97f" refkind="member"><highlight class="normal">function<sp/><ref refid="object__pool_8functions_8php_1a7a6cf388b35d2a99642d870655f6e97f" kindref="member">getObjectPoolQueryTypeList</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>array(</highlight><highlight class="stringliteral">&quot;Resource<sp/>Index<sp/>Query&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;SOLR<sp/>Query&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Specific<sp/>List&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="object__pool_8functions_8php_1a135a57864bdeae62f22fb61a2feb9c99" refkind="member"><highlight class="normal">function<sp/><ref refid="object__pool_8functions_8php_1a135a57864bdeae62f22fb61a2feb9c99" kindref="member">generateObjectPoolQueryTypeComboBox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>$object_pool_type_list<sp/>=<sp/><ref refid="object__pool_8functions_8php_1a7a6cf388b35d2a99642d870655f6e97f" kindref="member">getObjectPoolQueryTypeList</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>$combobox_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>$combobox_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;select<sp/>name=&quot;object_pool_query_types&quot;<sp/>id=&quot;object_pool_query_types&quot;&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>$combobox_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;&quot;<sp/>selected&gt;<sp/>&lt;/option&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i<sp/>=<sp/>0;<sp/>$i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($object_pool_type_list);<sp/>$i++)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>$combobox_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>onClick=&quot;update_object_pool_query_space(\&apos;&apos;</highlight><highlight class="normal">.$object_pool_type_list[$i].</highlight><highlight class="charliteral">&apos;\&apos;</highlight><highlight class="normal">);</highlight><highlight class="stringliteral">&quot;<sp/>value=&quot;</highlight><highlight class="stringliteral">&apos;.$object_pool_type_list[$i].&apos;</highlight><highlight class="stringliteral">&quot;&gt;&apos;.$object_pool_type_list[$i].&apos;&lt;/option&gt;&apos;.&quot;</highlight><highlight class="normal">\n</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/>$combobox_html<sp/>.=<sp/>&apos;&lt;/select&gt;&apos;.&quot;</highlight><highlight class="normal">\n</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral"><sp/><sp/>return<sp/>$combobox_html;</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/sgmurphy/Documents/Apiary Project/Drupal AP Module/object_pool.functions.php"/>
+  </compounddef>
+</doxygen>
