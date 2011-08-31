@@ -1,0 +1,2363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<book xmlns="http://docbook.org/ns/docbook"
+xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<info>
+<title>Apiary Project Technical Documentation</title>
+<author>
+<orgname> The <link xlink:href="http://www.txcdk.unt.edu">Texas Center for Digital
+Knowledge</link> (TxCDK) at the University of North Texas and the <link
+xlink:href="http://www.brit.org">Botanical Research Institute of Texas</link>
+(BRIT) </orgname>
+<email>smurphy@brit.org</email>
+</author>
+</info>
+<preface>
+<title>Introduction</title>
+==What is the Apiary Project?==
+The Apiary Project is a fundamental research project with the goal of identifying
+how human intelligence can be combined with machine processes for effective and
+efficient transformation of textual museum specimen label information into
+high-quality machine-processible parsed data.
+</preface>
+<subtitle> Servers, OS requirements, software components and dependencies</subtitle>
+<sect1>
+<title> Apiary Project Workflow and Image Server </title>
+<sect2>
+<title> Hardware</title>
+*Dual to Quad core 64 bit processor
+*4-16GB RAM
+*Sizeable storage space, we used a 100GB drive for original images and
+another 100GB for converted images
+</sect2>
+<sect2>
+<title> Software</title>
+<sect3>
+<title> Operating System</title>
+*Ubuntu 8.04 64-bit or later, primarily 10.04 Desktop
+</sect3>
+<sect3>
+<title> Ubuntu aptitude packages</title>
+<sect4>
+<title>Applications</title>
+*Apache 2
+*Mysql-server
+*PHP 5
+*Sun-java6-jdk
+*Subversion
+*curl
+*mercurial
+*scons
+*chkconfig
+*vim-nox
+*flashplugin-installer
+*varnish (*optional)
+</sect4>
+<sect4>
+<title>Libraries</title>
+*libapache2-mod-auth-mysql
+*Php5-mysql
+*Php5-curl
+*Php5-xsl
+*Php5-imagick
+*Php5-gd
+*Php5-dev
+*Php-soap
+*libjpeg-progs
+</sect4>
+</sect3>
+<sect3>
+<title> Additional required applications</title>
+*Fedora-commons digital repository 3.2
+*Tomcat 5.5
+*Adore-Djatoka JPEG2000 Image Server
+*Apache-SOLR 1.4.1
+*Drupal content management 6.22
+*Islandora (fedora repository Drupal module)
+*OCRopus 0.4.1
+*GOCR
+*Ocrad
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title> Apiary Project Image Processing and Conversion Server </title>
+<sect2>
+<title> Hardware</title>
+*Dual to Quad core 64 bit processor
+*4+GB RAM
+*Sizeable storage space. Note: We connected to the shared image drives
+from the Apiary Project Server.
+</sect2>
+<sect2>
+<title> Software</title>
+<sect3>
+<title> Operating System</title>
+*Ubuntu 10.04 64-bit server
+</sect3>
+<sect3>
+<title> Ubuntu aptitude packages</title>
+<sect4>
+<title>Applications</title>
+*ImageMagick
+*OpenJPEG
+</sect4>
+<sect4>
+<title>Libraries</title>
+*build-essential
+*libpng12-dev
+*libjpeg62-dev
+*libtiff4-dev
+*libjpeg-progs
+*libopenjpeg-dev
+</sect4>
+</sect3>
+<sect3>
+<title> Additional required applications</title>
+*OpenJPEG version 1.4 sources
+</sect3>
+</sect2>
+</sect1>
+<subtitle>A step by step guide to completly installing the Apiary Project
+workflow</subtitle>
+<sect1>
+<title>Install <link xlink:href="http://releases.ubuntu.com/lucid/">Ubuntu Desktop
+10.04</link></title>
+<subtitle>Note: The installation of the OS is outside the scope of this documentation,
+it is listed here to note the starting point of the installation</subtitle>
+*username: apiary
+*full name: password is apiary
+*password: apiary
+Note: These documents will assume all passwords to be 'apiary'
+</sect1>
+<sect1>
+<title>Go to Synaptics and install</title>
+<subtitle>Note: These can also be installed using aptitude from the command, i.e.
+apt-get install {package}</subtitle>
+*Apache 2 (and it’s automatically added required packages)
+*Mysql-server
+Note: These documents assume the root password is apiary
+*PHP 5 (and it’s automatically added required packages)
+*Sun-java6-jdk (and it’s automatically added required packages)
+*Subversion
+*curl
+*mercurial
+*scons
+*chkconfig
+*libapache2-mod-auth-mysql
+*flashplugin-installer
+*Php5-mysql
+*Php5-curl
+*Php5-xsl
+*Php5-imagick
+*Php5-gd
+*Php5-dev
+*Php-soap
+*libjpeg-progs
+*vim-nox (this fixes the weird behavior vi has with Ubuntu)
+</sect1>
+<sect1>
+<title>Configure server hostname</title>
+<cmdsynopsis>
+<command>vi /etc/hostname</command>
+</cmdsynopsis>
+change hostname
+</sect1>
+<sect1>
+<title>Enable Apache Modules</title>
+<cmdsynopsis>
+<command>a2enmod rewrite</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>a2enmod auth_mysqlvi</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>/etc/init.d/apache2 restart</command>
+</cmdsynopsis>
+</sect1>
+<sect1>
+<title>Configure PHP</title>
+<cmdsynopsis>
+<command>vi /etc/php5/apache2/php.ini</command>
+</cmdsynopsis>
+Replace ‘memory_limit = 16M’ with ‘memory_limit = 256M’
+<cmdsynopsis>
+<command>/etc/init.d/apache2 restart</command>
+</cmdsynopsis>
+</sect1>
+<sect1>
+<title>Create Mysql Drupal and Fedora users and databases</title>
+<cmdsynopsis>
+<command>mysql -u root -p</command>
+</cmdsynopsis>
+Accesses mysql command line, password is apiary
+<sect2>
+<title>Create Drupal user and database</title>
+<cmdsynopsis>
+<command>create database drupal;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>grant all on drupal.* to ‘drupalAdmin’@’localhost’ identified by
+‘apiary’;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>grant all on drupal.* to ‘drupalAdmin’@’%’ identified by
+‘apiary’;</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Create Fedora user and database</title>
+<cmdsynopsis>
+<command>create database fedora;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>grant all on drupal.* to ‘fedoraAdmin’@’localhost’ identified by
+‘apiary’;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>grant all on drupal.* to ‘fedoraAdmin’@’%’ identified by
+‘apiary’;</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Leave MySQL</title>
+<cmdsynopsis>
+<command>exit;</command>
+</cmdsynopsis>
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://drupal.org/project/drupal">Drupal</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>wget http://ftp.drupal.org/files/projects/drupal-6.22.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Extract drupal-6.22</title>
+<cmdsynopsis>
+<command>tar -zxvf drupal-6.22.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Move drupal-6.22 to /var/www/</title>
+<cmdsynopsis>
+<command>mv drupal-6.22 /var/www</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Create symbolic link to drupal dir</title>
+<emphasis role="bold">
+Note: This preserves versioning as drupal updates are released
+</emphasis>
+<cmdsynopsis>
+<command>ln -s /var/www/drupal-6.22 /var/www/drupal</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Edit Drupal .htaccess</title>
+<cmdsynopsis>
+<command>vi /var/www/drupal/.htaccess </command>
+</cmdsynopsis>
+uncomment REWRITEs for ‘/drupal’
+</sect2>
+<sect2>
+<title>Create writeable Drupal files directory outside the scope of the main
+.htaccess</title>
+<cmdsynopsis>
+<command>mkdir /var/www/drupal/sites/default/files</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chmod a+w /var/www/drupal/sites/default/files</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>vi /var/www/drupal/sites/default/files/.htaccess</command>
+</cmdsynopsis>
+Save blank file!
+</sect2>
+<sect2>
+<title>Edit Apache2 sites</title>
+<cmdsynopsis>
+<command>vi /etc/apache2/sites-enabled/000-default </command>
+</cmdsynopsis>
+change AllowOverride None to AllowOverride All for / and /var/www
+directories
+</sect2>
+<sect2>
+<title>Create writeable settings file for Drupal install</title>
+<cmdsynopsis>
+<command>cp /var/www/drupal/sites/default/default.settings.php
+/var/www/drupal/sites/default/settings.php</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chmod a+w /var/www/drupal/sites/default/settings.php</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Install Drupal via web browser</title>
+<sect3>
+<title>Go to http://hostname/drupal</title>
+</sect3>
+<sect3>
+<title>Click Install Drupal in English</title>
+</sect3>
+<sect3>
+<title>Enter values</title>
+<sect4>
+<title>Database name: drupal</title>
+</sect4>
+<sect4>
+<title>Database username: drupalAdmin</title>
+</sect4>
+<sect4>
+<title>Database password: apiary</title>
+</sect4>
+</sect3>
+<sect3>
+<title>Click Save and continue</title>
+</sect3>
+<sect3>
+<title>Configure site</title>
+<sect4>
+<title>Site information</title>
+<sect5>
+<title>Site name: hostname</title>
+</sect5>
+<sect5>
+<title>Site e-mail address: apiary@hostname.org</title>
+</sect5>
+</sect4>
+<sect4>
+<title>Administrator Account</title>
+<sect5>
+<title>Username: apiary</title>
+</sect5>
+<sect5>
+<title>E-mail address: apiary@hostname.org</title>
+</sect5>
+<sect5>
+<title>Password: apiary</title>
+</sect5>
+</sect4>
+<sect4>
+<title>Site e-mail address: apiary@hostname.org</title>
+</sect4>
+<sect4>
+<title>Click Save and continue</title>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Remove write permission on settings file</title>
+<cmdsynopsis>
+<command>Chmod a-w /var/www/drupal/sites/default/settings.php </command>
+</cmdsynopsis>
+</sect2>
+</sect1>
+<sect1>
+<title>Setup Environment Variables</title>
+<sect2>
+<title>Locate java home directory</title>
+<cmdsynopsis>
+<command>locate /rt.jar</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Create symbolic link for java-home</title>
+<emphasis role="bold">
+Note: This preserves versioning
+</emphasis>
+<cmdsynopsis>
+<command>ln -s /usr/lib/jvm/java-6-sun-1.6.0.15 /usr/lib/jvm/java-home</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Edit user profile</title>
+<cmdsynopsis xml:id="envirovariables">
+<command>vi /etc/profile</command>
+</cmdsynopsis>
+Add the following lines (Note: no spaces around equal signs!)
+export FEDORA_HOME=/usr/local/fedora
+export JAVA_HOME=/usr/lib/jvm/java-home
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$FEDORA_HOME/server/bin:$PATH
+export PATH=$FEDORA_HOME/client/bin:$PATH
+export CATALINA_HOME=$FEDORA_HOME/tomcat
+export LD_LIBRARY_PATH=/usr/lib/jvm/java-home
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+</sect2>
+<sect2>
+<title>Restart machine</title>
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://www.fedora-commons.org/">Fedora</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>wget
+http://downloads.sourceforge.net/fedora-commons/fedora-installer-3.2.1.jar</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Create symbolic link to fedora dir</title>
+<emphasis role="bold">
+Note: This preserves versioning
+</emphasis>
+<cmdsynopsis>
+<command>ln -s /usr/local/fedora-3.2 /usr/local/fedora</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Create a keystore for SSL support</title>
+<cmdsynopsis>
+<command>$JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA</command>
+</cmdsynopsis>
+Password:apiary
+</sect2>
+<sect2>
+<title>Run Fedora java installer</title>
+<cmdsynopsis>
+<command>java -jar fedora- installer-3.2.1.jar</command>
+</cmdsynopsis>
+<sect3>
+<title>Installation type: custom</title>
+</sect3>
+<sect3>
+<title>Fedora home directory: /usr/local/fedora-3.2</title>
+</sect3>
+<sect3>
+<title>Fedora administrator password: apiary</title>
+</sect3>
+<sect3>
+<title>Fedora server host: hostname</title>
+</sect3>
+<sect3>
+<title>Fedora application server context: fedora</title>
+</sect3>
+<sect3>
+<title>Authentication requirement for API-A: false</title>
+</sect3>
+<sect3>
+<title>SSL availability: true</title>
+</sect3>
+<sect3>
+<title>SSL required for API-A: false</title>
+</sect3>
+<sect3>
+<title>SSL required for API-M: false</title>
+</sect3>
+<sect3>
+<title>Servlet engine: included</title>
+</sect3>
+<sect3>
+<title>Tomcat home directory: /usr/local/fedora-3.2/tomcat</title>
+</sect3>
+<sect3>
+<title>Tomcat HTTP port: 8080</title>
+</sect3>
+<sect3>
+<title>Tomcat shutdown port: 8005</title>
+</sect3>
+<sect3>
+<title>Tomcat Secure HTTP port: 8443</title>
+</sect3>
+<sect3>
+<title>Keystore file: default</title>
+</sect3>
+<sect3>
+<title>Keystore password: apiary</title>
+</sect3>
+<sect3>
+<title>Keystore type: JKS</title>
+</sect3>
+<sect3>
+<title>Database: mysql</title>
+</sect3>
+<sect3>
+<title>MySQL JDBC driver: included</title>
+</sect3>
+<sect3>
+<title>Database username: fedoraAdmin</title>
+</sect3>
+<sect3>
+<title>Database password: apiary</title>
+</sect3>
+<sect3>
+<title>JDBC URL:
+jdbc:mysql://hostname/fedora?useUnicode=true&amp;amp;characterEncoding=UTF-8&amp;amp;autoReconnect=true</title>
+</sect3>
+<sect3>
+<title>JDBC DriverClass: com.mysql.jdbc.Driver</title>
+</sect3>
+<sect3>
+<title>Policy enforcement enabled: true</title>
+</sect3>
+<sect3>
+<title>Enable Resource Index: true</title>
+</sect3>
+<sect3>
+<title>Enable Messaging: false</title>
+</sect3>
+<sect3>
+<title>Deploy local services and demos: true</title>
+</sect3>
+</sect2>
+<sect2>
+<title>Verify Fedora’s Resource Index activation</title>
+<emphasis role="bold">
+Note: Some Ubuntu installs had this variable set to zero even using
+“Enable Resource Index: true”
+</emphasis>
+<cmdsynopsis>
+<command>vi $FEDORA_HOME/server/config/fedora.fcfg</command>
+</cmdsynopsis> Set fedora.server.resourceIndex.ResourceIndex to 1
+</sect2>
+<sect2>
+<title>Startup Tomcat (which will install Tomcat Fedora features)</title>
+<cmdsynopsis>
+<command>$FEDORA_HOME/tomcat/bin/startup.sh</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Shutdown Tomcat</title>
+<cmdsynopsis>
+<command>$FEDORA_HOME/tomcat/bin/shutdown.sh</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Copy crossdomain file</title>
+<cmdsynopsis>
+<command>cp $FEDORA_HOME/tomcat/webapps/fedora/admin/crossdomain.xml
+/usr/local/fedora/tomcat/webapps</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Setup anonymous user access</title>
+<emphasis role="bold">
+Note: Allows anonymous users to be able to view public objects later while
+using Islandora.
+</emphasis>
+<cmdsynopsis>
+<command>vi $FEDORA_HOME/server/config/fedora-users.xml</command>
+</cmdsynopsis>
+Note: Islandora will send the username of fedora_anonymous and password of
+anonymous for all unauthenticated use.
+Add the following &lt;user> lines:
+&lt;user name="fedora_anonymous" password="anonymous">   &lt;attribute name="fedoraRole">      &lt;value>fedoraUser&lt;/value>  &lt;/attribute>
+&lt;/user>
+</sect2>
+<sect2>
+<title>Install Islandora Drupal filter</title>
+<sect3>
+<title>Download DrupalFilter_3.jar from
+http://sourceforge.net/projects/islandora/files/ </title>
+<cmdsynopsis>
+<command>wget
+http://softlayer.dl.sourceforge.net/project/islandora/islandora/Islandora_Dru6_Fed_3.1_beta2009-04-03/DrupalFilter_3.jar</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Move Drupal filter to the fedora tomcat webapp</title>
+<cmdsynopsis>
+<command>cp DrupalFilter_3.jar
+$FEDORA_HOME/tomcat/webapps/fedora/WEB-INF/lib/DrupalFilter.jar</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Create a fedora server filter-drupal file</title>
+<cmdsynopsis>
+<command>vi $FEDORA_HOME/server/config/filter-drupal.xml</command>
+</cmdsynopsis>
+<caution/>
+<emphasis role="bold">
+Warning: The xml file needs a blank line at the end
+</emphasis>
+Add the following lines:
+&lt;?xml version="1.0" encoding="UTF-8"?> &lt;!--File to hold drupal
+connection info for the FilterDrupal servlet filter. For multisite drupal
+installs you can include multiple connection elements. We will query all the
+databases and assume any user in any drupal db with the same username and
+password are the same user. We will gather all roles for that user from all
+databases. This is a potential security risk if a user in one drupal db has
+the same username and password as another user in a seperate drupaldb. We
+are also assuming all drupal dbs to be mysql. This file should be located in
+the same directory as the fedora.cfcg file-->&lt;FilterDrupal_Connection>
+&lt;connection server="hostname" dbname="drupal" user="drupalAdmin"
+password="apiary" port="3306"> &lt;sql> SELECT distinct u.uid as userid,
+u.name as Name, u.pass as Pass, r.name as role FROM drupal.users u,
+drupal.role r, drupal.users_roles where u.name=? and u.pass=? and
+r.rid=drupal.users_roles.rid and u.uid=drupal.users_roles.uid; &lt;/sql>
+&lt;/connection> &lt;/FilterDrupal_Connection>
+</sect3>
+<sect3>
+<title>Edit the fedora tomcat webapp web.xml file</title>
+<cmdsynopsis>
+<command>vi $FEDORA_HOME/tomcat/webapps/fedora/WEB-INF/web.xml</command>
+</cmdsynopsis>
+After
+&lt;filter>  &lt;filter-name>XmlUserfileFilter&lt;/filter-name>
+&lt;filter-class>fedora.server.security.servletfilters.xmluserfile.FilterXmlUserfile&lt;/filter-class>
+&lt;/filter>
+Add
+&lt;filter>  &lt;filter-name>DrupalFilter&lt;/filter-name>
+&lt;filter-class>ca.upei.roblib.fedora.servletfilter.FilterDrupal&lt;/filter-class>
+&lt;/filter>
+After
+&lt;filter-mapping>  &lt;filter-name>XmlUserfileFilter&lt;/filter-name>  &lt;url-pattern>/*&lt;/url-pattern>
+&lt;/filter-mapping>
+Add
+&lt;filter-mapping>  &lt;filter-name>DrupalFilter&lt;/filter-name>  &lt;url-pattern>/*&lt;/url-pattern>
+&lt;/filter-mapping>
+</sect3>
+</sect2>
+<sect2>
+<title>Enable and rebuild Fedora’s Resource Index</title>
+<sect3>
+<title>Enable Fedora’s Resource Index activation</title>
+<emphasis role="bold">
+Note: Some Ubuntu installs had this variable set to zero even using
+“Enable Resource Index: true”
+</emphasis>
+<cmdsynopsis>
+<command>vi $FEDORA_HOME/server/config/fedora.fcfg</command>
+</cmdsynopsis>
+Set fedora.server.resourceIndex.ResourceIndex to 1
+</sect3>
+<sect3>
+<title>Rebuild Fedora’s Resource Index activation</title>
+<cmdsynopsis>
+<command>$FEDORA_HOME/server/bin/fedora-rebuild.sh</command>
+</cmdsynopsis>
+Choose “Rebuild the Resource Index”
+Verify selection
+</sect3>
+<sect3>
+<title>Restart Fedora</title>
+<cmdsynopsis>
+<command>$FEDORA_HOME/tomcat/bin/shutdown.sh</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>$FEDORA_HOME/tomcat/bin/startup.sh</command>
+</cmdsynopsis>
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://sourceforge.net/projects/djatoka/">Adore-Djatoka
+Image Server</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>wget
+http://iweb.dl.sourceforge.net/project/djatoka/djatoka/1.1/adore-djatoka-1.1.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Extract adore-djatoka-1.1</title>
+<cmdsynopsis>
+<command>tar -zxvf adore-djatoka-1.1.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Move adore-djatoka-1.1 to /usr/local</title>
+<cmdsynopsis>
+<command>mv adore-djatoka-x.x /usr/local</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Create symbolic link to adore-djatoka dir</title>
+<emphasis role="bold">
+Note: This preserves versioning
+</emphasis>
+<cmdsynopsis>
+<command>ln -s /usr/local/adore-djatoka-1.1 /usr/local/adore-djatoka</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Test functionality</title>
+<cmdsynopsis>
+<command>cd /usr/local/adore-djatoka/bin</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>./compress.sh -i ../etc/test.jpg -o ../etc/test.jp2</command>
+</cmdsynopsis>
+Compress jpg file into jpeg2000 format
+<cmdsynopsis>
+<command>./extract.sh -i ../etc/test.jp2 -o ../etc/test-size1.jpg -l 1
+</command>
+</cmdsynopsis>
+extracts a jpg file from a jpeg2000 file
+<cmdsynopsis>
+<command>ls -l ../etc </command>
+</cmdsynopsis>
+verify test.jp2 and test-size1.jpg files were created
+</sect2>
+<sect2>
+<title>Add Adore-Djatoka to tomcat webapps</title>
+<sect3>
+<title>Shutdown running tomcat</title>
+<cmdsynopsis>
+<command>$FEDORA_HOME/tomcat/bin/startup.sh</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Copy adore-djatoka.war file to tomcat webapps</title>
+<cmdsynopsis>
+<command>cp /usr/local/adore-djatoka/dist/adore-djatoka.war
+/$CATALINA_HOME/webapps</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Start tomcat from Adore-Djatoka bin directory</title>
+<emphasis role="bold">
+Note: Must be started while currently in the
+/usr/local/adore-djatoka/bin directory
+</emphasis>
+<cmdsynopsis>
+<command>cd /usr/local/adore-djatoka/bin</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>./tomcat.sh start</command>
+</cmdsynopsis>
+</sect3>
+</sect2>
+<sect2>
+<title>Configure Referent Resolver</title>
+<sect3>
+<title>Edit Djatoka Properties</title>
+<cmdsynopsis>
+<command>vi
+$CATALINA_HOME/webapps/adore-djatoka/WEB-INF/classes/djatoka.properties</command>
+</cmdsynopsis>
+Add the following in the Referent Resolver Properties section
+SimpleListResolver.maxRemoteCacheSize=10000
+</sect3>
+<sect3>
+<title>Setup JP2 images</title>
+<sect4>
+<title>Create Image directory</title>
+<cmdsynopsis>
+<command>mkdir -p /var/www/images/jpeg2000</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Download JP2 images</title>
+<cmdsynopsis>
+<command>cd /var/www/images/jpeg2000</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>wget
+http://research.apiaryproject.org/images/apiary-aquarius-jpeg2000-vbox.tar.gz</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Extract images</title>
+<cmdsynopsis>
+<command>tar –zxvf apiary-aquarius-jpeg2000-vbox.tar.gz</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Edit simple resolver list location</title>
+<cmdsynopsis>
+<command>vi /var/www/images/jpeg2000/imgIndex.txt</command>
+</cmdsynopsis>
+Replace all /mnt/converted_images with /var/www/images
+</sect4>
+<sect4>
+<title>Move list to appropriate location</title>
+<cmdsynopsis>
+<command>mv /var/www/images/jpeg2000/imgIndex.txt
+$CATALINA_HOME/webapps/adore-djatoka/WEB-INF/classes</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Stop and Start Tomcat from adore-djatoka bin directory</title>
+<cmdsynopsis>
+<command>cd /usr/local/adore-djatoka/bin</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>./tomcat.sh stop</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>./tomcat.sh start</command>
+</cmdsynopsis>
+</sect4>
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://code.google.com/p/ocropus/"
+>OCRopus</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>mkdir /home/apiary/ocropus</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>cd /home/apiary/ocropus</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>hg clone http://iulib.googlecode.com/hg iulib</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>hg clone http://ocropus.googlecode.com/hg ocropus</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Install prerequisites</title>
+<cmdsynopsis>
+<command>sh -x ocropus/ubuntu-packages</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Install iulib library</title>
+<cmdsynopsis>
+<command>cd /home/apiary/ocropus/iulib</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>scons</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>scons install</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Install OCRopus library</title>
+<cmdsynopsis>
+<command>cd /home/apiary/ocropus/ocropus</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>scons</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>scons install</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Configure Ubuntu for OCRopus</title>
+<sect3>
+<title>Add /usr/local/bin to PATH</title>
+<cmdsynopsis>
+<command>PATH=/usr/local/bin:$PATH</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Add library reference</title>
+<cmdsynopsis>
+<command>ldconfig</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH</command>
+</cmdsynopsis>
+</sect3>
+</sect2>
+<sect2>
+<title>Test install</title>
+<cmdsynopsis>
+<command>ocropus page data/testimages/simple.png</command>
+</cmdsynopsis>
+Note: should output the ocr of image simple.png
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://www.gnu.org/software/ocrad/"
+>Ocrad</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>mkdir /home/apiary/ocrad</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>cd /home/apiary/ocrad</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>wget http://ftp.gnu.org/gnu/ocrad/ocrad-0.21.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Extract ocrad-0.21</title>
+<cmdsynopsis>
+<command>tar -zxvf ocrad-0.21.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Configure and make ocrad</title>
+<cmdsynopsis>
+<command>cd /home/apiary/ocrad/ocrad-0.21</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>./configure</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>make</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>make installd</command>
+</cmdsynopsis>
+Note: adds ocrad file to /usr/local/bin
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://jocr.sourceforge.net/">GOCR</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>mkdir /home/apiary/gocr</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>cd /home/apiary/gocr</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>wget
+http://www-e.uni-magdeburg.de/jschulen/ocr/gocr-0.49.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Extract ocrad-0.21</title>
+<cmdsynopsis>
+<command>tar -zxvf gocr-0.49.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Configure and make ocrad</title>
+<cmdsynopsis>
+<command>cd /home/apiary/gocr/gocr-0.49</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>./configure</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>make</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>make install</command>
+</cmdsynopsis>
+<emphasis role="bold">
+<para wordsize="">Note: adds gocr file to /usr/local/bin
+</emphasis>
+</sect2>
+</sect1>
+<sect1>
+<title>Configure Drupal to work with Apiary using fedora_repository (Islandora) and
+apiary_project</title>
+<sect2>
+<title>Allow user access for druapl ajax calls</title>
+<sect3>
+<title>Edit drupal/includes/menu.inc</title>
+<cmdsynopsis>
+<command>/var/www/drupal/includes/menu.inc</command>
+</cmdsynopsis>
+In function _menu_check_access(&amp;$item, $map)
+Replace:
+if ($callback == 'user_access') { $item['access'] = (count($arguments) ==
+1) ? user_access($arguments[0]) : user_access($arguments[0], $arguments[1]);
+}
+With:
+if ($callback == 'user_access') { if(strpos($item['file'],
+"modules/apiary_project") > -1) { $item['access'] = user_access("View Apiary
+Project"); } else { $item['access'] = (count($arguments) == 1) ?
+user_access($arguments[0]) : user_access($arguments[0], $arguments[1]); }
+}
+</sect3>
+</sect2>
+<sect2>
+<title>Enable Clean URLs</title>
+<sect3>
+<title>Browse to Administer->Site configuration->Clean URLs</title>
+<sect4>
+<title>Select Enabled</title>
+</sect4>
+<sect4>
+<title>Click Save Configuration</title>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Install Required Drupal Themes</title>
+<sect3>
+<title>Install <link xlink:href="http://drupal.org/project/zen"
+>Zen</link></title>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /var/www/drupal/themes</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>svn co
+svn://projects.brit.org/src/svn_apiary/trunk/servers/applications/drupal/themes/zen</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/themes</title>
+Scroll to Zen
+Check Enabled
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Install Cti-flex-no-title</title>
+<emphasis role="bold">
+Note: This is theme altered by the Apiary Project to remove all menus,
+padding, etc
+</emphasis>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /var/www/drupal/themes</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>svn co
+svn://projects.brit.org/src/svn_apiary/trunk/servers/applications/drupal/themes/cti_flex_no_title</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/themes</title>
+Scroll to cti-flex-no-title
+Check Enabled
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Install <link xlink:href="http://drupal.org/project/cti_flex"
+>Cti-flex</link></title>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /var/www/drupal/themes</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>svn co
+svn://projects.brit.org/src/svn_apiary/trunk/servers/applications/drupal/themes/cti_flex</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/themes</title>
+Scroll to cti-flex
+Check Enabled
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Install Required Drupal Modules</title>
+<sect3>
+<title>Install <link xlink:href="http://drupal.org/project/imageapi"
+>ImageAPI</link></title>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /home/apiary/</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>wget
+http://ftp.drupal.org/files/projects/imageapi-6.x-1.10.tar.gz</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Extract</title>
+<cmdsynopsis>
+<command>tar -zxvf imageapi-6.x-1.10.tar.gz</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Move</title>
+<cmdsynopsis>
+<command>mv imageapi-6.x-1.10 /var/www/drupal/modules</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/modules</title>
+Scroll to ImageCache section
+Check Enabled for ImageAPI
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Install ImageAPI GD2</title>
+<sect4>
+<title>Download</title>
+<emphasis role="bold">Note: There is no download as it is already
+included</emphasis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/modules</title>
+Scroll to ImageCache section
+Check Enabled for ImageAPI GD2
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Install Core-optional Modules</title>
+<sect4>
+<title>Download</title>
+<emphasis role="bold">Note: There is no download as it is already
+included with the drupal core</emphasis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/modules</title>
+Scroll to Core-optional section
+Check Enabled for Path
+Check Enabled for PHP filter
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Install <link xlink:href="http://islandora.ca/">Fedora_Repository
+(ISLANDORA)</link></title>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /var/www/drupal/modules</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>svn co
+http://fedora-commons.org/svn/root/islandora/islandora-module/Islandora-dru6-fed3/trunk/fedora_repository</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/modules</title>
+Scroll to Fedora Repository section
+Check Enabled for Digital Repository
+Check Enabled for Fedora ImageAPI
+Click Save configuration
+</sect5>
+</sect4>
+<sect4>
+<title>Create Drupal administrator role</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/user/roles</title>
+type ‘administrator’ and click Add role
+</sect5>
+</sect4>
+<sect4>
+<title>Edit Drupal role administrator’s permissions</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/user/roles</title>
+Click edit permissions for administrator
+Check all options for fedora_repository module
+Click Save permissions
+</sect5>
+</sect4>
+<sect4>
+<title>Configure Fedora Repository settings</title>
+<sect5>
+<title>Browse to
+http://hostname/drupal/admin/settings/fedora_repository</title>
+Default Collection Name: Apiary's Fedora Repository
+Default Collection PID: apiary:SpecimenBinders
+A user with the Drupal role administrator: apiary
+Pid namespaces allowed in this Drupal install: demo: changeme:
+Islandora: ilives: apiary: ap-specimen: ap-roi: ap-image: ap-model:
+ap-sdef: ap-sdep: ap-sdefcm:
+Fedora Soap Management Url:
+http://hostname:8080/fedora/services/management?wsdl
+Fedora base url: http://hostname:8080/fedora
+Fedora RISearch URL: http://hostname:8080/fedora/risearch
+Fedora Lucene Search URL:
+http://hostname:8080/fedoragsearch/rest
+Fedora Lucene Index Name: BasicIndex
+Fedora Soap Url:
+http://hostname:8080/fedora/services/access?wsdl
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Install <link xlink:href="http://www.apiaryproject.org">Apiary
+Project</link></title>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /var/www/drupal/modules</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>svn co
+svn://projects.brit.org/src/svn_apiary/branches/mellifera-apiary-1.0.0/apiary_project</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Create Drupal apiary admin role</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/user/roles</title>
+type ‘apiary admin’ and click Add role
+</sect5>
+</sect4>
+<sect4>
+<title>Edit Drupal role  apiary admin’s permissions</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/user/roles</title>
+Click edit permissions for administrator
+Check all options for apiary_project module
+Click Save permissions
+</sect5>
+</sect4>
+<sect4>
+<title> Add Drupal roles apiary admin and administrator to Drupal User
+apiary </title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/user/user</title>
+Under Operations, click edit for apiary
+Scroll to Roles section
+Select apiary admin
+Select administrator
+Click Save
+</sect5>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Create Writeable Directories</title>
+<cmdsynopsis>
+<command>chmod 777
+/var/www/drupal/modules/apiary_project/workflow/templates_c</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>mkdir
+/var/www/drupal/sites/default/files/apiary_datastreams</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chmod 777
+/var/www/drupal/sites/default/files/apiary_datastreams</command>
+</cmdsynopsis>
+</sect5>
+<sect5>
+<title>Edit Externally Used Workflow files</title>
+<cmdsynopsis>
+<command>vi
+/var/www/drupal/modules/apiary_project/workflow/index.php</command>
+</cmdsynopsis>   Set $drupal_url = "http://hostname/drupal";  Set $djatoka_url = "http://hostname:8080/";
+<cmdsynopsis>
+<command>vi
+/var/www/drupal/modules/apiary_project/workflow/comparer.php</command>
+</cmdsynopsis>   Set $drupal_url = "http://hostname/drupal";
+<cmdsynopsis>
+<command>vi
+/var/www/drupal/modules/apiary_project/workflow/search.php</command>
+</cmdsynopsis>   Set $drupal_url = "http://hostname/drupal";
+<cmdsynopsis>
+<command>vi
+/var/www/drupal/modules/apiary_project/workflow/workflow.php</command>
+</cmdsynopsis>   Set $drupal_url = "http://hostname/drupal";
+</sect5>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/modules</title>
+Scroll to Apiary Project section
+Check Enabled for Apiary Research Project
+Click Save configuration
+</sect5>
+</sect4>
+<sect4>
+<title>Configure Apiary Project settings</title>
+<sect5>
+<title>Browse to
+http://hostname/drupal/admin/settings/apiary_project</title>
+Enter variable information
+Click Save configuration<caution>
+<emphasis role="bold"> Do this even if no changes are made.
+</emphasis>
+</caution>
+</sect5>
+</sect4>
+<sect4>
+<title>Configure Apiary Project System Startup Script</title>
+<cmdsynopsis>
+<command> cp apiary_project/apiary_project.sh /etc/init.d/apiary_project
+</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>update-rc.d apiary_project defaults</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chmod a+rx /etc/init.d/apiary_project</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chmod 777
+/var/www/drupal/modules/apiary_project/workflow/templates_c</command>
+</cmdsynopsis>
+</sect4>
+</sect3>
+<sect3>
+<title>Install <link xlink:href="http://drupal.org/project/themekey "
+>ThemeKey</link></title>
+<sect4>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /home/apiary/</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>wget
+http://ftp.drupal.org/files/projects/themekey-6.x-3.3.tar.gz</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Extract</title>
+<cmdsynopsis>
+<command>tar -zxvf themekey-6.x-3.3.tar.gz</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Move</title>
+<cmdsynopsis>
+<command>mv themekey-6.x-3.3 /var/www/drupal/modules</command>
+</cmdsynopsis>
+</sect4>
+<sect4>
+<title>Install</title>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/build/modules</title>
+Scroll to ThemeKey section
+Check Enabled for ThemeKey
+Click Save configuration
+</sect5>
+<sect5>
+<title>Browse to http://hostname/drupal/admin/settings/themekey</title>
+Create New themekey Rule
+drupal:path = apiary use CTI Flex theme No Title
+check Enabled
+Click Save configuration
+</sect5>
+</sect4>
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title>Install <link xlink:href="http://www.apache.org/dyn/closer.cgi/lucene/solr/"
+>Apache-Solr</link></title>
+<sect2>
+<title>Download</title>
+<cmdsynopsis>
+<command>cd /home/apiary</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>wget
+http://apache.tradebit.com/pub/lucene/solr/1.4.1/apache-solr-1.4.1.tgz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Extract apache-solr-1.4.1</title>
+<cmdsynopsis>
+<command>tar -zxvf apache-solr-1.4.1.tar.gz</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Move apache-solr-1.4.1</title>
+<cmdsynopsis>
+<command>mv apache-solr-1.4.1 $FEDORA_HOME/tomcat/webapps</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Copy Apiary Solr Schema</title>
+<cmdsynopsis>
+<command>cp apiary_project/solr/conf/schema.xml
+$FEDORA_HOME/tomcat/webapps/apache-solr-1.4.1/example/solr/conf/schema.xml</command>
+</cmdsynopsis>
+</sect2>
+<sect2>
+<title>Configure Solr System Startup Script</title>
+<cmdsynopsis>
+<command>cp apiary_project/solr/solr.sh /etc/init.d/solr</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>update-rc.d solr defaults</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chmod a+rx /etc/init.d/solr</command>
+</cmdsynopsis>
+</sect2>
+</sect1>
+<sect1>
+<title>Ingest Required Fedora Digital Objects</title>
+<sect2>
+<title>Ingest SpecimenBinders</title>
+<cmdsynopsis>
+<command>$FEDORA_HOME/client/bin/fedora-admin.sh</command>
+</cmdsynopsis>
+Login
+Username: fedoraAdmin
+Password: apiary
+Click File->Ingest->One Object->From File…
+Navigate to
+/var/www/drupal/modules/apiary_project/digital_objects/required/apiary_SpecimenBinders.xml
+Click Open
+Select FOXML version 1.1
+Click OK
+</sect2>
+<sect2>
+<title>dynamicOCR service definition</title>
+<cmdsynopsis>
+<command>cp
+/var/www/drupal/modules/apiary_project/digital_objects/sDefs/ocropus/dynamicOCR.php
+/var/www/drupal/sites/default/files/</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>$FEDORA_HOME/client/bin/fedora-admin.sh</command>
+</cmdsynopsis>
+Login
+Username: fedoraAdmin
+Click File->Ingest->One Object->From File…
+Navigate to each of the following separately:
+•
+/var/www/drupal/modules/apiary_project/digital_objects/sDefs/ocropus/ap-sdef_ocropus.xml
+•
+/var/www/drupal/modules/apiary_project/digital_objects/sDefs/ocropus/ap-sdefcm_ocropus.xml
+•
+/var/www/drupal/modules/apiary_project/digital_objects/sDefs/ocropus/ap-sdep_ocropus.xml
+Click Open
+Select FOXML version 1.1
+Click OK
+Click File->Exit
+</sect2>
+</sect1>
+<sect1>
+<title>Create Apiary Project Drupal items</title>
+<sect2>
+<title>Create Apiary Pages</title>
+<sect3>
+<title>homepage</title>
+<sect4>
+<title>Browse to http://hostname/drupal/node/add/page</title>
+Title: Home Page
+Menu settings  Menu link title:   Parent item: Primary links  Weight: 0
+Body:
+&lt;h1>Welcome to the Apiary Project Proof of Concept&lt;/h1> &lt;?php
+if (user_is_logged_in()): ?> &lt;p>To begin the demo, select Workspace
+in the navigation menu above.&lt;/p> &lt;?php else:?> &lt;p>To begin the
+demo, &lt;a href="user">login&lt;/a> with username "demo" and password
+"demo" then select Workspace in the navigation menu above.&lt;/p>
+&lt;?php endif;?>
+Input Format: PHP code
+URL path settings: homepage
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Set Homepage</title>
+<sect3>
+<title>Browse to http://hostname/drupal/admin/settings/site-information</title>
+Default front page: homepage
+Click Save configuration
+</sect3>
+</sect2>
+<sect2>
+<title>Set Menus</title>
+<sect3>
+<title> Remove menus</title>
+<sect4>
+<title>Browse to http://hostname/drupal/admin/build/block</title>
+Set all regions to &lt;none>
+Click Save blocks
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Configure Drupal Theme for Apiary site</title>
+<sect3>
+<title> Copy cti_flex_logo.png to files directory</title>
+<cmdsynopsis>
+<command>cp /var/www/drupal/modules/apiary_project/images/cti_flex_logo.png
+/var/www/drupal/sites/default/files</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title> Configure Zen</title>
+<sect4>
+<title>Browse to http://hostname/drupal/admin/build/themes</title>
+Click configure next to Zen
+Scroll to Logo image settings  Uncheck Use the default logo
+Click Save configuration
+</sect4>
+</sect3>
+<sect3>
+<title> Configure CTI Flex Theme</title>
+<sect4>
+<title>Browse to http://hostname/drupal/admin/build/themes</title>
+Click configure next to CTI Flex theme
+Scroll toToggle display  Uncheck Site name
+Scroll to Logo image settings  Uncheck Use the default logo  Path to custom logo: sites/default/files/cti_flex_logo.png
+Scroll to Theme-specific settings ->Custom color settings  Select color for body background: #FFE8B7  Select color for header and footer backgrounds: #8EB7FE  Select color for main navigation bar and block header backgrounds:
+#3F4F6B  Select color for block content background: #D4DAE6
+Click Save configuration
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Configure Drupal Primary links</title>
+<sect3>
+<title> Browse to
+http://hostname/drupal/admin/build/menu-customize/primary-links</title>
+<sect4>
+<title>Home</title>
+Click Add item tab
+Path: http://hostname/drupal
+Menu link title: Home
+Description: home page
+Parent item: &lt;Primary links>
+Weight: 0
+Click Save
+</sect4>
+<sect4>
+<title>Worksplace</title>
+<emphasis role="bold">Note: This link is now added when the module is
+installed</emphasis>
+Weight: 0
+Click Save
+</sect4>
+<sect4>
+<title>Login</title>
+Click Add item tab
+Path: user/login
+Menu link title: Login
+Description:
+Parent item: &lt;Primary links>
+Weight: 2
+Click Save
+</sect4>
+<sect4>
+<title>Logout</title>
+Click Add item tab
+Path: logout
+Menu link title: Logout
+Description:
+Parent item: &lt;Primary links>
+Weight: 2
+Click Save
+</sect4>
+<sect4>
+<title>About us</title>
+Click Add item tab
+Path: http://hostname/drupal/apiary?ref=about
+Menu link title: About us
+Description:
+Parent item: &lt;Primary links>
+Weight: 3
+Click Save
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Configure Drupal Navigation menu</title>
+<sect3>
+<title> Add/remove Navigation menu links</title>
+<sect4>
+<title>Browse to
+http://hostname/drupal/admin/build/menu-customize/navigation</title>
+Uncheck the following items marked Enabled  Digital Repository  Create content->Fedora Repository   Create content->Story
+Click Save configuration
+</sect4>
+</sect3>
+<sect3>
+<title>  Remove Navigation menu from the left panel for the workflow </title>
+<sect4>
+<title>Browse to http://hostname/drupal/admin/build/block</title>
+Click configure for Navigation  Scroll to Page specific visibility settings      Select Show only on the listed pages      Type ‘homepage’ in the Pages: section  Click Save block
+</sect4>
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title>Start Apiary</title>
+<cmdsynopsis>
+<command>/etc/init.d/solr start</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>/etc/init.d/apiary_project start</command>
+</cmdsynopsis>
+</sect1>
+<sect1>
+<title>Ingest Apiary Demo Objects</title>
+<sect2>
+<title>Browse to http://hostname/drupal/apiary/admin</title>
+<para xml:id="ingestobjects">Click Batch Create Specimens  Max Specimens:  File name source file:
+http://hostname/images/jpeg2000/demo_filenames.txt  Referent ID: apiary:jpeg2000  JPEG2000 Url Base: http://hostname/images/jpeg2000  Source Url Base: http://hostname/images/original
+Click Submit
+</sect2>
+</sect1>
+Preface: Chapter 2 entails a lot, so if you have objects ingested then great! It's
+time to harness  let the real power of the Apiary Project.
+<sect1>
+<title>(Re)Starting The Apiay Project</title>
+Anytime a reboot is felt necessary, use the following two commands to restart the
+project.
+Note: start, stop and restart can all be passed in, but restart will not die if
+either are not started so it is an all-safe command to use regardless.
+<cmdsynopsis>
+<command>/etc/init.d/solr restart</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>/etc/init.d/apiary_project restart</command>
+</cmdsynopsis>
+</sect1>
+<sect1>
+<title>Administrating the Apiary Project</title>
+<sect2>
+<title>Browse to http://hostname/drupal/apiary/admin</title>
+<sect3>
+<title>Create, Edit and Delete Workflows</title>
+<sect4>
+<title>Workflow Name</title>
+Title Name of the workflow
+</sect4>
+<sect4>
+<title>Workflow Description</title>
+Information about the workflow
+</sect4>
+<sect4>
+<title>Workflow Permissions</title>
+Permissions to features users of the workflow will be allowed to
+access.
+<sect5>
+<title>canAnalyzeSpecimen</title>
+Can users assigned to the workflow use Image Analysis features,
+like creating ROIs.
+</sect5>
+<sect5>
+<title> canTranscribe</title>
+Can users assigned to the workflow use Transcribe features.
+</sect5>
+<sect5>
+<title> canParseL1</title>
+Can users assigned to the workflow use Parse Level 1
+features.
+</sect5>
+<sect5>
+<title> canParseL2</title>
+Can users assigned to the workflow use Parse Level 2
+features.
+</sect5>
+<sect5>
+<title> canParseL3</title>
+Can users assigned to the workflow use Parse Level 3
+features.
+</sect5>
+<sect5>
+<title> canQC</title>
+Can users assigned to the workflow use Quality Control
+features.
+</sect5>
+</sect4>
+<sect4>
+<title>Workflow Users</title>
+Assign Users to this workflow
+<sect5>
+<title>Select Drupal Apiary Project User</title>
+Select one or many or all druapal users who can view the Apiary
+Project and assign them to the workflow
+</sect5>
+<sect5>
+<title>Create New Drupal Apiary Project User</title>
+This feature creates a new drupal user with all the roles and
+permissions needed to view an Apiary Project workflow and
+automatically adds that user to the workflow list.
+</sect5>
+</sect4>
+<sect4>
+<title>Workflow Strategy</title>
+<sect5>
+<title>Select Object Pool</title>
+Select an Object Pool from list of previous created Specimen
+Pools.
+</sect5>
+<sect5>
+<title>Create New Object Pool</title>
+This feature creates a new object pool based on a Resource Index
+or Solr Query.
+</sect5>
+<sect5>
+<title>Object Pool Resource Index Query Example</title>
+select $sp_pid from &lt;#ri> where
+$sp_pid&lt;fedora-rels-ext:isMemberOf>
+&lt;info:fedora/apiary:SpecimenBinders>
+</sect5>
+<sect5>
+<title>Object Pool Solr Query Example</title>
+imageMetadata_sourceURL:("http://research.apiaryproject.org/images/original/vol062.tif")+imageMetadata_sourceURL:("http://research.apiaryproject.org/images/original/vol065.tif")&amp;fl=parent_id
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Create and Edit GroundTruth</title>
+The expected result of a Specimen after being accurately analyzed,
+transcibed and parsed. This values do not necessarily associate to any real
+fedora objects.
+<sect4>
+<title>Display Specimen Data</title>
+Displays the existing Groundtruth datastream for a requested Specimen
+pid. Can be manually entered or passed as a
+specimen_pid=ap-specimen:Specimen-X variable
+</sect4>
+<sect4>
+<title>Save Specimen Data</title>
+Create or overwrites the Groundtruth datastream for the requested
+Specimen pid.
+</sect4>
+</sect3>
+<sect3>
+<title>Create one or more Specimen from the Apiary Project Research
+Server</title>
+A demonstration of the simplicity of sharing images from the djatoka image
+server. Any installation can ingest images found here.
+<sect4>
+<title>Select Specimen Images</title>
+Select any number of images to ingest.
+Assign Specimen Metadata to it to be saved during ingestion
+Click Add Specimens
+Upon successful ingestion, the Image and Specimen Pids are
+displayed
+</sect4>
+</sect3>
+<sect3>
+<title>Batch Create Specimen Using a Source File</title>
+Ingest a number of specimen using the same rft-id base, jp2 url base and
+source url base. See <link linkend="ingestobjects">Ingest Apiary Demo
+Objects</link>
+<sect4>
+<title>Select Specimen Images</title>
+Select any number of images to ingest.
+Assign Specimen Metadata to it to be saved during ingestion
+Click Add Specimens
+Upon successful ingestion, the Image and Specimen Pids are
+displayed
+</sect4>
+</sect3>
+<sect3>
+<title>Text Comparison</title>
+Compare two text strings and see the resulting levenshtein and simple text
+distances displayed using Daisydiff.
+</sect3>
+<sect3>
+<title>Search Metadata and Object Statuses</title>
+<sect4>
+<title>ROI specimenMetadata Search</title>
+Search using specimenMetadata keywords in throughout all or one
+specific metadata field.
+</sect4>
+<sect4>
+<title>Image or ROI Status Search</title>
+Search for all objects with workflow status and/or specimenMetadata
+keyword.
+Note: A search containing only Image status will return only
+Image/Specimen pairs.
+</sect4>
+</sect3>
+<sect3>
+<title>Re-Index all Fedora Objects into Solr</title>
+If changes have been made to Fedora Objects outside the Apiary Project,
+i.e. directly in Fedora, this useful tool will re-index all Apiary Project
+objects.
+</sect3>
+<sect3>
+<title>Example Links to Fedora Objects</title>
+Example links to:   Main Digital Object overview    View an object's datastream    View a list of datastreams for an object    View a list of service methods (i.e. dynamicOCR) for an object
+</sect3>
+</sect2>
+</sect1>
+Preface: Now that we have covered how to create workflows, it's time to use
+them.
+<sect1>
+<title>Click Workspace or browse to http://hostname/drupal/apiary</title>
+<sect2>
+<title>Select Workflow to begin work</title>
+</sect2>
+<sect2>
+<title>Load Workflow Queue</title>
+<sect3>
+<title>Click + in Southern Pane</title>
+Loads the next available Specimen in to the Workflow Queue
+</sect3>
+<sect3>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+<sect4>
+<title>Click Add Items to Bring Up the Image Bowser</title>
+<sect5>
+<title>Select Specimen to load into the Workflow Queue</title>
+</sect5>
+<sect5>
+<title>Click Add to queue</title>
+</sect5>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Select Specimen from Workflow Queue</title>
+<sect3>
+<title>Click Navigation Arrow in Southern Pane</title>
+Loads Specimen immediately to the right or left of the current Specimen in
+the Workflow Queue
+</sect3>
+<sect3>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+<sect4>
+<title>Click Specimen from List</title>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>View Specimen with <link
+xlink:href="http://code.google.com/p/jquery-openlayers/">Open
+Layers</link></title>
+<sect3>
+<title>Zoom</title>
+<sect4>
+<title>Use scroll wheel</title>
+</sect4>
+<sect4>
+<title>Use zoom + or - from the Open Layers control panel</title>
+</sect4>
+Loads Specimen immediately to the right or left of the current Specimen in
+the Workflow Queue
+</sect3>
+<sect3>
+<title>Pan</title>
+<sect4>
+<title>Select Hand from Open Layers control panel</title>
+<sect5>
+<title>Click and drag on the image</title>
+</sect5>
+</sect4>
+<sect4>
+<title>Use navigation arrows from the Open Layers control panel</title>
+</sect4>
+Loads Specimen immediately to the right or left of the current Specimen in
+the Workflow Queue
+</sect3>
+<sect3>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+<sect4>
+<title>Click Specimen from List</title>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Create Regions of Interest (ROIs)</title>
+<sect3>
+<title>Click Pencil Tool from Open Layers Panel</title>
+</sect3>
+<sect3>
+<title>Click and drag on the Image to highlight a region</title>
+<sect4>
+<title>Assign Region an ROI Type</title>
+<sect5>
+<title>Primary Label</title>
+</sect5>
+<sect5>
+<title>Annotation/Other</title>
+</sect5>
+<sect5>
+<title>Barcode</title>
+</sect5>
+<sect5>
+<title>Undefined</title>
+</sect5>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Transcribe ROI</title>
+<sect3>
+<title>Select an ROI to Transcibe</title>
+<sect4>
+<title>Click Transcibe from the right-hand side Specimen ROI List</title>
+Loads ROI immediately and switches to the Transcribe Text Tab
+</sect4>
+<sect4>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+<sect5>
+<title>Click Arrow in Specimen to Expand ROIs</title>
+</sect5>
+<sect5>
+<title>Click Transcibe in any ROI</title>
+Loads ROI immediately and switches to the Transcribe Text
+Tab
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>OCR Results Tab</title>
+<sect4>
+<title>OCRAD Results</title>
+<sect5>
+<title>Reprocess OCRAD Results</title>
+Reprocesses the ROI through the OCRAD OCR Engine
+</sect5>
+<sect5>
+<title>Copy OCRAD Results to Transcription Textarea</title>
+Click the Icon that looks like a Document with a swooshing arrow
+on it.
+</sect5>
+</sect4>
+<sect4>
+<title>OCRopus Results</title>
+<sect5>
+<title>Reprocess OCRopus Results</title>
+Reprocesses the ROI through the OCRopus OCR Engine
+</sect5>
+<sect5>
+<title>Copy OCRopus Results to Transcription Textarea</title>
+Click the Icon that looks like a Document with a swooshing arrow
+on it.
+</sect5>
+</sect4>
+<sect4>
+<title>GOCR Results</title>
+<sect5>
+<title>Reprocess GOCR Results</title>
+Reprocesses the ROI through the GOCR OCR Engine
+</sect5>
+<sect5>
+<title>Copy GOCR Results to Transcription Textarea</title>
+Click the Icon that looks like a Document with a swooshing arrow
+on it.
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Text Transcription Tab</title>
+<sect4>
+<title>Enter or correct Verbatim text as transcibed by OCR and human</title>
+</sect4>
+<sect4>
+<title>Click Save text</title>
+Click the Save Text Button to save the data to the Text datastream of
+the ROI Object
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Parse ROI</title>
+<sect3>
+<title>Select an ROI to Parse</title>
+<sect4>
+<title>Click Parse from the right-hand side Specimen ROI List</title>
+Loads ROI immediately and switches to the Parse Text Tab
+</sect4>
+<sect4>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+<sect5>
+<title>Click Arrow in Specimen to Expand ROIs</title>
+</sect5>
+<sect5>
+<title>Click Parse in any ROI</title>
+Loads ROI immediately and switches to the Parse Text Tab
+</sect5>
+</sect4>
+</sect3>
+<sect3>
+<title>Image Tab</title>
+Displays the ROI Image that was Transcibed
+</sect3>
+<sect3>
+<title>Text Tab</title>
+<sect4>
+<title>Select a section of text</title>
+</sect4>
+<sect4>
+<title>Assign Selection to Metadata Element</title>
+<sect5>
+<title>Right Click Selection and Follow the Menus</title>
+</sect5>
+<sect5>
+<title> Use the Top Menu</title>
+</sect5>
+</sect4>
+<sect4>
+<title>Remove Selection of Assigned Metadata Element</title>
+<sect5>
+<title>Right Click Selection and Click Remove</title>
+</sect5>
+<sect5>
+<title> Click Remove from the Top Menu</title>
+</sect5>
+</sect4>
+<sect4>
+<title>Find taxa via <link xlink:href="http://www.ubio.org/"
+>uBio</link></title>
+Retrieves and displays the uBio results in an overlay
+</sect4>
+<sect4>
+<title>Parse using <link xlink:href="http://www.herbis.org/"
+>HERBIS</link></title>
+Runs the Transcibed Text through a HERBIS Natural Language Processing
+(NLP) algorithms whose return is mapped to Apiary Project
+specimenMetadata elements.
+</sect4>
+<sect4>
+<title>Save Parse Text</title>
+Click the Save Parsed Text Button to save the data to the
+specimenMetadata datastream of the ROI Object
+Note: The Text datastream is also updated to include assign Span
+tags.
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Delete ROI</title>
+<sect3>
+<title>Click Delete ROI from the right-hand side Specimen ROI List</title>
+</sect3>
+</sect2>
+<sect2>
+<title>Remove ROI from Queue</title>
+<sect3>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+</sect3>
+<sect3>
+<title>Click remove for the ROI</title>
+</sect3>
+</sect2>
+<sect2>
+<title>Remove Specimen from Queue</title>
+<sect3>
+<title>Glide Mouse to left to reveal Workflow Queue</title>
+</sect3>
+<sect3>
+<title>Click the gear icon</title>
+<sect4>
+<title>Click Remove specimen</title>
+</sect4>
+</sect3>
+</sect2>
+</sect1>
+Preface: An attempt to cover a variety of known issues
+<sect1>
+<title>Fedora Will Not Start</title>
+<sect2>
+<title>Check System Variables</title>
+Typing in $FEDORA_HOME should result in the location of the fedora
+directory
+If it does not, then your variable needs to be set See <link
+linkend="envirovariables">Edit Environment Variables</link>
+Others that could be missing:
+JAVA_HOME, CATALINA_HOME, LD_LIBRARY_PATH
+Some of these directories use Symlinks that can become invalid after an
+update, especially JAVA_HOME
+</sect2>
+<sect2>
+<title>Check Tomcat/Catalina logs</title>
+<cmdsynopsis>
+<command>vi $FEDORA_HOME/server/config/fedora.fcfg</command>
+</cmdsynopsis>
+Verify hostname is accurate
+Verify mysql db and information is accurate
+</sect2>
+</sect1>
+Other techniques used to improve the Apiary Project
+<sect1>
+<title>Apache-Solr schema</title>
+<sect2>
+<title>Edit schema.xml file</title>
+<cmdsynopsis>
+<command>vi
+$FEDORA_HOME/tomcat/webapps/apache-solr-1.4.1/example/solr/conf/schema.xml</command>
+</cmdsynopsis>
+<sect3>
+<title>Add Dynamically Indexed Item</title>
+Edit the dynamicField section of the XML document
+</sect3>
+<sect3>
+<title>Add Other Solr Features</title>
+<para xlink:href="http://wiki.apache.org/solr/SolrPlugins">Solr Offer many other
+features that are beyid the scope of this project. They can be learned about
+<link>here</link>
+</sect3>
+<sect3>
+<title>Edit search.php file</title>
+<cmdsynopsis>
+<command>vi
+/var/www/drupal/modules/apiary_project/workflow/include/search.php</command>
+</cmdsynopsis>
+Add new code to include added Dynamically Index Item
+</sect3>
+<sect3>
+<title>Restart Solr</title>
+<cmdsynopsis>
+<command>/etc/init.d/solr restart</command>
+</cmdsynopsis>
+Re-Index Fedora Objects into Solr from
+http://hostname/drupal/apiary?ref=solr_index_all
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title>Configure Adore-Djatoka Database Resolver</title>
+<sect2>
+<title>Create and Setup djatoka mysql database</title>
+<cmdsynopsis>
+<command>mysql -u root -p</command>
+</cmdsynopsis>
+Accesses mysql command line, password is apiary
+<sect3>
+<title>Create Drupal user and database</title>
+<cmdsynopsis>
+<command>create database djatoka;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>grant all on djatoka.* to ‘djatokaAdmin’@’localhost’ identified by
+‘apiary’;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>grant all on djatoka.* to ‘djatokaAdmin’@’%’ identified by
+‘apiary’;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>use djatoka;</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>CREATE TABLE `resources` ( `identifier` varchar(150) NOT NULL,
+`imageFile` varchar(255) NOT NULL, `original_file_url` text NOT NULL,
+`jp2_file_url` text NOT NULL, PRIMARY KEY (`identifier`) ) ENGINE=MyISAM
+DEFAULT CHARSET=latin1;</command>
+</cmdsynopsis>
+</sect3>
+</sect2>
+<sect2>
+<title>Reconfigure Djatoka properties file</title>
+<cmdsynopsis>
+<command>vi
+/usr/local/fedora/tomcat/webapps/adore-djatoka/WEB-INF/classes/djatoka.properties</command>
+</cmdsynopsis>
+<sect3>
+<title>Comment out the current OpenURLJP2KService.referentResolverImpl</title>
+#OpenURLJP2KService.referentResolverImpl=gov.lanl.adore.djatoka.openurl.SimpleListResolverUncomment:
+</sect3>
+<sect3>
+<title>Uncomment the Database Resolver
+OpenURLJP2KService.referentResolverImpl</title>
+OpenURLJP2KService.referentResolverImpl=gov.lanl.adore.djatoka.openurl.plugin.r
+ftdb.DatabaseResolver
+</sect3>
+<sect3>
+<title>Uncomment the Database Resolver properties</title>
+DatabaseResolver.url=jdbc:mysql://localhost/djatoka
+DatabaseResolver.driver=com.mysql.jdbc.Driver
+DatabaseResolver.login=djatokaAdmin
+DatabaseResolver.pwd=apiary
+DatabaseResolver.maxActive=500
+DatabaseResolver.maxIdle=10
+DatabaseResolver.query=SELECT identifier, imageFile FROM resources WHERE
+identifier='\\i';
+</sect3>
+<sect3>
+<title>Add remotecaching property</title>
+DatabaseResolver.maxRemoteCacheSize=150000000
+Note: This is in pixels so 150000000 is equivalent to a 15000x10000 pixel
+image.
+</sect3>
+</sect2>
+</sect1>
+<sect1>
+<title>Install Varnish http accelerator</title>
+References:
+<link
+xlink:href="References: http://fak3r.com/2009/01/27/howto-serve-jpeg2000-images-with-a-scalable-infrastructure/ http://groups.drupal.org/node/25425/revisions/88248/view  http://blog.gootum.com/linux-blog/installing-varnish-reverse-proxy-for-ubuntu  http://comments.gmane.org/gmane.comp.web.varnish.misc/1840 "
+>http://fak3r.com/2009/01/27/howto-serve-jpeg2000-images-with-a-scalable-infrastructure/</link>
+<link xlink:href="http://groups.drupal.org/node/25425/revisions/88248/view"
+>http://groups.drupal.org/node/25425/revisions/88248/view</link>
+<link
+xlink:href="http://blog.gootum.com/linux-blog/installing-varnish-reverse-proxy-for-ubuntu"
+>http://blog.gootum.com/linux-blog/installing-varnish-reverse-proxy-for-ubuntu</link>
+<link xlink:href="http://comments.gmane.org/gmane.comp.web.varnish.misc/1840 "
+>http://comments.gmane.org/gmane.comp.web.varnish.misc/1840 </link>
+<sect2>
+<title>Configure Apache</title>
+<sect3>
+<title>Enable Modules</title>
+<cmdsynopsis>
+<command>a2enmod proxy</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>a2enmod proxy_ajp</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>a2enmod disk_cache</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>a2enmod file_cache</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>a2enmod mem_cache</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>a2enmod deflate</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Set Apache to listen on port 8019 instead of standard 80</title>
+<cmdsynopsis>
+<command>vi /etc/apache2/ports.conf</command>
+</cmdsynopsis>
+Change port 80 to 8019
+</sect3>
+<sect3>
+<title>Set Apache sites to use port 8019 instead of 80</title>
+<cmdsynopsis>
+<command>vi /etc/apache2/sites-enabled/000-default</command>
+</cmdsynopsis>
+Change port 80 to 8019
+</sect3>
+<sect3>
+<title>Restart Apache</title>
+<cmdsynopsis>
+<command>vi /etc/init.d/apache restart</command>
+</cmdsynopsis>
+</sect3>
+</sect2>
+<sect2>
+<title>Install Varnish</title>
+<sect3>
+<title>Two methods</title>
+<sect4>
+<title>Option 1 - via Synaptics Package Manager</title>
+Select the following to be installed:
+varnish
+libvarnish-dev
+</sect4>
+<sect4>
+<title>Option 2 - via command line</title>
+<cmdsynopsis>
+<command>apt-get install varnish</command>
+</cmdsynopsis>
+</sect4>
+</sect3>
+</sect2>
+<sect2>
+<title>Configure Varnish</title>
+<sect3>
+<title>Create a pressflow directory</title>
+<cmdsynopsis>
+<command>mkdir -p /var/lib/varnish/pressflow</command>
+</cmdsynopsis>
+<cmdsynopsis>
+<command>chown varnish.varnish /var/lib/varnish/pressflow</command>
+</cmdsynopsis>
+</sect3>
+<sect3>
+<title>Set Varnish to run on port 80</title>
+<cmdsynopsis>
+<command>vi /etc/default/varnish</command>
+</cmdsynopsis>
+Change INSTANCE=pressflow
+Use Alternative 2
+DAEMON_OPTS="-a :80 -T localhost:6082 -f /etc/varnish/default.vcl -s
+file,/var/lib/varnish/$INSTANCE/varnish_storage.bin,1G"
+</sect3>
+</sect2>
+<sect2>
+<title>Redirect Varnish to Apache via default.vcl file</title>
+<cmdsynopsis>
+<command>vi /etc/varnish/ default.vcl</command>
+</cmdsynopsis>
+change the backend default values:  backend default {       .host = "hostname";       .port = "8019";
+protect against apache rewrite conflicts:  uncomment sub vcl_fetch
+add after if statements:
+if (obj.http.location ~ ":81"){
+set obj.http.location = regsub(obj.http.location,"\:81","");
+}
+</sect2>
+<sect2>
+<title>(Re)-Start Varnish</title>
+<cmdsynopsis>
+<command>/etc/init.d/varnish restart</command>
+</cmdsynopsis>
+</sect2>
+</sect1>
+<sect1>
+<title>Install HERBIS</title>
+Reference Guide:
+http://projects.brit.org/projects/imls/repository/raw/trunk/documents/development/HERBIS%20Installation.docx
+</sect1>
+reference: The Apiary Project uses two powerful approaches to user interfacing and the
+handling of data. One is its ability to process everything on the server side using the
+full features of drupal. Second, it can support external sites as well as drupal pages
+in its JQuery ajax return methodology.
+<sect1>
+<title>An internal PHP File as a Page</title>
+These are the primary type of pages the Apiary Admin pages use. They are called by
+the automatically created drupal/apiary node.
+This file will be loaded from drupal, inside the cti-no-flex-title theme
+Example:  http://hostname/drupal/apiary?ref=groundtruth  This page is handled internally by drupal where the apiary page then loads the
+apiary_project/workflow/include/groundtruth.php file
+</sect1>
+<sect1>
+<title>An external PHP File as a Page</title>
+Currently the index (the actual workspace page), comparer, search and workflow use
+this approach.
+An externally loaded page that is popualted by ajax calls to the drupal
+site
+Example:  http://hostname/drupal/modules/apiary_project/workflow/index.php
+This page is completely outside the scope of drupal allowing full control of user
+interface customization
+In our case, we needed to apply jQuery to the full body of the page and this could
+not be done with drupal adding its own headers, etc first
+Ajax calls can still be made to drupal, since the VIEW_APIARY edit was made to the
+menu.inc file, allowing drupal to do the work and the page to then be
+populated
+The Task Queue is loaded by the response of the call
+http://hostname/drupal/apiary/workflow_ajax/queue_list/1/0/0
+</sect1>
+<sect1>
+<title>What actually takes place when a workflow is started?</title>
+Inside the external file, apiary_project/workflow/index.php, are variables that
+must be previously have been set  $drupal_url = "http://hostname/drupal";  $djatoka_url = "http://hostname:8080/";
+These are stored using a SMARTY template
+These tell the workflow where to make its ajax calls, mainly using jQuery
+There are a number of loaded javascript and css files
+(apiary_project/workflow/assets/js and apiary_project/workflow/assets/css)
+The return responses are then presented to the user with the javascript and css
+styling already loaded
+When a jQuery ajax call is made, drupal checks for a current login, and if the
+user has the VIEW_APIARY permission
+Once verified, drupal process whatever the request on the server side
+Often the request requires connection to the Fedora Repository, and a call using
+Islandora must be made (apiary_project/fedora_commons)
+We also write to the Fedora Repository using CURL
+Other times drupal executes a Solr query to process the response
+All this information is used to return html and JSON data in an expected
+format
+</sect1>
+reference:
+http://projects.brit.org/projects/imls/repository/show/trunk/Metadata
+reference:
+http://projects.brit.org/projects/imls/repository/raw/trunk/documents/ObjectModel/ApiaryDigitalObjects.pdf
+In an attempt to completely avoid the time headache of completing Chapter 2, a Virtual
+Box instance of the Apiary Project is available for download
+<sect1>
+<title>Download</title>
+<sect2>
+<title/>
+</sect2>
+</sect1>
+<sect1>
+<title>Choices and Technical Hurdles</title>
+<sect2>
+<title><link xlink:href="http://www.oxygenxml.com">OxygenXML</link></title>
+I choice to documet this using OxygenXML given their relationship with BRIT
+and its ability to transform the xml into html and pdf formats.
+</sect2>
+</sect1>
+<sect1>
+<title>Choices and Technical Hurdles</title>
+<para/>
+</sect1>
+</book>

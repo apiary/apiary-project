@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="apiary__project__admin_8php" kind="file">
+    <compoundname>apiary_project_admin.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="apiary__project__admin_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" prot="public" static="no" mutable="no">
+        <type>global</type>
+        <definition>global $user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/apiary_project_admin.php" line="3" bodyfile="apiary_project/apiary_project_admin.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2" refid="apiary__project__admin_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" refkind="member"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/apiaryPermissionsClass.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($user-&gt;uid<sp/>&amp;&amp;<sp/>module_exists(</highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Logged<sp/>in<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(user_access(<ref refid="classapiary_permissions_class_1af44ec5d3163f4fde9dd5974c643d7cba" kindref="member">apiaryPermissionsClass::$ADMINISTER_APIARY</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>$file<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;./&apos;</highlight><highlight class="normal"><sp/>.<sp/>drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/admin_workspace.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>include_once(</highlight><highlight class="stringliteral">&quot;$file&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;You<sp/>do<sp/>not<sp/>have<sp/>permission<sp/>to<sp/>administer<sp/>the<sp/>apiary<sp/>project&lt;/a&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;location:<sp/>&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/drupal&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="apiary_project/apiary_project_admin.php"/>
+  </compounddef>
+</doxygen>

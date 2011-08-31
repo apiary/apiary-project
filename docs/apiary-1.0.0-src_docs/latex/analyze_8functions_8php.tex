@@ -1,0 +1,370 @@
+\hypertarget{analyze_8functions_8php}{
+\section{apiary_project/analyze.functions.php File Reference}
+\label{analyze_8functions_8php}\index{apiary_project/analyze.functions.php@{apiary_project/analyze.functions.php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{analyze_8functions_8php_a569ab637484bb1b9bcd0ce7571dd5f95}{specimen\_\-list} (\$nothing, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_ad13e1985dddb1173b5cc748c11990c65}{update\_\-queue\_\-list} (\$nothing, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_afa0647e1c898c93547dcb3f7b7d8ceda}{get\_\-queue\_\-list} (\$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_a5dd4d25616cb603dea2f5214f643bfb0}{getImageROIList} (\$image\_\-pid, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_a6e2ed9556330362fb26ad4654e83f932}{getSpecimenROIList} (\$specimen\_\-pid, \$workflow\_\-id, \$nothing)
+\item 
+\hyperlink{analyze_8functions_8php_af0279594674a2ff529d0fe3bfa916a05}{get\_\-roi\_\-boxes} (\$image\_\-pid, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_ac3ad306edba53178755f1e17ba3ef052}{remove\_\-roi} (\$roi\_\-pid, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_a82d69f9619642c6bb08dc1d7ea672027}{create\_\-roi} (\$image\_\-pid, \$options, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_aa7f7268265f4049f5877aea14e6e1640}{generate\_\-roi\_\-html} (\$roi\_\-pid, \$roi\_\-thumb\_\-url, \$roiMetadata\_\-record, \$transcribe\_\-status, \$parsed\_\-status, \$workflow\_\-id=null)
+\item 
+\hyperlink{analyze_8functions_8php_a017338342276e0f6727737108e7cee43}{add\_\-queue\_\-roi\_\-to\_\-queue} (\$image\_\-pid, \$roi\_\-pid, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_a42cc21dd56bf989bad557ca72edef3fc}{add\_\-roi\_\-to\_\-queue} (\$image\_\-pid, \$roi\_\-pid, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_a734deca8701dbc178f8deab344dc6919}{create\_\-queue\_\-list\_\-image} (\$image\_\-pid, \$specimen\_\-pid, \$analyzedStatus, \$roi\_\-count, \$locked\_\-by, \$workflow\_\-status, \$workflow\_\-id=null)
+\item 
+\hyperlink{analyze_8functions_8php_a3f96187322c4cb55b00f35ebda175b8b}{create\_\-queue\_\-list\_\-roi} (\$roi\_\-pid, \$image\_\-pid, \$transcribedStatus, \$parsedL1Status, \$locked\_\-by, \$workflow\_\-status, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_a956d8e9f9a8b25192ddfd4c594468920}{get\_\-djatoka\_\-url\_\-by\_\-width} (\$image\_\-pid, \$width)
+\item 
+\hyperlink{analyze_8functions_8php_a5b8736da01191c26d860005d1999325c}{get\_\-djatoka\_\-url\_\-by\_\-height} (\$image\_\-pid, \$height)
+\item 
+\hyperlink{analyze_8functions_8php_ad4b0e661fe8a8e5cedb6d3442f27fc6d}{get\_\-images\_\-list} (\$specimen\_\-pid, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_ad640cacecc876546bdb4ed01084708aa}{thumbHeightReset} (\$height, \$width)
+\item 
+\hyperlink{analyze_8functions_8php_a84f8a9fd1fdd21b005dc0a4684b6f5fe}{get\_\-specimen\_\-pid} (\$image\_\-pid, \$nothing, \$workflow\_\-id)
+\item 
+\hyperlink{analyze_8functions_8php_acd2326183b88a4b79d4f3812207e658a}{change\_\-roi\_\-type} (\$roi\_\-pid, \$roi\_\-type)
+\item 
+\hyperlink{analyze_8functions_8php_ad3ad3c24ee1cf11791c0370dba068f3d}{get\_\-permission\_\-map} (\$workflow\_\-id)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{analyze_8functions_8php_aea941c07a4c4543da9db61e709571719}{\$rel\_\-path} = drupal\_\-get\_\-path('module','apiary\_\-project')
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{analyze_8functions_8php_a017338342276e0f6727737108e7cee43}{
+\index{analyze.functions.php@{analyze.functions.php}!add\_\-queue\_\-roi\_\-to\_\-queue@{add\_\-queue\_\-roi\_\-to\_\-queue}}
+\index{add\_\-queue\_\-roi\_\-to\_\-queue@{add\_\-queue\_\-roi\_\-to\_\-queue}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{add\_\-queue\_\-roi\_\-to\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}add\_\-queue\_\-roi\_\-to\_\-queue (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{roi\_\-pid, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a017338342276e0f6727737108e7cee43}
+
+
+Definition at line 344 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a42cc21dd56bf989bad557ca72edef3fc}{
+\index{analyze.functions.php@{analyze.functions.php}!add\_\-roi\_\-to\_\-queue@{add\_\-roi\_\-to\_\-queue}}
+\index{add\_\-roi\_\-to\_\-queue@{add\_\-roi\_\-to\_\-queue}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{add\_\-roi\_\-to\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}add\_\-roi\_\-to\_\-queue (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{roi\_\-pid, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a42cc21dd56bf989bad557ca72edef3fc}
+
+
+Definition at line 348 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_acd2326183b88a4b79d4f3812207e658a}{
+\index{analyze.functions.php@{analyze.functions.php}!change\_\-roi\_\-type@{change\_\-roi\_\-type}}
+\index{change\_\-roi\_\-type@{change\_\-roi\_\-type}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{change\_\-roi\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}change\_\-roi\_\-type (
+\begin{DoxyParamCaption}
+\item[{\$}]{roi\_\-pid, }
+\item[{\$}]{roi\_\-type}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_acd2326183b88a4b79d4f3812207e658a}
+
+
+Definition at line 511 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a734deca8701dbc178f8deab344dc6919}{
+\index{analyze.functions.php@{analyze.functions.php}!create\_\-queue\_\-list\_\-image@{create\_\-queue\_\-list\_\-image}}
+\index{create\_\-queue\_\-list\_\-image@{create\_\-queue\_\-list\_\-image}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{create\_\-queue\_\-list\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}create\_\-queue\_\-list\_\-image (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{specimen\_\-pid, }
+\item[{\$}]{analyzedStatus, }
+\item[{\$}]{roi\_\-count, }
+\item[{\$}]{locked\_\-by, }
+\item[{\$}]{workflow\_\-status, }
+\item[{\$}]{workflow\_\-id = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a734deca8701dbc178f8deab344dc6919}
+
+
+Definition at line 366 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a3f96187322c4cb55b00f35ebda175b8b}{
+\index{analyze.functions.php@{analyze.functions.php}!create\_\-queue\_\-list\_\-roi@{create\_\-queue\_\-list\_\-roi}}
+\index{create\_\-queue\_\-list\_\-roi@{create\_\-queue\_\-list\_\-roi}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{create\_\-queue\_\-list\_\-roi}]{\setlength{\rightskip}{0pt plus 5cm}create\_\-queue\_\-list\_\-roi (
+\begin{DoxyParamCaption}
+\item[{\$}]{roi\_\-pid, }
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{transcribedStatus, }
+\item[{\$}]{parsedL1Status, }
+\item[{\$}]{locked\_\-by, }
+\item[{\$}]{workflow\_\-status, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a3f96187322c4cb55b00f35ebda175b8b}
+
+
+Definition at line 403 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a82d69f9619642c6bb08dc1d7ea672027}{
+\index{analyze.functions.php@{analyze.functions.php}!create\_\-roi@{create\_\-roi}}
+\index{create\_\-roi@{create\_\-roi}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{create\_\-roi}]{\setlength{\rightskip}{0pt plus 5cm}create\_\-roi (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{options, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a82d69f9619642c6bb08dc1d7ea672027}
+
+
+Definition at line 268 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_aa7f7268265f4049f5877aea14e6e1640}{
+\index{analyze.functions.php@{analyze.functions.php}!generate\_\-roi\_\-html@{generate\_\-roi\_\-html}}
+\index{generate\_\-roi\_\-html@{generate\_\-roi\_\-html}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{generate\_\-roi\_\-html}]{\setlength{\rightskip}{0pt plus 5cm}generate\_\-roi\_\-html (
+\begin{DoxyParamCaption}
+\item[{\$}]{roi\_\-pid, }
+\item[{\$}]{roi\_\-thumb\_\-url, }
+\item[{\$}]{roiMetadata\_\-record, }
+\item[{\$}]{transcribe\_\-status, }
+\item[{\$}]{parsed\_\-status, }
+\item[{\$}]{workflow\_\-id = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_aa7f7268265f4049f5877aea14e6e1640}
+
+
+Definition at line 317 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a5b8736da01191c26d860005d1999325c}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-djatoka\_\-url\_\-by\_\-height@{get\_\-djatoka\_\-url\_\-by\_\-height}}
+\index{get\_\-djatoka\_\-url\_\-by\_\-height@{get\_\-djatoka\_\-url\_\-by\_\-height}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-djatoka\_\-url\_\-by\_\-height}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-djatoka\_\-url\_\-by\_\-height (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{height}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a5b8736da01191c26d860005d1999325c}
+
+
+Definition at line 476 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a956d8e9f9a8b25192ddfd4c594468920}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-djatoka\_\-url\_\-by\_\-width@{get\_\-djatoka\_\-url\_\-by\_\-width}}
+\index{get\_\-djatoka\_\-url\_\-by\_\-width@{get\_\-djatoka\_\-url\_\-by\_\-width}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-djatoka\_\-url\_\-by\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-djatoka\_\-url\_\-by\_\-width (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{width}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a956d8e9f9a8b25192ddfd4c594468920}
+
+
+Definition at line 463 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_ad4b0e661fe8a8e5cedb6d3442f27fc6d}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-images\_\-list@{get\_\-images\_\-list}}
+\index{get\_\-images\_\-list@{get\_\-images\_\-list}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-images\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-images\_\-list (
+\begin{DoxyParamCaption}
+\item[{\$}]{specimen\_\-pid, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_ad4b0e661fe8a8e5cedb6d3442f27fc6d}
+
+
+Definition at line 489 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_ad3ad3c24ee1cf11791c0370dba068f3d}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-permission\_\-map@{get\_\-permission\_\-map}}
+\index{get\_\-permission\_\-map@{get\_\-permission\_\-map}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-permission\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-permission\_\-map (
+\begin{DoxyParamCaption}
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_ad3ad3c24ee1cf11791c0370dba068f3d}
+
+
+Definition at line 527 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_afa0647e1c898c93547dcb3f7b7d8ceda}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-queue\_\-list@{get\_\-queue\_\-list}}
+\index{get\_\-queue\_\-list@{get\_\-queue\_\-list}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-queue\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-queue\_\-list (
+\begin{DoxyParamCaption}
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_afa0647e1c898c93547dcb3f7b7d8ceda}
+
+
+Definition at line 106 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_af0279594674a2ff529d0fe3bfa916a05}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-roi\_\-boxes@{get\_\-roi\_\-boxes}}
+\index{get\_\-roi\_\-boxes@{get\_\-roi\_\-boxes}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-roi\_\-boxes}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-roi\_\-boxes (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_af0279594674a2ff529d0fe3bfa916a05}
+
+
+Definition at line 234 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a84f8a9fd1fdd21b005dc0a4684b6f5fe}{
+\index{analyze.functions.php@{analyze.functions.php}!get\_\-specimen\_\-pid@{get\_\-specimen\_\-pid}}
+\index{get\_\-specimen\_\-pid@{get\_\-specimen\_\-pid}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{get\_\-specimen\_\-pid}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-specimen\_\-pid (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a84f8a9fd1fdd21b005dc0a4684b6f5fe}
+
+
+Definition at line 506 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a5dd4d25616cb603dea2f5214f643bfb0}{
+\index{analyze.functions.php@{analyze.functions.php}!getImageROIList@{getImageROIList}}
+\index{getImageROIList@{getImageROIList}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{getImageROIList}]{\setlength{\rightskip}{0pt plus 5cm}getImageROIList (
+\begin{DoxyParamCaption}
+\item[{\$}]{image\_\-pid, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a5dd4d25616cb603dea2f5214f643bfb0}
+
+
+Definition at line 160 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a6e2ed9556330362fb26ad4654e83f932}{
+\index{analyze.functions.php@{analyze.functions.php}!getSpecimenROIList@{getSpecimenROIList}}
+\index{getSpecimenROIList@{getSpecimenROIList}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{getSpecimenROIList}]{\setlength{\rightskip}{0pt plus 5cm}getSpecimenROIList (
+\begin{DoxyParamCaption}
+\item[{\$}]{specimen\_\-pid, }
+\item[{\$}]{workflow\_\-id, }
+\item[{\$}]{nothing}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a6e2ed9556330362fb26ad4654e83f932}
+
+
+Definition at line 204 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_ac3ad306edba53178755f1e17ba3ef052}{
+\index{analyze.functions.php@{analyze.functions.php}!remove\_\-roi@{remove\_\-roi}}
+\index{remove\_\-roi@{remove\_\-roi}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{remove\_\-roi}]{\setlength{\rightskip}{0pt plus 5cm}remove\_\-roi (
+\begin{DoxyParamCaption}
+\item[{\$}]{roi\_\-pid, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_ac3ad306edba53178755f1e17ba3ef052}
+
+
+Definition at line 251 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_a569ab637484bb1b9bcd0ce7571dd5f95}{
+\index{analyze.functions.php@{analyze.functions.php}!specimen\_\-list@{specimen\_\-list}}
+\index{specimen\_\-list@{specimen\_\-list}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{specimen\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}specimen\_\-list (
+\begin{DoxyParamCaption}
+\item[{\$}]{nothing, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_a569ab637484bb1b9bcd0ce7571dd5f95}
+
+
+Definition at line 10 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_ad640cacecc876546bdb4ed01084708aa}{
+\index{analyze.functions.php@{analyze.functions.php}!thumbHeightReset@{thumbHeightReset}}
+\index{thumbHeightReset@{thumbHeightReset}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{thumbHeightReset}]{\setlength{\rightskip}{0pt plus 5cm}thumbHeightReset (
+\begin{DoxyParamCaption}
+\item[{\$}]{height, }
+\item[{\$}]{width}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_ad640cacecc876546bdb4ed01084708aa}
+
+
+Definition at line 497 of file analyze.functions.php.
+
+\hypertarget{analyze_8functions_8php_ad13e1985dddb1173b5cc748c11990c65}{
+\index{analyze.functions.php@{analyze.functions.php}!update\_\-queue\_\-list@{update\_\-queue\_\-list}}
+\index{update\_\-queue\_\-list@{update\_\-queue\_\-list}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{update\_\-queue\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-queue\_\-list (
+\begin{DoxyParamCaption}
+\item[{\$}]{nothing, }
+\item[{\$}]{nothing, }
+\item[{\$}]{workflow\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{analyze_8functions_8php_ad13e1985dddb1173b5cc748c11990c65}
+
+
+Definition at line 43 of file analyze.functions.php.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{analyze_8functions_8php_aea941c07a4c4543da9db61e709571719}{
+\index{analyze.functions.php@{analyze.functions.php}!\$rel\_\-path@{\$rel\_\-path}}
+\index{\$rel\_\-path@{\$rel\_\-path}!analyze.functions.php@{analyze.functions.php}}
+\subsubsection[{\$rel\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}\$rel\_\-path = drupal\_\-get\_\-path('module','apiary\_\-project')}}
+\label{analyze_8functions_8php_aea941c07a4c4543da9db61e709571719}
+
+
+Definition at line 2 of file analyze.functions.php.
+

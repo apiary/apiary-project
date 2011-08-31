@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="apiary_permissions_class_8php" kind="file">
+    <compoundname>apiaryPermissionsClass.php</compoundname>
+    <innerclass refid="classapiary_permissions_class" prot="public">apiaryPermissionsClass</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classapiary_permissions_class" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classapiary_permissions_class" kindref="compound">apiaryPermissionsClass</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//allowed<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classapiary_permissions_class_1af44ec5d3163f4fde9dd5974c643d7cba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1af44ec5d3163f4fde9dd5974c643d7cba" kindref="member">$ADMINISTER_APIARY</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Administer<sp/>Apiary<sp/>Project&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6" refid="classapiary_permissions_class_1a37d9d8b791e84a572596899b5bd45e6b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1a37d9d8b791e84a572596899b5bd45e6b" kindref="member">$VIEW_APIARY</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;View<sp/>Apiary<sp/>Project&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7" refid="classapiary_permissions_class_1af8d6246e918ba9bf893ad8853638c846" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1af8d6246e918ba9bf893ad8853638c846" kindref="member">$CREATE_APIARY_SPECIMENS</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Create<sp/>Apiary<sp/>Project<sp/>specimens&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8" refid="classapiary_permissions_class_1ab519fecad8358f808167dbf208b37756" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1ab519fecad8358f808167dbf208b37756" kindref="member">$CREATE_APIARY_IMAGESS</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Create<sp/>Apiary<sp/>Project<sp/>images&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="classapiary_permissions_class_1a0569a7962c52e670222700a92386363c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1a0569a7962c52e670222700a92386363c" kindref="member">$CREATE_APIARY_ROIS</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Create<sp/>Apiary<sp/>Project<sp/>ROIs&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="classapiary_permissions_class_1a483814936bf3f97b10a1522d74045346" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1a483814936bf3f97b10a1522d74045346" kindref="member">$OCR_APIARY</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;OCR<sp/>Apiary<sp/>Project<sp/>objects&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="classapiary_permissions_class_1afb033d7a5a307633fb699003fcdf41ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classapiary_permissions_class_1afb033d7a5a307633fb699003fcdf41ea" kindref="member">$PARSE_APIARY</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Parse<sp/>Apiary<sp/>Project<sp/>objects&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classapiary_permissions_class_1a2f94ec91307bd261e9f1b11ab53232b1" refkind="member"><highlight class="normal"><sp/><sp/>function<sp/><ref refid="classapiary_permissions_class_1a2f94ec91307bd261e9f1b11ab53232b1" kindref="member">apiaryPermissionsClass</ref>(<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>module_load_include(</highlight><highlight class="stringliteral">&apos;nc&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiaryPermissionsClass&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="apiary_project/apiaryPermissionsClass.php"/>
+  </compounddef>
+</doxygen>

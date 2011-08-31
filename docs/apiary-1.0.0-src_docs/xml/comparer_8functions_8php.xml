@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="comparer_8functions_8php" kind="file">
+    <compoundname>comparer.functions.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="comparer_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" prot="public" static="no" mutable="no">
+        <type>global</type>
+        <definition>global $user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="4" bodyfile="apiary_project/comparer.functions.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>send_request</definition>
+        <argsstring>($function, $param1, $param2, $param3)</argsstring>
+        <name>send_request</name>
+        <param>
+          <type>$</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param1</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param2</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="8" bodyfile="apiary_project/comparer.functions.php" bodystart="8" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="comparer_8functions_8php_1aad11dd972f6f5ce0ef30f089e4a7686c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_comparer</definition>
+        <argsstring>()</argsstring>
+        <name>get_comparer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="24" bodyfile="apiary_project/comparer.functions.php" bodystart="24" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="comparer_8functions_8php_1ac5cb087f09745fea9c8721f198b38179" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_text</definition>
+        <argsstring>()</argsstring>
+        <name>compare_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="43" bodyfile="apiary_project/comparer.functions.php" bodystart="43" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="comparer_8functions_8php_1a0f38a41d4ad4a9c68a214af946514c3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PHPDiff</definition>
+        <argsstring>($old, $new)</argsstring>
+        <name>PHPDiff</name>
+        <param>
+          <type>$</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="128" bodyfile="apiary_project/comparer.functions.php" bodystart="127" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="comparer_8functions_8php_1a15529edea898e11a52232cc4baec11d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>asimilar</definition>
+        <argsstring>($str1, $str2)</argsstring>
+        <name>asimilar</name>
+        <param>
+          <type>$</type>
+          <declname>str1</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>str2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="253" bodyfile="apiary_project/comparer.functions.php" bodystart="253" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="comparer_8functions_8php_1a810bd640e21ac2129a0e7f53f5d45164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>daisydiff_text</definition>
+        <argsstring>($old_text, $new_text)</argsstring>
+        <name>daisydiff_text</name>
+        <param>
+          <type>$</type>
+          <declname>old_text</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>new_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="282" bodyfile="apiary_project/comparer.functions.php" bodystart="282" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="comparer_8functions_8php_1ae170b4e0e13feab0bbbde7445f320bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>daisydiff</definition>
+        <argsstring>($url_old, $url_new)</argsstring>
+        <name>daisydiff</name>
+        <param>
+          <type>$</type>
+          <declname>url_old</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>url_new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/comparer.functions.php" line="299" bodyfile="apiary_project/comparer.functions.php" bodystart="299" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Cache-Control:<sp/>no-cache,<sp/>must-revalidate&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>HTTP/1.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Expires:<sp/>Sat,<sp/>26<sp/>Jul<sp/>1997<sp/>05:00:00<sp/>GMT&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Date<sp/>in<sp/>the<sp/>past</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="comparer_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" refkind="member"><highlight class="normal">global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/apiaryPermissionsClass.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/search.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" kindref="member">send_request</ref>($function,<sp/>$param1,<sp/>$param2,<sp/>$param3){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;function<sp/>=<sp/>&quot;.$function.&quot;<sp/>param1<sp/>=<sp/>&quot;.$param1.&quot;<sp/>param2<sp/>=<sp/>&quot;.$param2.&quot;<sp/>param3<sp/>=<sp/>&quot;.$param3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param3<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2,<sp/>$param3);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param2<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($function<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;clear_session&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="comparer_8functions_8php_1aad11dd972f6f5ce0ef30f089e4a7686c" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1aad11dd972f6f5ce0ef30f089e4a7686c" kindref="member">get_comparer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>$return_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>$home_link<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;&lt;h3&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$server_base.</highlight><highlight class="stringliteral">&apos;/drupal&quot;&gt;Home&lt;/a&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.<ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref>.</highlight><highlight class="stringliteral">&apos;/drupal/apiary/admin&quot;&gt;Administer<sp/>Apiary&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/>$home_link;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;Please<sp/>enter<sp/>text<sp/>to<sp/>compare.<sp/>Results<sp/>are<sp/>displayed<sp/>in<sp/>daisydiff<sp/>and<sp/>highlighted<sp/>format<sp/>with<sp/>similar<sp/>text<sp/>percentages.&lt;/br&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;table&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr&gt;&lt;td&gt;Old<sp/>Text:&lt;/td&gt;&lt;/td&gt;&lt;td&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;New<sp/>Text:<sp/>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&lt;textarea<sp/>rows=&quot;10&quot;<sp/>cols=&quot;40&quot;<sp/>id=&quot;old_text&quot;<sp/>name=&quot;old_text&quot;<sp/>wrap=&quot;physical&quot;&gt;&apos;</highlight><highlight class="normal">.$_GET[</highlight><highlight class="stringliteral">&apos;quote1&apos;</highlight><highlight class="normal">].</highlight><highlight class="stringliteral">&apos;&lt;/textarea&gt;&lt;/td&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&lt;textarea<sp/>rows=&quot;10&quot;<sp/>cols=&quot;40&quot;<sp/>id=&quot;new_text&quot;<sp/>name=&quot;new_text&quot;<sp/>wrap=&quot;physical&quot;&gt;&apos;</highlight><highlight class="normal">.$_GET[</highlight><highlight class="stringliteral">&apos;quote2&apos;</highlight><highlight class="normal">].</highlight><highlight class="stringliteral">&apos;&lt;/textarea&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;button<sp/>onclick=&apos;reset();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Reset&lt;/button&gt;&quot;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;button<sp/>onclick=&apos;compare_text();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Compare<sp/>Text&lt;/button&gt;&lt;br&gt;&quot;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;daisydiff&quot;&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;highlight_diff&quot;&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;percent_results&quot;&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>echo<sp/>$return_html;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="comparer_8functions_8php_1ac5cb087f09745fea9c8721f198b38179" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1ac5cb087f09745fea9c8721f198b38179" kindref="member">compare_text</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>$successfully_compared_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>$highlight_diff_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>$daisydiff_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>$percent_results_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((isset($_POST[</highlight><highlight class="stringliteral">&apos;old_text&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;old_text&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>||<sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;new_text&apos;</highlight><highlight class="normal">])<sp/>&amp;&amp;<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;new_text&apos;</highlight><highlight class="normal">]<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>$old_text<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;old_text&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>$new_text<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;new_text&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>$levenshtein_distance<sp/>=<sp/>levenshtein($old_text,$new_text);</highlight><highlight class="comment">//levenshtein</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>$levenshtein_percentage<sp/>=<sp/><ref refid="comparer_8functions_8php_1a15529edea898e11a52232cc4baec11d1" kindref="member">asimilar</ref>($old_text,$new_text);</highlight><highlight class="comment">//levenshtein<sp/>percentage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>similar_text($old_text,$new_text,$similar_text_percentage);</highlight><highlight class="comment">//returns<sp/>similar<sp/>text<sp/>percentage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>$trimmedstr1<sp/>=<sp/>trim($old_text);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>$trimmedstr2<sp/>=<sp/>trim($new_text);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>$f1_arr<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">,<sp/>$trimmedstr1);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>$f2_arr<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">,<sp/>$trimmedstr2);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>$f1<sp/>=<sp/>implode(<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,<sp/>$f1_arr<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>$f2<sp/>=<sp/>implode(<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,<sp/>$f2_arr<sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>$array_val<sp/>=<sp/><ref refid="comparer_8functions_8php_1a0f38a41d4ad4a9c68a214af946514c3a" kindref="member">PHPDiff</ref>(<sp/>$f1,<sp/>$f2<sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>$f2_string<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,<sp/>$f2);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>$array_val_arr<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,$array_val);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>array_pop($array_val_arr);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>$highlightarr<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($array_val_arr<sp/>as<sp/>&amp;$value)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$range<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$range<sp/>=<sp/>strstr($value,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($range)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$rangefrom<sp/>=<sp/>substr($value,<sp/>0,<sp/>strpos($value,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$rangeto<sp/>=<sp/>substr($value,<sp/>strpos($value,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)+1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i=$rangefrom;$i&lt;=$rangeto;$i++)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$highlightarr[]<sp/>=<sp/>$i<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$highlightarr[]<sp/>=<sp/>$value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>$highlight_diff_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;&lt;h2&gt;Simple<sp/>text<sp/>comparison<sp/>results&lt;/h2&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>$highlight_diff_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;table<sp/>width=&apos;100%&apos;<sp/>border=&apos;1&apos;&gt;&lt;tr&gt;&lt;td<sp/>width=&apos;10%&apos;&gt;Orginal:&lt;/td&gt;&lt;td&gt;&quot;</highlight><highlight class="normal"><sp/>.$old_text.<sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;/tr&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>$highlight_diff_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;tr&gt;&lt;td<sp/>width=&apos;10%&apos;&gt;Change:&lt;/td&gt;&lt;td&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i<sp/>=<sp/>0;$i&lt;</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($f2_string);<sp/>$i++)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($highlightarr<sp/>as<sp/>$value)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($i==<sp/>$value)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$flg<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($flg<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$flg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$highlight_diff_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;font<sp/>color=&apos;#00FF00&apos;&gt;&quot;</highlight><highlight class="normal"><sp/>.$f2_string[$i].</highlight><highlight class="stringliteral">&quot;&lt;/font&gt;&amp;nbsp;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$highlight_diff_html<sp/>.=<sp/>$f2_string[$i].</highlight><highlight class="stringliteral">&quot;&amp;nbsp;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>$highlight_diff_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>$daisydiff_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;&lt;h2&gt;Daisydiff<sp/>comparison<sp/>results&lt;/h2&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>$daisydiff_html<sp/>.=<sp/><ref refid="comparer_8functions_8php_1a810bd640e21ac2129a0e7f53f5d45164" kindref="member">daisydiff_text</ref>($old_text,<sp/>$new_text);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>$percent_results_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;&lt;h2&gt;Percentage<sp/>of<sp/>similar<sp/>text&lt;/h2&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>$percent_results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>levenshtein<sp/>distance<sp/>for<sp/>the<sp/>strings<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>.$levenshtein_distance.<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;br/&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>$percent_results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;Using<sp/>levenshtein<sp/>distance,<sp/>the<sp/>strings<sp/>are<sp/>&quot;</highlight><highlight class="normal"><sp/>.$levenshtein_percentage.<sp/></highlight><highlight class="stringliteral">&quot;<sp/>percent<sp/>similar<sp/>&lt;br/&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>$percent_results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;Using<sp/>similar<sp/>text,<sp/>the<sp/>strings<sp/>are<sp/>&quot;</highlight><highlight class="normal">.$similar_text_percentage.</highlight><highlight class="stringliteral">&quot;<sp/>percent<sp/>similar<sp/>&lt;br/&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>$successfully_compared_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;No<sp/>text<sp/>passed<sp/>to<sp/>compare!&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;levenshtein_distance&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$levenshtein_percentage;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;levenshtein_percentage&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$levenshtein_percentage;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;similar_text_percentage&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$similar_text_percentage;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;daisydiff_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$daisydiff_html;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;highlight_diff_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$highlight_diff_html;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;percent_results_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$percent_results_html;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;successfully_compared_text&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$successfully_compared_text;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="comparer_8functions_8php_1a0f38a41d4ad4a9c68a214af946514c3a" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a0f38a41d4ad4a9c68a214af946514c3a" kindref="member">PHPDiff</ref>($old,<sp/>$new)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>split<sp/>the<sp/>source<sp/>text<sp/>into<sp/>arrays<sp/>of<sp/>lines</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>$t1<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,$old);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>$x=array_pop($t1);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($x&gt;</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>$t1[]=</highlight><highlight class="stringliteral">&quot;$x\n\\<sp/>No<sp/>newline<sp/>at<sp/>end<sp/>of<sp/>file&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>$t2<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,$new);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>$x=array_pop($t2);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($x&gt;</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>$t2[]=</highlight><highlight class="stringliteral">&quot;$x\n\\<sp/>No<sp/>newline<sp/>at<sp/>end<sp/>of<sp/>file&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>build<sp/>a<sp/>reverse-index<sp/>array<sp/>using<sp/>the<sp/>line<sp/>as<sp/>key<sp/>and<sp/>line<sp/>number<sp/>as<sp/>value</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>don&apos;t<sp/>store<sp/>blank<sp/>lines,<sp/>so<sp/>they<sp/>won&apos;t<sp/>be<sp/>targets<sp/>of<sp/>the<sp/>shortest<sp/>distance</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>search</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($t1<sp/>as<sp/>$i=&gt;$x)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($x&gt;</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$r1[$x][]=$i;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($t2<sp/>as<sp/>$i=&gt;$x)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($x&gt;</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$r2[$x][]=$i;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>$a1=0;<sp/>$a2=0;<sp/><sp/><sp/>#<sp/>start<sp/>at<sp/>beginning<sp/>of<sp/>each<sp/>list</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>$actions=array();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>walk<sp/>this<sp/>loop<sp/>until<sp/>we<sp/>reach<sp/>the<sp/>end<sp/>of<sp/>one<sp/>of<sp/>the<sp/>lists</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>($a1&lt;count($t1)<sp/>&amp;&amp;<sp/>$a2&lt;count($t2))<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>if<sp/>we<sp/>have<sp/>a<sp/>common<sp/>element,<sp/>save<sp/>it<sp/>and<sp/>go<sp/>to<sp/>the<sp/>next</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($t1[$a1]==$t2[$a2])<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$actions[]=4;<sp/>$a1++;<sp/>$a2++;<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>otherwise,<sp/>find<sp/>the<sp/>shortest<sp/>move<sp/>(Manhattan-distance)<sp/>from<sp/>the</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>current<sp/>location</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$best1=count($t1);<sp/>$best2=count($t2);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$s1=$a1;<sp/>$s2=$a2;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(($s1+$s2-$a1-$a2)<sp/>&lt;<sp/>($best1+$best2-$a1-$a2))<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$d=-1;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">((array)@$r1[$t2[$s2]]<sp/>as<sp/>$n)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($n&gt;=$s1)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$d=$n;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($d&gt;=$s1<sp/>&amp;&amp;<sp/>($d+$s2-$a1-$a2)&lt;($best1+$best2-$a1-$a2))<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$best1=$d;<sp/>$best2=$s2;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$d=-1;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">((array)@$r2[$t1[$s1]]<sp/>as<sp/>$n)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($n&gt;=$s2)<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$d=$n;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($d&gt;=$s2<sp/>&amp;&amp;<sp/>($s1+$d-$a1-$a2)&lt;($best1+$best2-$a1-$a2))<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$best1=$s1;<sp/>$best2=$d;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$s1++;<sp/>$s2++;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>($a1&lt;$best1)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$actions[]=1;<sp/>$a1++;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/>#<sp/>deleted<sp/>elements</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>($a2&lt;$best2)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$actions[]=2;<sp/>$a2++;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/>#<sp/>added<sp/>elements</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>we<sp/>haveve<sp/>reached<sp/>the<sp/>end<sp/>of<sp/>one<sp/>list,<sp/>now<sp/>walk<sp/>to<sp/>the<sp/>end<sp/>of<sp/>the<sp/>other</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">($a1&lt;count($t1))<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>$actions[]=1;<sp/>$a1++;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>}<sp/><sp/>#<sp/>deleted<sp/>elements</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">($a2&lt;count($t2))<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>$actions[]=2;<sp/>$a2++;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>}<sp/><sp/>#<sp/>added<sp/>elements</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>and<sp/>this<sp/>marks<sp/>our<sp/>ending<sp/>point</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>$actions[]=8;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>now,<sp/>let<sp/>us<sp/>follow<sp/>the<sp/>path<sp/>we<sp/>just<sp/>took<sp/>and<sp/>report<sp/>the<sp/>added/deleted</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#<sp/>elements<sp/>into<sp/>$out.</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>$op<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>$x0=$x1=0;<sp/>$y0=$y1=0;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>$out<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($actions<sp/>as<sp/>$act)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($act==1)<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$op|=$act;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$x1++;<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($act==2)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$op|=$act;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$y1++;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($op&gt;0)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$xstr<sp/>=<sp/>($x1==($x0+1))<sp/>?<sp/>$x1<sp/>:<sp/>($x0+1).</highlight><highlight class="stringliteral">&quot;,$x1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$ystr<sp/>=<sp/>($y1==($y0+1))<sp/>?<sp/>$y1<sp/>:<sp/>($y0+1).</highlight><highlight class="stringliteral">&quot;,$y1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($op==1)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$out[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;{$y1}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($op==3)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$out[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;{$ystr}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>($x0&lt;$x1)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$out[]<sp/>=<sp/>&apos;&lt;<sp/>&apos;.$t1[$x0];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$x0++;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/>#<sp/>deleted<sp/>elems</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($op==2)<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$out[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;{$ystr}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($op==3)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$out[]<sp/>=<sp/>&apos;---&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>($y0&lt;$y1)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$out[]<sp/>=<sp/>&apos;&gt;<sp/>&apos;.$t2[$y0];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$y0++;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/>#<sp/>added<sp/>elems</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>$x1++;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>$x0=$x1;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>$y1++;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>$y0=$y1;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>$op=0;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>$out[]<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>join(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,$out);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="comparer_8functions_8php_1a15529edea898e11a52232cc4baec11d1" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a15529edea898e11a52232cc4baec11d1" kindref="member">asimilar</ref>($str1,<sp/>$str2)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>$strlen1=strlen($str1);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>$strlen2=strlen($str2);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>$max=max($strlen1,<sp/>$strlen2);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>$splitSize=250;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($max&gt;$splitSize)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>$lev=0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($cont=0;$cont&lt;$max;$cont+=$splitSize)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($strlen1&lt;=$cont<sp/>||<sp/>$strlen2&lt;=$cont)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lev=$lev/($max/min($strlen1,$strlen2));</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$lev+=levenshtein(substr($str1,$cont,$splitSize),<sp/>substr($str2,$cont,$splitSize));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>$lev=levenshtein($str1,<sp/>$str2);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>$percentage=<sp/>-100*$lev/$max+100;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($percentage&gt;75)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Ajustar<sp/>con<sp/>similar_text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>similar_text($str1,$str2,$percentage);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$percentage;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="comparer_8functions_8php_1a810bd640e21ac2129a0e7f53f5d45164" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a810bd640e21ac2129a0e7f53f5d45164" kindref="member">daisydiff_text</ref>($old_text,<sp/>$new_text)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">//save<sp/>old<sp/>and<sp/>new<sp/>texts<sp/>to<sp/>old_text_file<sp/>and<sp/>new_text_file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>$now<sp/>=<sp/>date(</highlight><highlight class="stringliteral">&quot;Ymdhis&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>$old_text_file<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;/tmp/old_text_file_&apos;</highlight><highlight class="normal">.$now.</highlight><highlight class="stringliteral">&apos;.txt&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>$new_text_file<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;/tmp/new_text_file_&apos;</highlight><highlight class="normal">.$now.</highlight><highlight class="stringliteral">&apos;.txt&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>$fp_old<sp/>=<sp/>fopen($old_text_file,<sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>fwrite($fp_old,<sp/>$old_text);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>fclose($fp_old);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>$fp_new<sp/>=<sp/>fopen($new_text_file,<sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>fwrite($fp_new,<sp/>$new_text);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>fclose($fp_new);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>$return_html<sp/>=<sp/><ref refid="comparer_8functions_8php_1ae170b4e0e13feab0bbbde7445f320bed" kindref="member">daisydiff</ref>($old_text_file,<sp/>$new_text_file);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>unlink($old_text_file);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>unlink($new_text_file);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$return_html;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="comparer_8functions_8php_1ae170b4e0e13feab0bbbde7445f320bed" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1ae170b4e0e13feab0bbbde7445f320bed" kindref="member">daisydiff</ref>($url_old,<sp/>$url_new)<sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>$daisydiff_dir<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;/var/www/drupal/modules/apiary_project/daisydiff&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>$daisydiff_output<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;/tmp/daisydiff_output_&apos;</highlight><highlight class="normal">.date(</highlight><highlight class="stringliteral">&quot;Ymdhis&quot;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;.xml&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>$daisydiff_cmd<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;java<sp/>-jar<sp/>$daisydiff_dir/daisydiff.jar<sp/>$url_old<sp/>$url_new<sp/>--file=$daisydiff_output<sp/>--output=xml<sp/>--type=tag<sp/>--q&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/>shell_exec($daisydiff_cmd);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/>$daisydiff_doc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMDocument();</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/>$daisydiff_doc-&gt;load($daisydiff_output);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//$daisydiff_xml<sp/>=<sp/>$daisydiff_doc-&gt;saveXML();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($daisydiff_doc-&gt;getElementsByTagName(</highlight><highlight class="stringliteral">&apos;diff&apos;</highlight><highlight class="normal">)<sp/>as<sp/>$diff)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>$daisydiff_html<sp/>=<sp/>$daisydiff_doc-&gt;saveXML($diff);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>unlink($daisydiff_output);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$daisydiff_html;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="apiary_project/comparer.functions.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="parse_8functions_8php" kind="file">
+    <compoundname>parse.functions.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="parse_8functions_8php_1a0a4baf0b22973c07685c3981f0d17fc4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$path</definition>
+        <argsstring></argsstring>
+        <name>$path</name>
+        <initializer> getcwd()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="2" bodyfile="apiary_project/parse.functions.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="parse_8functions_8php_1a2faa0af7bdc3433507fac73b54b32a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_parse_elements</definition>
+        <argsstring>($roi_pid, $parse_level, $workflow_id)</argsstring>
+        <name>get_parse_elements</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>parse_level</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="5" bodyfile="apiary_project/parse.functions.php" bodystart="5" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="parse_8functions_8php_1aa96f5225d54ad2ec39b5f20c8fcfd1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_parsing_content</definition>
+        <argsstring>($roi_pid, $size, $workflow_id)</argsstring>
+        <name>get_parsing_content</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="121" bodyfile="apiary_project/parse.functions.php" bodystart="121" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="parse_8functions_8php_1ad1a7ce33f2d558c9379716ac13616ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>save_parsed_text</definition>
+        <argsstring>($roi_pid, $nothing, $workflow_id)</argsstring>
+        <name>save_parsed_text</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>nothing</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="151" bodyfile="apiary_project/parse.functions.php" bodystart="151" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="parse_8functions_8php_1a0a53697541381fa238496ef4853da969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>reload_transcribe_text</definition>
+        <argsstring>($roi_pid, $nothing, $workflow_id)</argsstring>
+        <name>reload_transcribe_text</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>nothing</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>workflow_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="186" bodyfile="apiary_project/parse.functions.php" bodystart="186" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="parse_8functions_8php_1abfc7646adccdc888b9888fc3245368ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ubio_parse</definition>
+        <argsstring>($roi_pid)</argsstring>
+        <name>ubio_parse</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="198" bodyfile="apiary_project/parse.functions.php" bodystart="198" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="parse_8functions_8php_1a76a5e673d8cc7a610d8ed2024a1ca3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>herbis_parse_nonJSON</definition>
+        <argsstring>($roi_pid)</argsstring>
+        <name>herbis_parse_nonJSON</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="207" bodyfile="apiary_project/parse.functions.php" bodystart="207" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="parse_8functions_8php_1afeb088e74d751684f09b5c712d454ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>herbis_parse</definition>
+        <argsstring>($roi_pid)</argsstring>
+        <name>herbis_parse</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/parse.functions.php" line="218" bodyfile="apiary_project/parse.functions.php" bodystart="218" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2" refid="parse_8functions_8php_1a0a4baf0b22973c07685c3981f0d17fc4" refkind="member"><highlight class="normal"><ref refid="parse_8functions_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kindref="member">$path</ref><sp/>=<sp/>getcwd();</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/workflow/include/class.Errorlog.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="parse_8functions_8php_1a2faa0af7bdc3433507fac73b54b32a86" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1a2faa0af7bdc3433507fac73b54b32a86" kindref="member">get_parse_elements</ref>($roi_pid,<sp/>$parse_level,<sp/>$workflow_id){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roiMetadata_record<sp/>=<sp/>AP_ROI::getroiMetadata_record($roi_pid);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$type<sp/>=<sp/>$roiMetadata_record[</highlight><highlight class="stringliteral">&apos;roiType&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">($type){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Primary<sp/>Label&quot;</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$level<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;parse&quot;</highlight><highlight class="normal">.$parse_level.</highlight><highlight class="stringliteral">&quot;-primaryLabel&quot;</highlight><highlight class="normal">;</highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Annotation/Other&quot;</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$level<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;parse&quot;</highlight><highlight class="normal">.$parse_level.</highlight><highlight class="stringliteral">&quot;-annotationLabel&quot;</highlight><highlight class="normal">;</highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Barcode&quot;</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$level<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;parse&quot;</highlight><highlight class="normal">.$parse_level.</highlight><highlight class="stringliteral">&quot;-barcodeLabel&quot;</highlight><highlight class="normal">;</highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Undefined&quot;</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$level<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;parse&quot;</highlight><highlight class="normal">.$parse_level.</highlight><highlight class="stringliteral">&quot;-noLabel&quot;</highlight><highlight class="normal">;</highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$level<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;parse&quot;</highlight><highlight class="normal">.$parse_level.</highlight><highlight class="stringliteral">&quot;-noLabel&quot;</highlight><highlight class="normal">;</highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$access_code<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;canParseL&quot;</highlight><highlight class="normal">.$parse_level;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow_Users::doesWorkflowHaveUserName($workflow_id,<sp/>$user-&gt;name)<sp/>&amp;&amp;<sp/>Workflow_Permission::doesWorkflowHavePermission($workflow_id,<sp/>$access_code)){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($roi_obj-&gt;ifExist(</highlight><highlight class="stringliteral">&quot;specimenMetadata&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$sp_metadata<sp/>=<sp/>$roi_obj-&gt;getDatastream(</highlight><highlight class="stringliteral">&quot;specimenMetadata&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$xml<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMDocument;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$xml-&gt;loadXML($sp_metadata);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dom<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMDocument();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$dom-&gt;load(&quot;http://dev.apiaryproject.org/ML/ApiaryUITemplate_20110329.xml&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$parse_elements_template<sp/>=<sp/>drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;/workflow/assets/xml/parse_elements_template.xml&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dom-&gt;load($parse_elements_template);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$xpath<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMXPath(<sp/>$dom);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$groups<sp/>=<sp/>$xpath-&gt;query(</highlight><highlight class="stringliteral">&quot;//apiary_ui/ui[@id=&apos;$level&apos;]/group&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$context_menu_html<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&lt;ul<sp/>id=&apos;jeegoocontextmenu&apos;<sp/>class=&apos;jeegoocontext<sp/>cm_blue&apos;&gt;&lt;li<sp/>onclick=\&quot;remove_span();\&quot;&gt;Remove&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&lt;ul<sp/>class=\&quot;sf-menu<sp/>sf-js-enabled<sp/>sf-shadow\&quot;&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li<sp/>onclick=\&quot;remove_span();\&quot;&gt;&lt;a<sp/>href=\&quot;#\&quot;<sp/>onclick=\&quot;return<sp/>false;\&quot;&gt;Remove&lt;/a&gt;&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-title&quot;&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-title-help-button<sp/>floatright&quot;<sp/>onclick=&quot;open_popup(\&apos;help_parse_controls.html\&apos;);&quot;&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;nbsp;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;&lt;!--<sp/>.widget-title-help-button<sp/>--&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h3&gt;Parse&lt;/h3&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-title-content&quot;&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;parse-control-content&quot;<sp/>style=&quot;&quot;&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul<sp/>id=&quot;parse-treeview&quot;<sp/>class=&quot;treeview-gray&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;form<sp/>name=&apos;parse_text_elements&apos;<sp/>id=&apos;parse_text_form&apos;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($groups<sp/>as<sp/>$key=&gt;$group){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++$count;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($groups<sp/>as<sp/>$key=&gt;$group){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$id<sp/>=<sp/>$group-&gt;getAttribute(</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;li&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;span&gt;&apos;</highlight><highlight class="normal">.$group-&gt;getAttribute(</highlight><highlight class="stringliteral">&apos;label&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&quot;&lt;/span&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul&gt;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$context_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;li&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$group-&gt;getAttribute(</highlight><highlight class="stringliteral">&apos;label&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;&lt;ul<sp/>id=&apos;jeegoo-&quot;</highlight><highlight class="normal">.$id.</highlight><highlight class="stringliteral">&quot;&apos;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;li<sp/>class=\&quot;current\&quot;&gt;&lt;a<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>$key<sp/>&gt;=<sp/>$count-1<sp/>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;class=\&quot;last<sp/>sf-with-ul\&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;class=\&quot;sf-with-ul\&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;href=\&quot;#\&quot;&gt;&quot;</highlight><highlight class="normal">.<sp/>$group-&gt;getAttribute(</highlight><highlight class="stringliteral">&apos;label&apos;</highlight><highlight class="normal">)<sp/>.</highlight><highlight class="stringliteral">&quot;&lt;/a&gt;&lt;ul&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$elements<sp/>=<sp/>$xpath-&gt;query(</highlight><highlight class="stringliteral">&quot;//apiary_ui/ui[@id=&apos;$level&apos;]/group[@id=&apos;$id&apos;]/item&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$ecount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($elements<sp/>as<sp/>$element){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++$ecount;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$element_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($elements<sp/>as<sp/>$ekey=&gt;$element){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($roi_obj-&gt;parseXMLExist)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$val<sp/>=<sp/>$xml-&gt;getElementsByTagName($element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">))-&gt;item(0)-&gt;nodeValue;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$val<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$context_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;li<sp/>id=&apos;jeegoo-&quot;</highlight><highlight class="normal">.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)<sp/>.</highlight><highlight class="stringliteral">&quot;&apos;<sp/>onclick=&apos;set_parse_type(\&quot;&quot;</highlight><highlight class="normal">.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)<sp/>.</highlight><highlight class="stringliteral">&quot;\&quot;)&apos;&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;label&quot;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;li&gt;&lt;a<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>$ekey<sp/>&gt;=<sp/>$ecount-1<sp/>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;class=\&quot;last\&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;href=\&quot;#\&quot;<sp/>onclick=\&quot;set_parse_type(&apos;&quot;</highlight><highlight class="normal">.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)<sp/>.</highlight><highlight class="stringliteral">&quot;&apos;);\&quot;&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;label&quot;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;&lt;/a&gt;&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;li&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;label&quot;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;:<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if($element-&gt;getAttribute(&quot;inputType&quot;)<sp/>==<sp/>&quot;textarea&quot;){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/>&quot;&lt;textarea<sp/>cols=&apos;&quot;<sp/>.<sp/>$element-&gt;getAttribute(&apos;cols&apos;)<sp/>.<sp/><sp/>&quot;&apos;<sp/>rows=<sp/>&apos;&quot;<sp/>.<sp/>$element-&gt;getAttribute(&apos;rows&apos;)<sp/>.<sp/>&quot;&apos;<sp/>name=&apos;&quot;.<sp/>$element-&gt;getAttribute(&quot;name&quot;)<sp/>.<sp/>&quot;&apos;<sp/>id=&apos;&quot;<sp/>.<sp/>$element-&gt;getAttribute(&apos;name&apos;)<sp/>.<sp/>&quot;&apos;&gt;&quot;.$val.&quot;&lt;/textarea&gt;&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;inputType&quot;</highlight><highlight class="normal">)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;text&quot;</highlight><highlight class="normal"><sp/>||<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;inputType&quot;</highlight><highlight class="normal">)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;textarea&quot;</highlight><highlight class="normal"><sp/>||<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;inputType&quot;</highlight><highlight class="normal">)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;list&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$returnHTML<sp/>.=<sp/>&quot;&lt;input<sp/>type=&apos;text&apos;<sp/>id=&apos;&quot;<sp/>.<sp/>$element-&gt;getAttribute(&quot;name&quot;)<sp/>.<sp/>&quot;&apos;<sp/>name=&apos;&quot;.<sp/>$element-&gt;getAttribute(&quot;name&quot;)<sp/>.<sp/>&quot;&apos;<sp/>value=&apos;&quot;.$val.&quot;&apos;/&gt;&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;span<sp/>type=&apos;text&apos;<sp/>id=&apos;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>name=&apos;&quot;</highlight><highlight class="normal">.<sp/>$element-&gt;getAttribute(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>&gt;&quot;</highlight><highlight class="normal">.$val.</highlight><highlight class="stringliteral">&quot;&lt;/span&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if($element-&gt;getAttribute(&quot;inputType&quot;)<sp/>==<sp/>&quot;list&quot;){</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/>&quot;&lt;select<sp/>id=&apos;&quot;<sp/>.<sp/>$element-&gt;getAttribute(&apos;name&apos;)<sp/>.<sp/>&quot;&apos;<sp/>name=&apos;&quot;<sp/>.<sp/>$element-&gt;getAttribute(&apos;name&apos;)<sp/>.<sp/>&quot;&apos;&gt;&quot;;</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$options<sp/>=<sp/>$element-&gt;getAttribute(&quot;options&quot;);</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$options<sp/>=<sp/>explode(&quot;|&quot;,<sp/>$options);</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/>&quot;&lt;option<sp/>value=&apos;&apos;&gt;&lt;/option&gt;&quot;;</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foreach($options<sp/>as<sp/>$option)</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/>&quot;&lt;option<sp/>value=&apos;&quot;.<sp/>trim($option);</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if($option==$val<sp/>||<sp/>trim($option)==$val)<sp/>$returnHTML<sp/>.=<sp/>&quot;<sp/>selected=&apos;selected&apos;&quot;;</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/>&quot;<sp/>&apos;&gt;&quot;.<sp/>trim($option)<sp/>.<sp/>&quot;&lt;/option&gt;&quot;;</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/>&quot;&lt;/select&gt;&quot;;</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$context_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/ul&gt;&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/ul&gt;&lt;/li&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/li&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$context_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/ul&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dropdown_menu_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/ul&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/form&gt;&lt;/ul&gt;&lt;div<sp/>id=\&quot;divPush\&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div<sp/>id=\&quot;parse_buttons\&quot;&gt;&lt;button<sp/>onclick=&apos;save_parse_text();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Save<sp/>Parsed<sp/>Text&lt;/button&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;button<sp/>onclick=&apos;find_taxa_via_ubio();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Find<sp/>taxa<sp/>via<sp/>uBio&lt;/button&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;button<sp/>onclick=&apos;herbis_nlp();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Parse<sp/>using<sp/>HERBIS&lt;/button&gt;&lt;/div&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;accordian&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$returnHTML;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;context&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$context_menu_html;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;dropdown&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$dropdown_menu_html;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;Sorry!<sp/>You<sp/>do<sp/>not<sp/>have<sp/>permission<sp/>for<sp/>this<sp/>operation&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="parse_8functions_8php_1aa96f5225d54ad2ec39b5f20c8fcfd1c2" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1aa96f5225d54ad2ec39b5f20c8fcfd1c2" kindref="member">get_parsing_content</ref>($roi_pid,<sp/>$size,<sp/>$workflow_id){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list($height,<sp/>$width)<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>$size);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow_Users::doesWorkflowHaveUserName($workflow_id,<sp/>$user-&gt;name)<sp/>&amp;&amp;<sp/>Workflow_Permission::doesWorkflowHavePermission($workflow_id,<sp/></highlight><highlight class="stringliteral">&quot;canTranscribe&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roiMetadata_record<sp/>=<sp/>AP_ROI::getroiMetadata_record($roi_pid);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roiURL<sp/>=<sp/>$roiMetadata_record[</highlight><highlight class="stringliteral">&apos;roiURL&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($height<sp/>&gt;<sp/>(($roiMetadata_record[</highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">]/<sp/>$roiMetadata_record[</highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">])<sp/>*<sp/>$width)){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roi_image_url<sp/>=<sp/>scaleDjatokaURL($roiURL,<sp/>$width,<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$roi_image_url<sp/>=<sp/>getDjatokaURL($roiMetadata_record[&apos;sourceURL&apos;],<sp/>&apos;getRegion&apos;,<sp/>&apos;100&apos;,<sp/>$roiMetadata_record[&apos;y&apos;],<sp/>$roiMetadata_record[&apos;x&apos;],<sp/>$roiMetadata_record[&apos;h&apos;],<sp/>$roiMetadata_record[&apos;w&apos;],<sp/>$width,<sp/>&apos;0&apos;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;image_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&lt;img<sp/>class=&apos;transcribe_roi_image&apos;<sp/>src=&apos;$roi_image_url&apos;<sp/>/&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roi_image_url<sp/>=<sp/>scaleDjatokaURL($roiURL,<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">,<sp/>$height);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$roi_image_url<sp/>=<sp/>getDjatokaURL($roiMetadata_record[&apos;sourceURL&apos;],<sp/>&apos;getRegion&apos;,<sp/>&apos;100&apos;,<sp/>$roiMetadata_record[&apos;y&apos;],<sp/>$roiMetadata_record[&apos;x&apos;],<sp/>$roiMetadata_record[&apos;h&apos;],<sp/>$roiMetadata_record[&apos;w&apos;],<sp/>&apos;0&apos;,<sp/>$height);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;image_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&lt;img<sp/>class=&apos;transcribe_roi_image&apos;<sp/>src=&apos;$roi_image_url&apos;<sp/>/&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;text&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($roi_obj-&gt;ifExist(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;text&apos;</highlight><highlight class="normal">]<sp/>=<sp/>nl2br($roi_obj-&gt;getDatastream(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;Sorry!<sp/>You<sp/>do<sp/>not<sp/>have<sp/>permission<sp/>for<sp/>this<sp/>operation&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="parse_8functions_8php_1ad1a7ce33f2d558c9379716ac13616ae5" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1ad1a7ce33f2d558c9379716ac13616ae5" kindref="member">save_parsed_text</ref>($roi_pid,<sp/>$nothing,<sp/>$workflow_id){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnjs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow_Users::doesWorkflowHaveUserName($workflow_id,<sp/>$user-&gt;name)<sp/>&amp;&amp;<sp/>Workflow_Permission::doesWorkflowHavePermission($workflow_id,<sp/></highlight><highlight class="stringliteral">&quot;canTranscribe&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$query_string<sp/>=<sp/>$_SERVER[</highlight><highlight class="stringliteral">&apos;QUERY_STRING&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_to_db($_SERVER[</highlight><highlight class="stringliteral">&apos;QUERY_STRING&apos;</highlight><highlight class="normal">],</highlight><highlight class="stringliteral">&apos;save_parsed_text<sp/>QUERY_STRING&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$file_path<sp/>=<sp/>drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&quot;/workflow/assets/xml/metadata_template.xml&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$doc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMDocument();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$doc-&gt;load($file_path);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$pairs<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/>$query_string);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($pairs<sp/>as<sp/>$pair){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($pair)){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list($name,<sp/>$value)<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;=&quot;</highlight><highlight class="normal">,<sp/>$pair,<sp/>2);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($name<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;q&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$element<sp/>=<sp/>$doc-&gt;getElementsByTagName($name)-&gt;item(0);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$element-&gt;nodeValue<sp/>=<sp/>urldecode($value);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Anton:<sp/>I<sp/>am<sp/>remarking<sp/>this<sp/>call<sp/>to<sp/>setDatastream<sp/>out<sp/>so<sp/>I<sp/>can<sp/>following<sp/>the<sp/>same<sp/>procedure<sp/>that<sp/>is<sp/>used<sp/>in<sp/>save_transcribed_text()<sp/>post.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$success<sp/>=<sp/>$roi_obj-&gt;setDatastream(&quot;specimenMetadata&quot;,<sp/>&quot;Label-Information&quot;,<sp/>&quot;text/xml&quot;,<sp/>$doc-&gt;saveXML(),<sp/>FEDORA_DATABASE_USERNAME.&quot;:&quot;.FEDORA_DATABASE_PASSWORD);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_to_db($_REQUEST[</highlight><highlight class="stringliteral">&apos;text&apos;</highlight><highlight class="normal">],</highlight><highlight class="stringliteral">&apos;save_parsed_text<sp/>text&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$success<sp/>=<sp/>$roi_obj-&gt;setDatastream(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Parsed&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;text/plain&quot;</highlight><highlight class="normal">,<sp/>$_REQUEST[</highlight><highlight class="stringliteral">&apos;text&apos;</highlight><highlight class="normal">],<sp/>FEDORA_DATABASE_USERNAME.</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">.FEDORA_DATABASE_PASSWORD);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($success)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnjs<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;\$.jGrowl(&apos;Parsed<sp/>text<sp/>for<sp/>ROI<sp/>[$roi_pid]<sp/>saved<sp/>successfully.&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnjs<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;\$.jGrowl(&apos;Parsed<sp/>text<sp/>for<sp/>ROI<sp/>[$roi_pid]<sp/>failed<sp/>to<sp/>save.&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$returnjs<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;\$.jGrowl(&apos;Sorry!<sp/>You<sp/>do<sp/>not<sp/>have<sp/>permission<sp/>for<sp/>this<sp/>operation&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>$returnjs;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="parse_8functions_8php_1a0a53697541381fa238496ef4853da969" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1a0a53697541381fa238496ef4853da969" kindref="member">reload_transcribe_text</ref>($roi_pid,<sp/>$nothing,<sp/>$workflow_id){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>$returnHTML<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Workflow_Users::doesWorkflowHaveUserName($workflow_id,<sp/>$user-&gt;name)<sp/>&amp;&amp;<sp/>Workflow_Permission::doesWorkflowHavePermission($workflow_id,<sp/></highlight><highlight class="stringliteral">&quot;canTranscribe&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($roi_obj-&gt;ifExist(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$returnHTML<sp/>=<sp/>nl2br($roi_obj-&gt;getDatastream(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>echo<sp/>$returnHTML;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="parse_8functions_8php_1abfc7646adccdc888b9888fc3245368ec" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1abfc7646adccdc888b9888fc3245368ec" kindref="member">ubio_parse</ref>($roi_pid)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>$returnJSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>$ubio_result<sp/>=<sp/>$roi_obj-&gt;get_ubio();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//$returnJSON[&apos;ubio_result&apos;]<sp/>=<sp/>&apos;&lt;div<sp/>id=&quot;ubio_results&quot;&gt;&lt;textarea<sp/>class=&quot;ubio&quot;&gt;&lt;pre&gt;&apos;.$ubio_result.&apos;&lt;/pre&gt;&lt;/textarea&gt;&lt;/div&gt;&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;ubio_result&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;ubio_results&quot;&gt;&lt;pre&gt;&apos;</highlight><highlight class="normal">.$ubio_result.</highlight><highlight class="stringliteral">&apos;&lt;/pre&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="parse_8functions_8php_1a76a5e673d8cc7a610d8ed2024a1ca3c0" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1a76a5e673d8cc7a610d8ed2024a1ca3c0" kindref="member">herbis_parse_nonJSON</ref>($roi_pid)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>$apiary_project_herbis_dir<sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_project_herbis_dir&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;/var/www/drupal/modules/apiary_project/herbis&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>$apiary_project_herbis_url<sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_project_herbis_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://txcdk3g.unt.edu:8080/HERBIS&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>$returnJSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>$herbis_result<sp/>=<sp/>$roi_obj-&gt;get_herbis($apiary_project_herbis_dir,<sp/>$apiary_project_herbis_url);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>echo<sp/>$herbis_result;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//$returnJSON[&apos;herbis_result&apos;]<sp/>=<sp/>$herbis_result;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//echo<sp/>json_encode($returnJSON);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="parse_8functions_8php_1afeb088e74d751684f09b5c712d454ea4" refkind="member"><highlight class="normal">function<sp/><ref refid="parse_8functions_8php_1afeb088e74d751684f09b5c712d454ea4" kindref="member">herbis_parse</ref>($roi_pid)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>$apiary_project_herbis_dir<sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_project_herbis_dir&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;/var/www/drupal/modules/apiary_project/herbis&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>$apiary_project_herbis_url<sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_project_herbis_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://txcdk3g.unt.edu:8080/HERBIS&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>$returnJSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>$roi_obj<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>roiHandler($roi_pid);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>$herbis_result<sp/>=<sp/>$roi_obj-&gt;get_herbis($apiary_project_herbis_dir,<sp/>$apiary_project_herbis_url);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//echo<sp/>$herbis_result;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;herbis_result&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$herbis_result;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="apiary_project/parse.functions.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="search_8functions_8php" kind="file">
+    <compoundname>search.functions.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="search_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" prot="public" static="no" mutable="no">
+        <type>global</type>
+        <definition>global $user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="4" bodyfile="apiary_project/search.functions.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="search_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>send_request</definition>
+        <argsstring>($function, $param1, $param2, $param3)</argsstring>
+        <name>send_request</name>
+        <param>
+          <type>$</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param1</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param2</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>param3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="9" bodyfile="apiary_project/search.functions.php" bodystart="9" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1ad070411c3e0f82ab8f3f9cebdea1dd6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_search</definition>
+        <argsstring>()</argsstring>
+        <name>get_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="25" bodyfile="apiary_project/search.functions.php" bodystart="25" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a1ea6f95533a64c01b6d8a294a22b367e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_metadata_search_options</definition>
+        <argsstring>()</argsstring>
+        <name>get_metadata_search_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="47" bodyfile="apiary_project/search.functions.php" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1ad3b79112dc41cc34b986c4f462609425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>metadata_search_options</definition>
+        <argsstring>()</argsstring>
+        <name>metadata_search_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="51" bodyfile="apiary_project/search.functions.php" bodystart="51" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1ad1edff4b206d5592ad22c8609e8e453f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>metadata_combobox</definition>
+        <argsstring>($curr_field= &apos;&apos;)</argsstring>
+        <name>metadata_combobox</name>
+        <param>
+          <type>$</type>
+          <declname>curr_field</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="68" bodyfile="apiary_project/search.functions.php" bodystart="68" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1af16b87b19a80e27adc34631fcf8dc679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>search_metadata</definition>
+        <argsstring>()</argsstring>
+        <name>search_metadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="84" bodyfile="apiary_project/search.functions.php" bodystart="84" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a5d1a3df4c9bf841aa94fe6f4b8b84b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_status_search_options</definition>
+        <argsstring>()</argsstring>
+        <name>get_status_search_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="128" bodyfile="apiary_project/search.functions.php" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1ae8e41e2bb51042ca85a9079cbfac904c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>status_search_options</definition>
+        <argsstring>()</argsstring>
+        <name>status_search_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="132" bodyfile="apiary_project/search.functions.php" bodystart="132" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a3d0d025469031fbff024e8c147bae9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_analyzeStatus_combobox</definition>
+        <argsstring>()</argsstring>
+        <name>get_analyzeStatus_combobox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="157" bodyfile="apiary_project/search.functions.php" bodystart="157" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a9c6395393919f0f0803a3645193ab4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>analyzeStatus_combobox</definition>
+        <argsstring>()</argsstring>
+        <name>analyzeStatus_combobox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="161" bodyfile="apiary_project/search.functions.php" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a659ab8660fbcf76342bfcfece2c26d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_transcribeStatus_combobox</definition>
+        <argsstring>()</argsstring>
+        <name>get_transcribeStatus_combobox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="165" bodyfile="apiary_project/search.functions.php" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a3faf33f802668cbc4feb92a9df27f2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>transcribeStatus_combobox</definition>
+        <argsstring>()</argsstring>
+        <name>transcribeStatus_combobox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="169" bodyfile="apiary_project/search.functions.php" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1ade3708d63e72b4a6a2f8977054dcf167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_parseLevel1Status_combobox</definition>
+        <argsstring>()</argsstring>
+        <name>get_parseLevel1Status_combobox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="173" bodyfile="apiary_project/search.functions.php" bodystart="173" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1aa0e9e726f423c4e621b6e823023a3fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>parseLevel1Status_combobox</definition>
+        <argsstring>()</argsstring>
+        <name>parseLevel1Status_combobox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="177" bodyfile="apiary_project/search.functions.php" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a0c1777af8fe3e7c3f2a12bd919b24cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>search_status</definition>
+        <argsstring>()</argsstring>
+        <name>search_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="181" bodyfile="apiary_project/search.functions.php" bodystart="181" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a042ca692f32cfbb692c3a0e01be45f82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solr_query_xpath</definition>
+        <argsstring>($solr_q, $solr_fl, $solr_op, $solr_rows)</argsstring>
+        <name>solr_query_xpath</name>
+        <param>
+          <type>$</type>
+          <declname>solr_q</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>solr_fl</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>solr_op</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>solr_rows</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="284" bodyfile="apiary_project/search.functions.php" bodystart="284" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1aae08e06de020cdbc5403703fa9f6533e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getROIStatusSearchSolrQ</definition>
+        <argsstring>($query, $tt_status, $pt_status, $parent_id=null)</argsstring>
+        <name>getROIStatusSearchSolrQ</name>
+        <param>
+          <type>$</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>tt_status</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>pt_status</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>parent_id</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="297" bodyfile="apiary_project/search.functions.php" bodystart="297" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a1a7b59291e44147961f898fd911e0f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageSearchResults</definition>
+        <argsstring>($image_pids)</argsstring>
+        <name>ImageSearchResults</name>
+        <param>
+          <type>$</type>
+          <declname>image_pids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="329" bodyfile="apiary_project/search.functions.php" bodystart="329" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a9f8c2618b3b65c13851fc7e58cd5f105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ROISearchResults</definition>
+        <argsstring>($roi_pids)</argsstring>
+        <name>ROISearchResults</name>
+        <param>
+          <type>$</type>
+          <declname>roi_pids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="369" bodyfile="apiary_project/search.functions.php" bodystart="369" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solr_query_xml</definition>
+        <argsstring>($q, $fl= &apos;&apos;, $op= &apos;&apos;, $rows= &apos;&apos;)</argsstring>
+        <name>solr_query_xml</name>
+        <param>
+          <type>$</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>fl</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>op</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>rows</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="420" bodyfile="apiary_project/search.functions.php" bodystart="420" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1a052eb8d329f0dca0225ccacf92253dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solr_query_search</definition>
+        <argsstring>($q, $fl= &apos;&apos;, $op= &apos;&apos;, $rows= &apos;&apos;)</argsstring>
+        <name>solr_query_search</name>
+        <param>
+          <type>$</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>fl</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>op</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>$</type>
+          <declname>rows</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="455" bodyfile="apiary_project/search.functions.php" bodystart="455" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="search_8functions_8php_1afa31d4f307ae4a75a41266b9294d8236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_specimen_list_via_solr_query</definition>
+        <argsstring>($solr_q)</argsstring>
+        <name>get_specimen_list_via_solr_query</name>
+        <param>
+          <type>$</type>
+          <declname>solr_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apiary_project/search.functions.php" line="483" bodyfile="apiary_project/search.functions.php" bodystart="483" bodyend="505"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Cache-Control:<sp/>no-cache,<sp/>must-revalidate&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>HTTP/1.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Expires:<sp/>Sat,<sp/>26<sp/>Jul<sp/>1997<sp/>05:00:00<sp/>GMT&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Date<sp/>in<sp/>the<sp/>past</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="search_8functions_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" refkind="member"><highlight class="normal">global<sp/><ref refid="apiary__project_8php_1a00365e6c5f70c43fb2ed86c9bc5626e0" kindref="member">$user</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/apiaryPermissionsClass.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/workflow/include/search.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">include_once(drupal_get_path(</highlight><highlight class="stringliteral">&apos;module&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;apiary_project&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/workflow/include/functions.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="search_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" refkind="member"><highlight class="normal">function<sp/><ref refid="comparer_8functions_8php_1a78bd2c85ad1dcdc1fb68e40605d593b0" kindref="member">send_request</ref>($function,<sp/>$param1,<sp/>$param2,<sp/>$param3){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;function<sp/>=<sp/>&quot;.$function.&quot;<sp/>param1<sp/>=<sp/>&quot;.$param1.&quot;<sp/>param2<sp/>=<sp/>&quot;.$param2.&quot;<sp/>param3<sp/>=<sp/>&quot;.$param3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param3<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2,<sp/>$param3);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($param2<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1,<sp/>$param2);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($function<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;clear_session&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>call_user_func($function,<sp/>$param1);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="search_8functions_8php_1ad070411c3e0f82ab8f3f9cebdea1dd6a" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ad070411c3e0f82ab8f3f9cebdea1dd6a" kindref="member">get_search</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>$home_link<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;p&gt;&lt;h3&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$server_base.</highlight><highlight class="stringliteral">&apos;/drupal&quot;&gt;Home&lt;/a&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.<ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref>.</highlight><highlight class="stringliteral">&apos;/drupal/apiary/admin&quot;&gt;Administer<sp/>Apiary&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>$return_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/>$home_link;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>style=&quot;font-size:150%;<sp/>font-weight:bold;&quot;&gt;<sp/>Apiary<sp/>Search<sp/>&lt;/div&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;br/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;table<sp/>id=&quot;search_types_table&quot;<sp/>cellspacing=&quot;0&quot;<sp/>border=&quot;0&quot;<sp/>width=&quot;30%&quot;<sp/>style=&quot;height:22px;&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tbody&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&lt;a<sp/>href=&quot;#&quot;<sp/>onclick=&quot;select_search(\&apos;metadata_search\&apos;);&quot;&gt;ROI<sp/>specimenMetadata<sp/>Search&lt;/a&gt;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&lt;a<sp/>href=&quot;#&quot;<sp/>onclick=&quot;select_search(\&apos;status_search\&apos;);&quot;&gt;Image<sp/>or<sp/>ROI<sp/>Status<sp/>Search&lt;/a&gt;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tbody&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/table&gt;&lt;!--<sp/>search_types_table<sp/>--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;br/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;search_options&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/><ref refid="search_8functions_8php_1ad3b79112dc41cc34b986c4f462609425" kindref="member">metadata_search_options</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&lt;!--<sp/>search_options<sp/>--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>echo<sp/>$return_html;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="search_8functions_8php_1a1ea6f95533a64c01b6d8a294a22b367e" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a1ea6f95533a64c01b6d8a294a22b367e" kindref="member">get_metadata_search_options</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>echo<sp/><ref refid="search_8functions_8php_1ad3b79112dc41cc34b986c4f462609425" kindref="member">metadata_search_options</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="search_8functions_8php_1ad3b79112dc41cc34b986c4f462609425" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ad3b79112dc41cc34b986c4f462609425" kindref="member">metadata_search_options</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>$return_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;b&gt;Search<sp/>ROIs<sp/>by<sp/>specimenMetadata<sp/>keyword&lt;/b&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;table<sp/>cellspacing=&quot;0&quot;<sp/>cellpadding=&quot;4&quot;<sp/>border=&quot;1&quot;<sp/>rules=&quot;none&quot;<sp/>frame=&quot;box&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tbody&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr<sp/>valign=&quot;top&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td<sp/>align=&quot;center&quot;<sp/>nowrap=&quot;&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;Field(s):&apos;</highlight><highlight class="normal">.metadata_combobox();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>name=&quot;metadata_query&quot;<sp/>id=&quot;metadata_query&quot;<sp/>onkeypress=&quot;keyPressEvent(event,<sp/>\&apos;submit_metadata_search\&apos;);&quot;<sp/>size=&quot;30&quot;<sp/>title=&quot;Apiary<sp/>Search&quot;<sp/>class=&quot;lst&quot;<sp/>maxlength=&quot;2048&quot;<sp/>style=&quot;background:<sp/>none<sp/>repeat<sp/>scroll<sp/>0%<sp/>0%<sp/>rgb(255,<sp/>255,<sp/>255);<sp/>border-width:<sp/>1px;<sp/>border-style:<sp/>solid;<sp/>border-color:<sp/>rgb(204,<sp/>204,<sp/>204)<sp/>rgb(153,<sp/>153,<sp/>153)<sp/>rgb(153,<sp/>153,<sp/>153)<sp/>rgb(204,<sp/>204,<sp/>204);<sp/>color:<sp/>rgb(0,<sp/>0,<sp/>0);<sp/>font:<sp/>18px<sp/>arial,<sp/>sans-serif<sp/>bold;<sp/>height:<sp/>25px;<sp/>margin:<sp/>0pt;<sp/>padding:<sp/>5px<sp/>8px<sp/>0pt<sp/>6px;<sp/>vertical-align:<sp/>top;&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;button<sp/>onclick=&apos;submit_metadata_search();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Submit&lt;/button&gt;&quot;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tbody&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/table&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$return_html;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="search_8functions_8php_1ad1edff4b206d5592ad22c8609e8e453f" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ad1edff4b206d5592ad22c8609e8e453f" kindref="member">metadata_combobox</ref>($curr_field<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>$return_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&lt;select<sp/>id=&quot;metadata_field&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;option<sp/>value=&apos;&apos;&gt;&lt;/option&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>$whenObj<sp/>=<sp/>db_query(</highlight><highlight class="stringliteral">&quot;select<sp/>term,<sp/>display_label<sp/>from<sp/>{apiary_project}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">($res<sp/>=<sp/>db_fetch_object($whenObj)){</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($curr_field<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;$res-&gt;term&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;option<sp/>value=&apos;$res-&gt;term&apos;&gt;$res-&gt;display_label&lt;/option&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;option<sp/>SELECTED<sp/>value=&apos;$res-&gt;term&apos;&gt;$res-&gt;display_label&lt;/option&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/select&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$return_html;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="search_8functions_8php_1af16b87b19a80e27adc34631fcf8dc679" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1af16b87b19a80e27adc34631fcf8dc679" kindref="member">search_metadata</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>$successfully_searched_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>$results_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>$query<sp/>=<sp/>trim($_POST[</highlight><highlight class="stringliteral">&apos;query&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>$field<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;field&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>$query<sp/>=<sp/>str_replace(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">,$query);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($field)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=roism_&apos;</highlight><highlight class="normal">.$field.</highlight><highlight class="stringliteral">&apos;:(&quot;&apos;</highlight><highlight class="normal">.$query.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=&quot;&apos;</highlight><highlight class="normal">.$query.</highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>$solr_fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=id&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>$solr_op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>$solr_rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=10000&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>$solr_sxml<sp/>=<sp/><ref refid="search_8functions_8php_1a052eb8d329f0dca0225ccacf92253dbe" kindref="member">solr_query_search</ref>($solr_q,<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>$elements=<sp/>array();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_sxml)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>$successfully_searched_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>$dom<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMDocument();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>$dom-&gt;loadXML($solr_sxml);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>$xpath<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMXPath($dom);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>$elements<sp/>=<sp/>$xpath-&gt;query(</highlight><highlight class="stringliteral">&apos;//response/result/doc/str[@name=&quot;id&quot;]&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>$roi_pids<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($elements<sp/>as<sp/>$element){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($element-&gt;nodeValue,<sp/></highlight><highlight class="stringliteral">&apos;ap-roi&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array_push($roi_pids,<sp/>$element-&gt;nodeValue);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/><ref refid="search_8functions_8php_1a9f8c2618b3b65c13851fc7e58cd5f105" kindref="member">ROISearchResults</ref>($roi_pids);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>$msg<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>perform<sp/>serach!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;successfully_searched_text&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$successfully_searched_text;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;solr_q&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$solr_q;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;query&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$query;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;field&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$field;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;results_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$results_html;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="search_8functions_8php_1a5d1a3df4c9bf841aa94fe6f4b8b84b22" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a5d1a3df4c9bf841aa94fe6f4b8b84b22" kindref="member">get_status_search_options</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>echo<sp/><ref refid="search_8functions_8php_1ae8e41e2bb51042ca85a9079cbfac904c" kindref="member">status_search_options</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="search_8functions_8php_1ae8e41e2bb51042ca85a9079cbfac904c" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ae8e41e2bb51042ca85a9079cbfac904c" kindref="member">status_search_options</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>$return_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;b&gt;Search<sp/>Objects<sp/>by<sp/>Status&lt;/b&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;table<sp/>cellspacing=&quot;0&quot;<sp/>cellpadding=&quot;4&quot;<sp/>border=&quot;1&quot;<sp/>rules=&quot;none&quot;<sp/>frame=&quot;box&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;Image<sp/>Analyze<sp/>Status:&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&apos;</highlight><highlight class="normal">.analyzeStatus_combobox().</highlight><highlight class="stringliteral">&apos;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;ROI<sp/>Transcribe<sp/>Status:&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&apos;</highlight><highlight class="normal">.transcribeStatus_combobox().</highlight><highlight class="stringliteral">&apos;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;ROI<sp/>Parse<sp/>Status:&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&apos;</highlight><highlight class="normal">.parseLevel1Status_combobox().</highlight><highlight class="stringliteral">&apos;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;Keyword(s):&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&lt;input<sp/>name=&quot;status_query&quot;<sp/>id=&quot;status_query&quot;<sp/>onkeypress=&quot;keyPressEvent(event,<sp/>\&apos;submit_status_search\&apos;);&quot;<sp/>size=&quot;30&quot;<sp/>title=&quot;Apiary<sp/>Search&quot;<sp/>class=&quot;lst&quot;<sp/>maxlength=&quot;2048&quot;<sp/>style=&quot;background:<sp/>none<sp/>repeat<sp/>scroll<sp/>0%<sp/>0%<sp/>rgb(255,<sp/>255,<sp/>255);<sp/>border-width:<sp/>1px;<sp/>border-style:<sp/>solid;<sp/>border-color:<sp/>rgb(204,<sp/>204,<sp/>204)<sp/>rgb(153,<sp/>153,<sp/>153)<sp/>rgb(153,<sp/>153,<sp/>153)<sp/>rgb(204,<sp/>204,<sp/>204);<sp/>color:<sp/>rgb(0,<sp/>0,<sp/>0);<sp/>font:<sp/>18px<sp/>arial,<sp/>sans-serif<sp/>bold;<sp/>height:<sp/>25px;<sp/>margin:<sp/>0pt;<sp/>padding:<sp/>5px<sp/>8px<sp/>0pt<sp/>6px;<sp/>vertical-align:<sp/>top;&quot;&gt;&lt;/td&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;button<sp/>onclick=&apos;submit_status_search();&apos;<sp/>style=&apos;margin:<sp/>5px<sp/>0px;<sp/>border:<sp/>1px<sp/>solid<sp/>grey;&apos;&gt;Submit&lt;/button&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/tr&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>$return_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/table&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$return_html;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="search_8functions_8php_1a3d0d025469031fbff024e8c147bae9b9" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a3d0d025469031fbff024e8c147bae9b9" kindref="member">get_analyzeStatus_combobox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>echo<sp/><ref refid="search_8functions_8php_1a9c6395393919f0f0803a3645193ab4bf" kindref="member">analyzeStatus_combobox</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="search_8functions_8php_1a9c6395393919f0f0803a3645193ab4bf" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a9c6395393919f0f0803a3645193ab4bf" kindref="member">analyzeStatus_combobox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>generateAnalyzeSpecimenStatusComboBox();<sp/></highlight><highlight class="comment">//from<sp/>include/functions.php</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="search_8functions_8php_1a659ab8660fbcf76342bfcfece2c26d28" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a659ab8660fbcf76342bfcfece2c26d28" kindref="member">get_transcribeStatus_combobox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>echo<sp/><ref refid="search_8functions_8php_1a3faf33f802668cbc4feb92a9df27f2b1" kindref="member">transcribeStatus_combobox</ref>();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="search_8functions_8php_1a3faf33f802668cbc4feb92a9df27f2b1" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a3faf33f802668cbc4feb92a9df27f2b1" kindref="member">transcribeStatus_combobox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>generateTranscribeTextStatusComboBox();<sp/></highlight><highlight class="comment">//from<sp/>include/functions.php</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="search_8functions_8php_1ade3708d63e72b4a6a2f8977054dcf167" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ade3708d63e72b4a6a2f8977054dcf167" kindref="member">get_parseLevel1Status_combobox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>echo<sp/><ref refid="search_8functions_8php_1aa0e9e726f423c4e621b6e823023a3fbf" kindref="member">parseLevel1Status_combobox</ref>();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="search_8functions_8php_1aa0e9e726f423c4e621b6e823023a3fbf" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1aa0e9e726f423c4e621b6e823023a3fbf" kindref="member">parseLevel1Status_combobox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>generateParseTextStatusComboBox();<sp/></highlight><highlight class="comment">//from<sp/>include/functions.php</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="search_8functions_8php_1a0c1777af8fe3e7c3f2a12bd919b24cab" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a0c1777af8fe3e7c3f2a12bd919b24cab" kindref="member">search_status</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>$successfully_searched_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>$results_html<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>$msg<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>$hasQuery<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>$hasAS_status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>$hasTT_status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>$hasPT_status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>$as_status<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;as_status&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>$query<sp/>=<sp/>trim($_POST[</highlight><highlight class="stringliteral">&apos;query&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>$tt_status<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;tt_status&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>$pt_status<sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;pt_status&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($as_status<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$as_status<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>$hasAS_status<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($query<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$query<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>$hasQuery<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($tt_status<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$tt_status<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>$hasTT_status<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($pt_status<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$pt_status<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>$hasPT_status<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>$image_pids=<sp/>array();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>$roi_pids<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($hasAS_status)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=status_analyzedStatus:(&quot;&apos;</highlight><highlight class="normal">.$as_status.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=id&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=10000&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_xpath<sp/>=<sp/><ref refid="search_8functions_8php_1a042ca692f32cfbb692c3a0e01be45f82" kindref="member">solr_query_xpath</ref>($solr_q,<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_xpath)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$successfully_searched_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath_image_elements<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath_image_elements<sp/>=<sp/>$solr_xpath-&gt;query(</highlight><highlight class="stringliteral">&apos;//response/result/doc/str[@name=&quot;id&quot;]&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($solr_xpath_image_elements<sp/>as<sp/>$solr_xpath_image_element)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($solr_xpath_image_element-&gt;nodeValue,<sp/></highlight><highlight class="stringliteral">&apos;ap-image&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array_push($image_pids,<sp/>$solr_xpath_image_element-&gt;nodeValue);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($hasQuery<sp/>||<sp/>$hasTT_status<sp/>||<sp/>$hasPT_status)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($image_pids<sp/>as<sp/>$image_pid)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>=<sp/><ref refid="search_8functions_8php_1aae08e06de020cdbc5403703fa9f6533e" kindref="member">getROIStatusSearchSolrQ</ref>($query,<sp/>$tt_status,<sp/>$pt_status,<sp/>$image_pid);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=id&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=10000&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath<sp/>=<sp/><ref refid="search_8functions_8php_1a042ca692f32cfbb692c3a0e01be45f82" kindref="member">solr_query_xpath</ref>($solr_q,<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_xpath)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath_roi_elements<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath_roi_elements<sp/>=<sp/>$solr_xpath-&gt;query(</highlight><highlight class="stringliteral">&apos;//response/result/doc/str[@name=&quot;id&quot;]&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($solr_xpath_roi_elements<sp/>as<sp/>$solr_xpath_roi_element){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($solr_xpath_roi_element-&gt;nodeValue,<sp/></highlight><highlight class="stringliteral">&apos;ap-roi&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array_push($roi_pids,<sp/>$solr_xpath_roi_element-&gt;nodeValue);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_q<sp/>=<sp/><ref refid="search_8functions_8php_1aae08e06de020cdbc5403703fa9f6533e" kindref="member">getROIStatusSearchSolrQ</ref>($query,<sp/>$tt_status,<sp/>$pt_status);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=id&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=10000&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_xpath<sp/>=<sp/><ref refid="search_8functions_8php_1a042ca692f32cfbb692c3a0e01be45f82" kindref="member">solr_query_xpath</ref>($solr_q,<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_xpath)<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$successfully_searched_text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath_roi_elements<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_xpath_roi_elements<sp/>=<sp/>$solr_xpath-&gt;query(</highlight><highlight class="stringliteral">&apos;//response/result/doc/str[@name=&quot;id&quot;]&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($solr_xpath_roi_elements<sp/>as<sp/>$solr_xpath_roi_element){</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($solr_xpath_roi_element-&gt;nodeValue,<sp/></highlight><highlight class="stringliteral">&apos;ap-roi&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array_push($roi_pids,<sp/>$solr_xpath_roi_element-&gt;nodeValue);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($successfully_searched_text<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sizeOf($roi_pids)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/><ref refid="search_8functions_8php_1a9f8c2618b3b65c13851fc7e58cd5f105" kindref="member">ROISearchResults</ref>($roi_pids);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sizeOf($image_pids)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//no<sp/>need<sp/>to<sp/>show<sp/>image<sp/>results<sp/>if<sp/>we<sp/>already<sp/>have<sp/>ROI<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/><ref refid="search_8functions_8php_1a1a7b59291e44147961f898fd911e0f19" kindref="member">ImageSearchResults</ref>($image_pids);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;No<sp/>Results<sp/>found!&lt;/b&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>$msg<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>perform<sp/>serach!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;successfully_searched_text&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$successfully_searched_text;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;solr_q&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$solr_q;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;query&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$query;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;field&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$field;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;results_html&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$results_html;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>$returnJSON[</highlight><highlight class="stringliteral">&apos;msg&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>echo<sp/>json_encode($returnJSON);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="search_8functions_8php_1a042ca692f32cfbb692c3a0e01be45f82" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a042ca692f32cfbb692c3a0e01be45f82" kindref="member">solr_query_xpath</ref>($solr_q,<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows)<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>$solr_sxml<sp/>=<sp/><ref refid="search_8functions_8php_1a052eb8d329f0dca0225ccacf92253dbe" kindref="member">solr_query_search</ref>(str_replace(</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;+&apos;</highlight><highlight class="normal">,<sp/>$solr_q),<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_sxml)<sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>$dom<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMDocument();</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>$dom-&gt;loadXML($solr_sxml);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>$xpath<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DOMXPath($dom);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$xpath;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="search_8functions_8php_1aae08e06de020cdbc5403703fa9f6533e" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1aae08e06de020cdbc5403703fa9f6533e" kindref="member">getROIStatusSearchSolrQ</ref>($query,<sp/>$tt_status,<sp/>$pt_status,<sp/>$parent_id<sp/>=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>$solr_q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($query<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$query<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=&quot;&apos;</highlight><highlight class="normal">.$query.</highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($tt_status<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$tt_status<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($solr_q,<sp/></highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;+AND+status_transcribedStatus:(&quot;&apos;</highlight><highlight class="normal">.$tt_status.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;q=status_transcribedStatus:(&quot;&apos;</highlight><highlight class="normal">.$tt_status.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($pt_status<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$pt_status<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($solr_q,<sp/></highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;+AND+status_parsedL1Status:(&quot;&apos;</highlight><highlight class="normal">.$pt_status.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;q=status_parsedL1Status:(&quot;&apos;</highlight><highlight class="normal">.$pt_status.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($parent_id<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$parent_id<sp/>!=<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($solr_q,<sp/></highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;+AND+parent_id:(&quot;&apos;</highlight><highlight class="normal">.$parent_id.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$solr_q<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;q=parent_id:(&quot;&apos;</highlight><highlight class="normal">.$parent_id.</highlight><highlight class="stringliteral">&apos;&quot;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$solr_q;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="search_8functions_8php_1a1a7b59291e44147961f898fd911e0f19" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a1a7b59291e44147961f898fd911e0f19" kindref="member">ImageSearchResults</ref>($image_pids)<sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>$found_result<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($image_pids<sp/>as<sp/>$image_pid)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!$found_result)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;div<sp/>align=&apos;left&apos;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;table<sp/>id=&apos;image_results_table&apos;<sp/>class=&apos;tablesorter&apos;<sp/>style=&apos;width:800px&apos;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Image&lt;/th&gt;&lt;th&gt;Specimen&lt;/th&gt;&lt;/tr&gt;&lt;thead&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$found_result<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;tbody&gt;&lt;tr&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;$image_pid&lt;/td&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>$sp_pid<sp/>=<sp/><ref refid="analyze_8functions_8php_1a84f8a9fd1fdd21b005dc0a4684b6f5fe" kindref="member">AP_Image::get_specimen_pid</ref>($image_pid);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;$sp_pid&lt;/td&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="workspace_8functions_8php_1aa6646341a4c737489965d44a47caef17" kindref="member">$fedora_base_url</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;fedora_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost:8080/fedora&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;/tr&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($found_result)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="workspace_8functions_8php_1a1ec770754ff6c8671939d992f578d167" kindref="member">$server_base</ref><sp/>=<sp/>variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;pager&quot;<sp/>class=&quot;pager&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;form&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/first.png&quot;<sp/>class=&quot;first&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/prev.png&quot;<sp/>class=&quot;prev&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;text&quot;<sp/><sp/>class=&quot;pagedisplay&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/next.png&quot;<sp/><sp/>class=&quot;next&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/last.png&quot;<sp/><sp/>class=&quot;last&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;select<sp/>class=&quot;pagesize&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>selected=&quot;selected&quot;<sp/><sp/>value=&quot;10&quot;&gt;10&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;20&quot;&gt;20&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;30&quot;&gt;30&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;40&quot;&gt;40&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/select&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/form&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&lt;!--pager--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;No<sp/>Results<sp/>found!&lt;/b&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$results_html;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="search_8functions_8php_1a9f8c2618b3b65c13851fc7e58cd5f105" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a9f8c2618b3b65c13851fc7e58cd5f105" kindref="member">ROISearchResults</ref>($roi_pids)<sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/>$found_result<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($roi_pids<sp/>as<sp/>$roi_pid)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!$found_result)<sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;div<sp/>align=&apos;left&apos;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;table<sp/>id=&apos;roi_results_table&apos;<sp/>class=&apos;tablesorter&apos;<sp/>style=&apos;width:800px&apos;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;ROI&lt;/th&gt;&lt;th&gt;Image&lt;/th&gt;&lt;th&gt;Specimen&lt;/th&gt;&lt;th&gt;Datastream&lt;/th&gt;&lt;/tr&gt;&lt;thead&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$found_result<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;tbody&gt;&lt;tr&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$results_html<sp/>.=<sp/>&apos;&lt;td&gt;&lt;a<sp/>class=&quot;preview&quot;<sp/>href=&quot;&apos;.$server_base.&apos;/drupal/apiary?ref=specimenMetadata_details&amp;pid=&apos;.$roi_pid.&apos;&quot;&gt;&apos;.$roi_pid.&apos;&lt;/a&gt;&lt;/td&gt;&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;td&gt;&lt;a<sp/>href=&quot;#&quot;<sp/>class=&quot;preview&quot;<sp/>onclick=&quot;display_specimenMetadata_details(\&apos;&apos;</highlight><highlight class="normal">.$roi_pid.</highlight><highlight class="charliteral">&apos;\&apos;</highlight><highlight class="normal">);</highlight><highlight class="stringliteral">&quot;&gt;&apos;.$roi_pid.&apos;&lt;/a&gt;&lt;/td&gt;&apos;;</highlight></codeline>
+<codeline lineno="380"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$roi_ob<sp/>=<sp/>new<sp/>AP_ROI();</highlight></codeline>
+<codeline lineno="381"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$image_pid<sp/>=<sp/>$roi_ob-&gt;get_image_pid($roi_pid);</highlight></codeline>
+<codeline lineno="382"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&quot;</highlight><highlight class="normal">&lt;td&gt;$image_pid&lt;/td&gt;</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="383"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$sp_pid<sp/>=<sp/>AP_Image::get_specimen_pid($image_pid);</highlight></codeline>
+<codeline lineno="384"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&quot;</highlight><highlight class="normal">&lt;td&gt;$sp_pid&lt;/td&gt;</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="385"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$fedora_base_url<sp/>=<sp/>variable_get(&apos;fedora_base_url&apos;,<sp/>&apos;http://localhost:8080/fedora&apos;);</highlight></codeline>
+<codeline lineno="386"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$text<sp/>=<sp/>shell_exec(&quot;</highlight><highlight class="normal">curl<sp/>-H<sp/>-<sp/>XGET<sp/><ref refid="workspace_8functions_8php_1aa6646341a4c737489965d44a47caef17" kindref="member">$fedora_base_url</ref>/</highlight><highlight class="keyword">get</highlight><highlight class="normal">/$roi_pid/specimenMetadata</highlight><highlight class="stringliteral">&quot;);</highlight></codeline>
+<codeline lineno="387"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$check=strpos($text,<sp/>&quot;</highlight><highlight class="normal">404<sp/>Not<sp/>Found</highlight><highlight class="stringliteral">&quot;);</highlight></codeline>
+<codeline lineno="388"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>if($check<sp/>===<sp/>FALSE)<sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&quot;</highlight><highlight class="normal">&lt;td&gt;&lt;a<sp/>href=</highlight><highlight class="stringliteral">&apos;&quot;.$fedora_base_url.&quot;/get/$roi_pid/specimenMetadata&apos;</highlight><highlight class="normal">&gt;specimenMetadata&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="390"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>else<sp/>{</highlight></codeline>
+<codeline lineno="392"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&quot;</highlight><highlight class="normal">&lt;td&gt;No<sp/>specimenMetadata<sp/>found&lt;/td&gt;&lt;/tr&gt;</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="393"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="394"><highlight class="stringliteral"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="stringliteral"><sp/><sp/>if($found_result)<sp/>{</highlight></codeline>
+<codeline lineno="396"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$server_base<sp/>=<sp/>variable_get(&apos;apiary_research_base_url&apos;,<sp/>&apos;http://localhost&apos;);</highlight></codeline>
+<codeline lineno="397"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/><sp/>&quot;</highlight><highlight class="normal">&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="398"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&apos;&lt;div<sp/>id=&quot;</highlight><highlight class="normal">pager</highlight><highlight class="stringliteral">&quot;<sp/>class=&quot;</highlight><highlight class="normal">pager</highlight><highlight class="stringliteral">&quot;&gt;&apos;;</highlight></codeline>
+<codeline lineno="399"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&apos;&lt;form&gt;&apos;;</highlight></codeline>
+<codeline lineno="400"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/>&apos;&lt;img<sp/>src=&quot;</highlight><highlight class="stringliteral">&apos;.variable_get(&apos;</highlight><highlight class="normal">apiary_research_base_url</highlight><highlight class="stringliteral">&apos;,<sp/>&apos;</highlight><highlight class="normal">http:</highlight><highlight class="comment">//localhost&apos;).&apos;/drupal/modules/apiary_project/workflow/assets/img/first.png&quot;<sp/>class=&quot;first&quot;/&gt;&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/prev.png&quot;<sp/>class=&quot;prev&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;text&quot;<sp/><sp/>class=&quot;pagedisplay&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/next.png&quot;<sp/><sp/>class=&quot;next&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;img<sp/>src=&quot;&apos;</highlight><highlight class="normal">.variable_get(</highlight><highlight class="stringliteral">&apos;apiary_research_base_url&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;http://localhost&apos;</highlight><highlight class="normal">).</highlight><highlight class="stringliteral">&apos;/drupal/modules/apiary_project/workflow/assets/img/last.png&quot;<sp/><sp/>class=&quot;last&quot;/&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;select<sp/>class=&quot;pagesize&quot;&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>selected=&quot;selected&quot;<sp/><sp/>value=&quot;10&quot;&gt;10&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;20&quot;&gt;20&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;30&quot;&gt;30&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;40&quot;&gt;40&lt;/option&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/select&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/form&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&lt;!--pager--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>$results_html<sp/>.=<sp/></highlight><highlight class="stringliteral">&quot;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;No<sp/>Results<sp/>found!&lt;/b&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$results_html;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420" refid="search_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" kindref="member">solr_query_xml</ref>($q,<sp/>$fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/>$solr_search<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>search();</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($q,<sp/></highlight><highlight class="stringliteral">&quot;q=&quot;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>$q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$q);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/>$solr_query<sp/>=<sp/>$q;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($fl))<sp/>{</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($fl,<sp/></highlight><highlight class="stringliteral">&apos;fl=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=&apos;</highlight><highlight class="normal">.$fl;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$fl);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($op))<sp/>{</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($op,<sp/></highlight><highlight class="stringliteral">&apos;op=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;op=&apos;</highlight><highlight class="normal">.$op;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$op);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($rows))<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($rows,<sp/></highlight><highlight class="stringliteral">&apos;rows=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=&apos;</highlight><highlight class="normal">.$rows;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$rows);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;solr_query<sp/>=<sp/>&quot;.$solr_query.&quot;&lt;br&gt;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/>$solr_results<sp/>=<sp/>$solr_search-&gt;doSearch($solr_query);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($solr_results<sp/>!=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_sxml<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SimpleXMLElement($solr_results);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$solr_sxml;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455" refid="search_8functions_8php_1a052eb8d329f0dca0225ccacf92253dbe" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1a052eb8d329f0dca0225ccacf92253dbe" kindref="member">solr_query_search</ref>($q,<sp/>$fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/>$solr_search<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>search();</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($q,<sp/></highlight><highlight class="stringliteral">&quot;q=&quot;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>$q<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;q=&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$q);</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/>$solr_query<sp/>=<sp/>$q;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($fl))<sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($fl,<sp/></highlight><highlight class="stringliteral">&apos;fl=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;fl=&apos;</highlight><highlight class="normal">.$fl;</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$fl);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($op))<sp/>{</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($op,<sp/></highlight><highlight class="stringliteral">&apos;op=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;op=&apos;</highlight><highlight class="normal">.$op;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$op);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!empty($rows))<sp/>{</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($rows,<sp/></highlight><highlight class="stringliteral">&apos;rows=&apos;</highlight><highlight class="normal">)<sp/>===<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=&apos;</highlight><highlight class="normal">.$rows;</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_query<sp/>.=<sp/></highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">.str_replace(</highlight><highlight class="charliteral">&apos;&amp;&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">,<sp/>$rows);</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//echo<sp/>&quot;solr_query<sp/>=<sp/>&quot;.$solr_query.&quot;&lt;br&gt;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$solr_search-&gt;doSearch($solr_query);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483" refid="search_8functions_8php_1afa31d4f307ae4a75a41266b9294d8236" refkind="member"><highlight class="normal">function<sp/><ref refid="search_8functions_8php_1afa31d4f307ae4a75a41266b9294d8236" kindref="member">get_specimen_list_via_solr_query</ref>($solr_q)<sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/>$solr_fl<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/>$solr_op<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/>$solr_rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/>$specimen_list<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos(strtolower($solr_query),<sp/></highlight><highlight class="stringliteral">&apos;&amp;rows=&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>$solr_rows<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;rows=10000&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/>$solr_sxml<sp/>=<sp/><ref refid="search_8functions_8php_1ae6356bbdc7e39f2f56be2e74848e4c58" kindref="member">solr_query_xml</ref>($solr_q,<sp/>$solr_fl,<sp/>$solr_op,<sp/>$solr_rows);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($solr_sxml-&gt;result[0]-&gt;doc<sp/>as<sp/>$doc)<sp/>{</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($doc-&gt;children()<sp/>as<sp/>$sxml_node)<sp/>{</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>$node_value<sp/>=<sp/>(string)$sxml_node;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos($node_value,<sp/></highlight><highlight class="stringliteral">&apos;ap-specimen:&apos;</highlight><highlight class="normal">)<sp/>&gt;<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!array_search($node_value,<sp/>$specimen_list))<sp/>{</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array_push($specimen_list,<sp/>$node_value);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$specimen_list;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="apiary_project/search.functions.php"/>
+  </compounddef>
+</doxygen>
