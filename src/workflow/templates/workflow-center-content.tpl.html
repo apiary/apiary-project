@@ -1,0 +1,372 @@
+<div id="center-center">
+    <div id="step1_section">
+        <div class="help_tab floatright">
+            <span onclick="open_popup('help_analyze_main.html');">?</span>
+        <div id="myControls" class="floatright">
+        <div id="pan_up_control" class="map_control" onclick="pan_up();">
+            <img src="assets/js/img/north-mini.png" />
+        </div>
+        <div id="pan_left_control" class="map_control" onclick="pan_left();">
+            <img src="assets/js/img/west-mini.png" />
+        </div>
+        <div id="pan_right_control" class="map_control" onclick="pan_right();">
+            <img src="assets/js/img/east-mini.png" />
+        </div>
+        <div id="pan_down_control" class="map_control" onclick="pan_down();">
+            <img src="assets/js/img/south-mini.png" />
+        </div>
+        <div id="pan_zoomin_control" class="map_control" onclick="zoom_in();">
+            <img src="assets/js/img/zoom-plus-mini.png" />
+        </div>
+        <div id="pan_zoomworld_control" class="map_control" onclick="zoom_world();">
+            <img src="assets/js/img/zoom-world-mini.png" />
+        </div>
+        <div id="pan_zoomout_control" class="map_control" onclick="zoom_out();">
+            <img src="assets/js/img/zoom-minus-mini.png" />
+        </div>
+        <div id="">&nbsp;</div>
+        <div id="panel" class="olControlPanZoom olControlEditingToolbar"></div>
+        </div>
+        </div><!-- .help_tab -->
+        <!--div class="clearfix">&nbsp;</div-->
+
+    	<div id="tags"></div>
+        <p id="shortdesc"></p>
+		<div id="map" class="smallmap" style="">
+		<div id="loading_queue_message" style="width:60%;height:100%;text-align:left"><h3>Welcome to the Apiary Project<br><br>Loading your queue...</h3>
+		</div><!--loading_queue_message-->
+		</div><!--map-->
+		<div id="docs"></div>
+    </div><!-- step1_section -->
+    <div id="step2_section">
+        <div class="help_tab floatright" onclick="open_popup('help_transcribe_main.html');"><span>?</span></div><!-- .help_tab -->
+        <h3>Transcribe</h3>
+        <div id="roi_transcribe_image"><!--img src="assets/img/roi_full.png" width=300px /--></div>
+    </div><!-- step2_section -->
+    <div id="step3_section">
+        <div id="parse_tab_nav" class="tab1">
+        <div class="tab_nav">
+        <ul class="breadcrumbs">
+        <li class="tab1 first" onclick="select_tab('parse_tab_nav','tab1','parse_tab1_section');">Text<span></span></li>
+        <li class="tab2" onclick="select_tab('parse_tab_nav','tab2','parse_tab2_section');">Image<span></span></li>
+        <li class="info info2 last" onclick="open_popup('help_parse.html');">?<span></span></li>
+        </ul>
+        <span>&nbsp;</span>
+        </div>
+        <div id="parse_tab1_section" class="tab_section center-layout" style="text-align:left;padding-left:20px;">
+            <div class="roundedcornr_ltgray" id="parse_tab_text_container">
+            <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr" id="parse_tab1_instructions">
+                    Highlight the text you wish to parse then right-click and select the desired element from the menu.
+            <div class="clearfix"></div>
+            </div></div></div></div></div></div></div></div>
+            </div><!-- .roundedcornr_ltgray -->
+
+            <div class="roundedcornr_ltgray" id="parse_tab_text_content_container">
+            <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr" id="parsecontent">
+                <div id="parse_tab_text_content" class="parse_tab_text_content" onclick="">
+
+                    <h3>Nothing selected yet</h3>
+                </div>
+            </div></div></div></div></div></div></div></div>
+            </div><!-- .roundedcornr_ltgray -->
+        </div>
+        <div id="parse_tab2_section" class="tab_section">
+            <h3>Image content</h3>
+        </div>
+        </div> <!-- #parse_tab_nav -->
+    </div><!-- step3_section -->
+</div><!-- #center-center -->
+<!--div id="center-south">
+    <img src="assets/img/specimen_current.jpg" style="margin-top:3px;"/>
+</div--><!-- #center-south -->
+
+<div id="tag_container">
+</div>
+{literal}
+<script type="text/javascript">
+
+	if(!window.Kolich){
+		Kolich = {};
+	}
+
+	Kolich.Selector = {};
+	// getSelected() was borrowed from CodeToad at
+	// http://www.codetoad.com/javascript_get_selected_text.asp
+	Kolich.Selector.getSelected = function(){
+		var t = '';
+		if(window.getSelection){
+			t = window.getSelection();
+		}else if(document.getSelection){
+			t = document.getSelection();
+		}else if(document.selection){
+			t = document.selection.createRange().text;
+		}
+   		//console.log('focusNode:'+t.focusNode.nodeValue+' anchorNode:'+t.anchorNode.nodeValue);
+		if ( t.focusNode.nodeValue == t.anchorNode.nodeValue && t.focusOffset == t.anchorOffset )
+		{
+		    parent_text_offset = 0;
+		    parent_text_element = null;
+		}
+		else if ( t.focusNode.nodeValue == t.anchorNode.nodeValue )
+		{
+   		    parent_text_element = $.trim(t.focusNode.nodeValue);
+		    if ( t.focusOffset < t.anchorOffset )
+		    {
+    		    parent_text_offset = t.focusOffset - 2;
+    		}
+    		else
+    		{
+    		    parent_text_offset = t.anchorOffset - 2;
+    		}
+    		if ( parent_text_offset < 0 )
+    		    parent_text_offset == 0;
+		}
+   		//console.log('anchorOffset:'+t.anchorOffset+' focusOffset:'+t.focusOffset+' parent_text_offset:'+parent_text_offset);
+   		//console.log(t);
+   		current_selection = t;
+		return jQuery.trim(t);
+	}
+	var previous_selected_text;
+	var current_text_selection = "";
+	var parent_text_element = "";
+	var previous_markup = "";
+	var selected_class = '';
+	var current_id = 1;
+	var lastClickType = '';
+	var parse_type_string = '';
+	var parent_text_offset = 0;
+	var current_selection = null;
+
+	Kolich.Selector.mouseup = function(e)
+	{
+		var target_string = ''+$('#parse_tab_text_content').html();
+		var st = ''+Kolich.Selector.getSelected();
+		var clickType = 0;
+        if (navigator.appName=="Netscape") clickType=e.which;
+        else clickType=event.button;
+		if(st.length > 0)
+		{
+		    current_text_selection = st;
+		    //console.log('parent_text_element='+parent_text_element);
+	        unselect();
+		}
+		else if (st.length == 0 && clickType == 1 && lastClickType == 1)
+	    {
+	        unselect();
+	    }
+	    lastClickType = clickType;
+	}
+
+	$(document).ready(function(){
+		$('#parse_tab_text_content_container').bind("mouseup", Kolich.Selector.mouseup);
+	});
+
+	function set_parse_type(parse_type)
+	{
+	    // Hide the dropdown menu in case it is covering the selected text.
+	    $('ul.sf-menu').hideSuperfishUl();
+	    $('.sf-menu li ul').hide();
+
+	    // Get the class of the last section that was clicked on by the user.
+	    var selected_class = $('.selected_section').attr('class');
+	    if ( selected_class != undefined )
+    	    selected_class = selected_class.replace(' selected_section','');
+
+    	// Check to see if we are dealing with a section that has already been classified.
+	    if ( selected_class != undefined && selected_class != '' )
+	    {
+	        $('.selected_section').addClass(parse_type);
+	        text_selection = $('.selected_section').html();
+        	//$('#'+parse_type).html(text_selection);
+        	refresh_tree_element(parse_type);
+	        $('.selected_section').removeClass(selected_class);
+      	    $('#'+selected_class).html("");
+	    }
+	    else
+        {
+            // If the user has manually selected some text, then put a span around it and update the treeview item.
+            if ( current_text_selection != "" )
+            {
+                //$('.'+parse_type).removeClass(parse_type);
+            	var content_string = $('#parse_tab_text_content').html();
+       		    current_text_selection = current_text_selection.replace('&','&amp;');
+        	    var new_text = '<span id="span'+current_id+'" class="'+parse_type+' selected_section" onclick="select(\'#span'+current_id+'\');">'+current_text_selection+'</span>';
+        	    ++current_id;
+
+        	    var pos = 0;
+        	    if ( parent_text_element != '' )
+        	    {
+        	    //    pos = content_string.indexOf(parent_text_element)+parent_text_offset;
+        	        pos = content_string.indexOf(parent_text_element);
+        	        first_part = content_string.substring(0,pos);
+        	        second_part = content_string.substring(pos);
+        	        second_part = second_part.replace(current_text_selection,new_text);
+        	        content_string = first_part+second_part;
+        	    }
+        	    else
+            		content_string = content_string.replace(current_text_selection,new_text);
+
+        	    previous_markup = new_text;
+        	    $('#parse_tab_text_content').html(content_string);
+        	    var text_selection = current_text_selection.replace('&amp;','&');
+        	    refresh_tree_element(parse_type);
+        	    current_text_selection = "";
+        	}
+    	}
+	    $('ul.sf-menu').hideSuperfishUl();
+	    return false;
+	}
+
+    function refresh_tree_element(parse_type)
+    {
+	    parse_type_string = '';
+	    $('.'+parse_type).each( function(index, Element){
+	        parse_type_string += ' '+$(Element).html();
+	    });
+	    $('#'+parse_type).html(parse_type_string);
+    }
+
+	function select(target)
+	{
+        $('.selected_section').removeClass('selected_section');
+        $(target).addClass('selected_section');
+	}
+
+/*	function change(target)
+	{
+	    var target_class = $(target).attr('class');
+	    if ( target_class == "parse_tab_text_content" )
+	    {
+    		var target_string = ''+$('#parse_tab_text_content').html();
+    		if ( previous_selected_text != undefined )
+    		{
+        	    if ( previous_selected_text.length > 3 )
+        	    {
+        	        var st = ''+Kolich.Selector.getSelected();
+        	        if ( st.length == 0 )
+        	        {
+            	        //unselect everything
+            	        $('.undefined').html('');
+                        $('.selected_section').removeClass('selected_section');
+            	        target_string = ''+$('#parse_tab_text_content').html();
+            	        undef_markup = '<span class="undefined" onclick="change(this);"></span>';
+            			target_string = target_string.replace(undef_markup,previous_selected_text);
+            	        $('#parse_tab_text_content').html(target_string);
+            	    }
+        	    }
+        	}
+  	    }
+  	    else
+        {
+            selected_class = target_class;
+            $('.selected_section').removeClass('selected_section');
+            $('.'+selected_class).addClass('selected_section');
+        }
+	}
+*/
+	function unselect()
+	{
+	    $('.selected_section').removeClass('selected_section');
+	}
+
+	function remove_span()
+	{
+   	    var selected_class = $('.selected_section').attr('class');
+	    if ( selected_class != undefined )
+	    {
+    	    selected_class = selected_class.replace(' selected_section','');
+            $('#tag_'+selected_class).replaceWith('');
+    	}
+
+        current_text_selection = $('.selected_section').html();
+        $('.selected_section').replaceWith(current_text_selection);
+	}
+
+	function adjust_center_overflow()
+	{
+	    var south_height = $('.ui-layout-south').height();
+	    var north_height = $('.ui-layout-north').height();
+	    var center_height = $('.ui-layout-center').height();
+	    var south_resizer_height = $('.ui-layout-resizer-south').height();
+	    var north_resizer_height = $('.ui-layout-resizer-north').height();
+	    var document_height = $(document).height();
+	    var left_over = document_height - (south_height + north_height + south_resizer_height + north_resizer_height);
+	    //var div_position = $('#parse_tab1_section').position();
+	    $('#step1_section').height(left_over-5);
+	    $('#step2_section').height(left_over-5);
+	    $('#step3_section').height(left_over-5);
+	    myLayout.allowOverflow("center");
+	}
+
+	function get_largest_span_id()
+	{
+	    var highest_number = 0;
+	    $('#parse_tab_text_content span').each( function(index, Element){
+            var span_num = $(Element).attr('id').replace('span','');
+            if ( span_num > highest_number )
+                highest_number = parseInt(span_num);
+
+	        //parse_type_string += ' '+$(Element).html();
+	    });
+	    current_id = highest_number + 1;
+	}
+
+</script>
+
+<style type="text/css">
+
+.whoandwhen,
+.recordedBy,
+.recordNumber,
+.additionalRecordNumbers,
+.verbatimEventDate,
+.identifiedBy,
+.eventRemarks,
+.verbatimDateIdentified,
+.verbatimDateAnnotated,
+.annotatedBy{
+    background: #f00;
+}
+
+.what,
+.vernacularName,
+.taxonRemarks,
+.datasetName,
+.otherCatalogNumbers,
+.catalogNumber,
+.collectionCode,
+.previousOwners,
+.occurrenceRemarks,
+.identificationRemarks,
+.verbatimScientificName,
+.verbatimHigherClassification,
+.annotationRemarks,
+.primaryLabelFooter{
+    background: #00f;
+    color:#fff;
+}
+
+.where,
+.verbatimLocality,
+.verbatimElevation,
+.verbatimCoordinates{
+    background: #0f0;
+}
+
+.undefined{
+    background: #aaa;
+}
+
+.selected_section{
+    border: 2px solid #fff;
+}
+
+.unconfirmed{
+    border: 2px solid #FFDD44;
+    padding-right:16px;
+    background: url(assets/img/unconfirmed.png) 100% 0 no-repeat;
+}
+
+
+	</style>
+{/literal}

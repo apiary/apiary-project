@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- a template for specifying elements and grouping for parsing elements for ROIs  -->
+
+<!-- each ui element represents a set of groups and elements for a particular parse level and ROI type -->
+<!-- the elements and groups will be displayed in the order as they appear in this template file -->
+<apiary_ui>
+    <ui id="parse1-primaryLabel" parseLevel="1" ROItype="primaryLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Verbatim Collector(s)" name="recordedBy" description="A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence (collecting the specimen). The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first." dataType="string" inputType="text" element="dwc:recordedBy">
+            </item>
+            <item label="Collector Number" name="recordNumber" description="An identifier given to the Occurrence at the time it was recorded. Often serves as a link between field notes and an Occurrence record, such as a specimen collector’s number." inputType="text" element="dwc:recordNumber">
+            </item>
+            <item label="Verbatim Collection Date" name="verbatimEventDate" description="The verbatim original representation of the date and time information for an Event." dataType="date" inputType="text" element="dwc:verbatimEventDate">
+            </item>
+            <item label="Verbatim Determiner(s)" name="identifiedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject." dataType="string" inputType="text" element="dwc:identifiedBy">
+            </item>
+            <item label="Event Remarks" name="eventRemarks" description="Comments or notes about the Event" dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:eventRemarks">
+            </item>
+            <item label="Verbatim Identification Date" name="verbatimDateIdentified" description="The verbatim date of identification noted on a label." dataType="date" inputType="text" element="ap:verbatimDateIdentified">
+            </item>
+            <item label="Verbatim Annotation Date" name="verbatimDateAnnotated" description="The verbatim date of the creation of the annotation." dataType="date" inputType="text" element="ap:verbatimDateAnnotated">
+            </item>
+            <item label="Verbatim Annotator(s)" name="annotatedBy" description="A list (concatenated and separated) of names of people, groups, software agents, or organizations who provided the annotation.  The verbatim text identifying who provided the annotation." dataType="string" inputType="text" element="ap:annotatedBy">
+            </item>
+        </group>
+        <group id="group2" label="What">
+            <item label="Common Name" name="vernacularName" description="A common or vernacular name." dataType="string" inputType="text" element="dwc:vernacularName">
+            </item>
+            <item label="Taxon Remarks" name="taxonRemarks" description="Comments or notes about the taxon or name." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:taxonRemarks">
+            </item>
+            <item label="Other Barcode/Accession Numbers" name="otherCatalogNumbers" description="A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection." dataType="string" inputType="text" element="dwc:otherCatalogNumbers">
+            </item>
+            <item label="Verbatim Field Notes" name="occurrenceRemarks" description="Comments or notes about the Occurrence." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:occurrenceRemarks">
+            </item>
+            <item label="Identification Remarks" name="identificationRemarks" description="Comments or notes about the Identification." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:identificationRemarks">
+            </item>
+            <item label="Event Field Notes" name="fieldNotes" description="One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:fieldNotes">
+            </item>
+            <item label="Common Name Language" name="vernacularNameLanguage" description="The language in which the common name is found to be attributed to." dataType="string" inputType="text" element="ap:vernacularNameLanguage">
+            </item>
+            <item label="Verbatim Scientific Name" name="verbatimScientificName" description="The full scientific name text string as it appears on the specimen label, with authorship and date information if shown." dataType="string" inputType="text" element="ap:verbatimScientificName">
+            </item>
+            <item label="Verbatim Higher Classification" name="verbatimHigherClassification" description="Scientific Name on Image(Please contact expert)" dataType="string" inputType="text" element="ap:verbatimHigherClassification">
+            </item>
+            <item label="Primary Label Footer" name="primaryLabelFooter" description="The verbatim text of the primary specimen label footer." dataType="string" rows='2' cols='23' inputType="textarea" element="ap:primaryLableFooter">
+            </item>
+            <item label="Primary Label Header" name="primaryLabelHeader" description="The verbatim text of the primary specimen label header." dataType="string" rows='2' cols='23' inputType="textarea" element="ap:primaryLabelHeader">
+            </item>
+            <item label="Annotation Text" name="annotationRemarks" description="The verbatim wording on a specimen annotation." dataType="string" rows='2' cols='23' inputType="textarea" element="ap:annotationRemarks">
+            </item>
+        </group>
+        <group id="group3" label="Where">
+            <item label="Verbatim Locality" name="verbatimLocality" description="The original textual description of the place." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:verbatimLocality">
+            </item>
+            <item label="Verbatim Elevation" name="verbatimElevation" description="The original description of the elevation (altitude, usually above sea level) of the Location." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:verbatimElevation">
+            </item>
+            <item label="Verbtim Coordinates" name="verbatimCoordinates" description="The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:verbatimCoordinates">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse1-annotationLabel" parseLevel="1" ROItype="annotationLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Verbatim Determiners" name="identifiedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject." dataType="string" inputType="text" element="dwc:identifiedBy">
+            </item>
+            <item label="Verbatim Annotators" name="annotatedBy" description="A list (concatenated and separated) of names of people, groups, software agents, or organizations who provided the annotation.  The verbatim text identifying who provided the annotation." dataType="string" inputType="text" element="ap:annotatedBy">
+            </item>
+            <item label="Verbatim Identification Date" name="verbatimDateIdentified" description="The verbatim date of identification noted on a label." dataType="date" inputType="text" element="ap:verbatimDateIdentified">
+            </item>
+            <item label="Verbatim Annotation Date" name="verbatimDateAnnotated" description="The verbatim date of the creation of the annotation." dataType="date" inputType="text" element="ap:verbatimDateAnnotated">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Common Name" name="vernacularName" description="The language in which the common name is found to be attributed to." dataType="string" inputType="text" element="dwc:vernacularName">
+            </item>
+            <item label="Taxon Remarks" name="taxonRemarks" description="Comments or notes about the taxon or name." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:taxonRemarks">
+            </item>
+            <item label="Identification Remarks" name="identificationRemarks" description="Comments or notes about the Identification." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:identificationRemarks">
+            </item>
+            <item label="Common Name Language" name="vernacularNameLanguage" description="The language in which the common name is found to be attributed to." dataType="string" inputType="text" element="ap:vernacularNameLanguage">
+            </item>
+            <item label="Verbatim Scientific Name" name="verbatimScientificName" description="The full scientific name text string as it appears on the specimen label, with authorship and date information if shown." dataType="string" inputType="text" element="ap:verbatimScientificName">
+            </item>
+            <item label="Verbatim Higher Classification" name="verbatimHigherClassfication" description="" dataType="string" inputType="text" element="ap:verbatimHigherClassfication">
+            </item>
+            <item label="Annotation Text" name="annotationRemarks" description="The verbatim wording on a specimen annotation." dataType="string" rows='2' cols='23' inputType="textarea" element="ap:annotationRemarks">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse1-barcodeLabel" parseLevel="1" ROItype="barcodeLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Other Barcode/Accession Numbers" name="otherCatalogNumbers" description="A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection." dataType="string" inputType="text" element="dwc:otherCatalogNumbers">
+            </item>
+            <item label="Barcode Number" name="catalogNumber" description="An identifier (preferably unique) for the record within the data set or collection." dataType="string" inputType="text" element="dwc:catalogNumber">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse1-noLabel" parseLevel="1" ROItype="noLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Taxon Remarks" name="taxonRemarks" description="Comments or notes about the taxon or name." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:taxonRemarks">
+            </item>
+            <item label="Special Collection/Project Name" name="datasetName" description="The name identifying the data set from which the record was derived." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:datasetName">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse1-stampLabel" parseLevel="1" ROItype="stampLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Herbarium Code" name="collectionCode" description="The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived." dataType="string" inputType="text" element="dwc:collectionCode">
+            </item>
+            <item label="Previous Owning Institutions" name="previousOwners" description="Institution Codes representing previous ownership of specimen." dataType="string" inputType="text" element="ap:previousOwners">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Other Barcode/Accession Numbers" name="otherCatalogNumbers" description="A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same Occurrence, whether in the current or any other data set or collection." dataType="string" inputType="text" element="dwc:otherCatalogNumbers">
+            </item>
+            <item label="Special Collection/Project Name" name="datasetName" description="The name identifying the data set from which the record was derived." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:datasetName">
+            </item>
+        </group>
+    </ui>
+    
+    <ui id="parse2-primaryLabel" parseLevel="2" ROItype="primaryLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Measurement Determined By" name="measurementDeterminedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact." dataType="string" inputType="text" element="dwc:measurementDeterminedBy">
+            </item>
+            <item label="Measurement Determined Date" name="measurementDeterminedDate" description="The date on which the the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." dataType="date" inputType="text" element="dwc:measurementDeterminedDate">
+            </item>
+            <item label="Standardized Collection Date" name="eventDate" description="The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." dataType="date" inputType="text" element="dwc:eventDate">
+            </item>
+            <item label="Standardized Annotation Date" name="dateIdentified" description="The date on which the subject was identified as representing the Taxon. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." dataType="date" inputType="text" element="dwc:dateIdentified">
+            </item>
+            <item label="Standardized Primary Collector" name="primaryRecorder" description="The standardized name of the Primary Recorder (primary collector of the specimen)." dataType="string" inputType="text" element="ap:primaryRecorder">
+            </item>
+            <item label="Standardized Primary Determiner" name="primaryIdentifier" description="The standardized name of the Primary Identifier (primary determiner of the specimen)." dataType="string" inputType="text" element="ap:primaryIdentifier">
+            </item>
+            <item label="Standardized Primary Annotator" name="primaryAnnotator" description="The authorized name of the Primary Annotator (located on the primary label or annotation label) verified using the Harvard University Herbaria Index of Botanists when possible." dataType="string" inputType="text" element="ap:primaryAnnotator">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Individual Identifier" name="individualID" description="An identifier for an individual or named group of individual organisms represented in the Occurrence. Meant to accommodate resampling of the same individual or group for monitoring purposes. May be a global unique identifier or an identifier specific to a data set." dataType="string" inputType="text" element="dwc:individualID">
+            </item>
+            <item label="Verbatim Taxon Rank" name="verbatimTaxonRank" description="The taxonomic rank of the most specific name in the scientificName as it appears in the original record." dataType="string" inputType="text" element="dwc:verbatimTaxonRank">
+            </item>
+            <item label="Taxon Rank" name="taxonRank" description="The taxonomic rank of the most specific name in the scientificName. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:taxonRank">
+            </item>
+            <item label="Subgenus" name="subgenus" description="The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion." dataType="string" inputType="text" element="dwc:subgenus">
+            </item>
+            <item label="Sex" name="sex" description="The sex of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="list" options="unknowable | undetermined | male | female | hermaphrodite" element="dwc:sex">
+            </item>
+            <item label="Life Stage" name="lifeStage" description="The age class or life stage of the biological individual(s) at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:lifeStage">
+            </item>
+            <item label="Authorship" name="scientificNameAuthorship" description="The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode." dataType="string" inputType="text" element="dwc:scientificNameAuthorship">
+            </item>
+            <item label="Phenology" name="reproductiveCondition" description="The reproductive condition of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:reproductiveCondition">
+            </item>
+            <item label="Abundance" name="occurrenceStatus" description="A statement about the presence or absence of a Taxon at a Location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="list" options="common | irregular | rare" element="dwc:occurrenceStatus">
+            </item>
+            <item label="Measurement Value" name="measurementValue" description="The value of the measurement, fact, characteristic, or assertion." dataType="string" inputType="text" element="dwc:measurementValue">
+            </item>
+            <item label="Measurement Unit" name="measurementUnit" description="The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI)." dataType="string" inputType="text" element="dwc:measurementUnit">
+            </item>
+            <item label="Measurement Type" name="measurementType" description="The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:measurementType">
+            </item>
+            <item label="Measurement Remarks" name="measurementRemarks" description="Comments or notes accompanying the MeasurementOrFact." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:measurementRemarks">
+            </item>
+            <item label="Measurement Method" name="measurementMethod" description="" dataType="string" inputType="text" element="dwc:measurementMethod">
+            </item>
+            <item label="Measurement Accurary" name="measurementAccuracy" description="The description of the potential error associated with the measurementValue." dataType="string" inputType="text" element="dwc:measurementAccuracy">
+            </item>
+            <item label="Infraspecifc Epithet" name="infraspecificEpithet" description="The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation." dataType="string" inputType="text" element="dwc:infraspecificEpithet">
+            </item>
+            <item label="Number of Individuals" name="dindividualCount" description="The number of individuals represented present at the time of the Occurrence." dataType="string" inputType="text" element="dwc:individualCount">
+            </item>
+            <item label="Identification References" name="identificationReferences" description="A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:identificationReferences">
+            </item>
+            "
+            <item label="Identification Qualifier" name="identificationQualifier" description="A brief phrase or a standard term (cf., aff.) to express the determiner's doubts about the Identification." dataType="string" inputType="text" element="dwc:identificationQualifier">
+            </item>
+            <item label="Habitat" name="habitat" description="A category or description of the habitat in which the Event occurred (includes soil information)" dataType="string" inputType="text" element="dwc:habitat">
+            </item>
+            <item label="Genus" name="genus" description="The full scientific name of the genus in which the taxon is classified." dataType="string" inputType="text" element="dwc:genus">
+            </item>
+            <item label="Specific Epithet" name="specificEpithet" description="The name of the first or species epithet of the scientificName." dataType="string" inputType="text" element="dwc:specificEpithet">
+            </item>
+            <item label="Family" name="family" description="" dataType="string" inputType="text" element="dwc:family">
+            </item>
+            <item label="Establishment" name="establishmentMeans" description="The process by which the biological individual(s) represented in the Occurrence became established at the location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:establishmentMeans">
+            </item>
+            <item label="Dynamic Properties" name="dynamicProperties" description="The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record." dataType="string" inputType="text" element="dwc:dynamicProperties">
+            </item>
+            >
+            <item label="Habit" name="behavior" description="A description of the behavior shown by the subject at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:behavior">
+            </item>
+            <item label="Associated Taxa" name="associatedTaxa" description="A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence." dataType="string" inputType="text" element="dwc:associatedTaxa">
+            </item>
+            <item label="Associated Genetic Sequences" name="associatedSequences" description="A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence." dataType="string" inputType="text" element="dwc:associatedSequences">
+            </item>
+            <item label="Associated References" name="associatedReferences" description="A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence." dataType="string" inputType="text" element="dwc:associatedReferences">
+            </item>
+            <item label="Other Annotations" name="assciatedMedia" description="" dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:assciatedMedia">
+            </item>
+            <item label="Annotation Type" name="basisOfAnnotation" description="The specific nature of the annotation record which indicates the type of annotation" dataType="string" inputType="list" options="Identification | Typification | Accession | Georeference |HumanObservation | MachineObservation | Unknown" element="ap:basisOfAnnotation">
+            </item>
+            <item label="Annotation References" name="annotationReferences" description="A list (concatenated and separated) of references (publication, global unique identifier, URI) referred to in the annotation." dataType="string" rows='2' cols='23' inputType="textarea" element="ap:annotationReferences">
+            </item>
+        </group>
+        <group id="group3" label="where" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="State/Province" name="stateProvince" description="The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs." dataType="string" inputType="text" element="dwc:stateProvince">
+            </item>
+            <item label="County/Department" name="county" description="The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs." dataType="string" inputType="text" element="dwc:county">
+            </item>
+            <item label="Country ISO Code" name="countryCode" description="The standard code for the country in which the Location occurs. Recommended best practice is to use ISO 3166-1-alpha-2 country codes." dataType="string" inputType="text" element="dwc:countryCode">
+            </item>
+            <item label="Country" name="country" description="The name of the country or major administrative unit in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names." dataType="string" inputType="text" element="dwc:country">
+            </item>
+            <item label="Municipality" name="municipality" description="The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location." dataType="string" inputType="text" element="dwc:municipality">
+            </item>
+            <item label="Location Remarks" name="locationRemarks" description="Comments or notes about the Location." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:locationRemarks">
+            </item>
+            <item label="Locality" name="locality" description="The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description." dataType="string" inputType="text" element="dwc:locality">
+            </item>
+            <item label="Minimum Elevation in Meters" name="minumumElevationInMeters" description="The lower limit of the range of elevation (altitude, usually above sea level), in meters." dataType="string" inputType="text" element="dwc:minumumElevationInMeters">
+            </item>
+            <item label="Maximum Elevation in Meters" name="maximumElevationInmeters" description="The upper limit of the range of elevation (altitude, usually above sea level), in meters." dataType="string" inputType="text" element="dwc:maximumElevationInmeters">
+            </item>
+            <item label="Verbatim Spatial Reference System" name="verbatimSRS" description="The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:verbatimSRS">
+            </item>
+            <item label="Verbatim Longitude" name="verbatimLatitude" description="The verbatim original latitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem." dataType="string" inputType="text" element="dwc:verbatimLongitude">
+            </item>
+            <item label="Verbatim Latitude" name="verbatimLongitude" description="The verbatim original longitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem." dataType="string" inputType="text" element="dwc:verbatimLatitude">
+            </item>
+            <item label="Verbatim Coordinate System" name="verbatimCoordinateSystem" description="The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:verbatimCoordinateSystem">
+            </item>
+            <item label="Geological Member" name="member" description="The full name of the lithostratigraphic member from which the cataloged item was collected." dataType="string" inputType="text" element="">
+            </item>
+            <item label="Water Body" name="waterBody" description="The name of the water body in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names." dataType="string" inputType="text" element="dwc:waterBody">
+            </item>
+            <item label="Island Group" name="islandGroup" description="The name of the island on or near which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names." dataType="string" inputType="text" element="dwc:islandGroup">
+            </item>
+            <item label="Island" name="island" description="The name of the island group in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names." dataType="string" inputType="text" element="dwc:island">
+            </item>
+            <item label="Geological Group" name="group" description="The full name of the lithostratigraphic group from which the cataloged item was collected." dataType="string" inputType="text" element="dwc:group">
+            </item>
+            <item label="Geodetic Datum" name="geodeticDatum" description="The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value unknown." dataType="string" inputType="text" element="dwc:geodeticDatum">
+            </item>
+            <item label="Geological Formation" name="formation" description="The full name of the lithostratigraphic formation from which the cataloged item was collected." dataType="string" inputType="text" element="dwc:formation">
+            </item>
+            <item label="Geological Bed" name="bed" description="The full name of the lithostratigraphic bed from which the cataloged item was collected." dataType="string" inputType="text" element="dwc:bed">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse2-annotationLabel" parseLevel="2" ROItype="annotationLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Measurement Determined By" name="measurementDeterminedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact." dataType="string" inputType="text" element="dwc:measurementDeterminedBy">
+            </item>
+            <item label="Measurement Determined Date" name="measurementDeterminedDate" description="The date on which the the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." dataType="date" inputType="text" element="dwc:measurementDeterminedDate">
+            </item>
+            <item label="Standardized Annotation Date" name="dateIdentified" description="The date on which the subject was identified as representing the Taxon. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." dataType="date" inputType="text" element="dwc:dateIdentified">
+            </item>
+            <item label="Standardized Primary Determiner" name="primaryIdentifier" description="The standardized name of the Primary Identifier (primary determiner of the specimen)." dataType="string" inputType="text" element="ap:primaryIdentifier">
+            </item>
+            <item label="Standardized Primary Annotator" name="primaryAnnotator" description="The authorized name of the Primary Annotator (located on the primary label or annotation label) verified using the Harvard University Herbaria Index of Botanists when possible." dataType="string" inputType="text" element="ap:primaryAnnotator">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Individual Identifier" name="individualID" description="An identifier for an individual or named group of individual organisms represented in the Occurrence. Meant to accommodate resampling of the same individual or group for monitoring purposes. May be a global unique identifier or an identifier specific to a data set." dataType="string" inputType="text" element="dwc:individualID">
+            </item>
+            <item label="Verbatim Taxon Rank" name="verbatimTaxonRank" description="The taxonomic rank of the most specific name in the scientificName as it appears in the original record." dataType="string" inputType="text" element="dwc:verbatimTaxonRank">
+            </item>
+            <item label="Taxon Rank" name="taxonRank" description="The taxonomic rank of the most specific name in the scientificName. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:taxonRank">
+            </item>
+            <item label="Subgenus" name="subgenus" description="The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion." dataType="string" inputType="text" element="dwc:subgenus">
+            </item>
+            <item label="Sex" name="sex" description="The sex of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="list" options="unknowable | undetermined | male | female | hermaphrodite" element="dwc:sex">
+            </item>
+            <item label="Life Stage" name="lifeStage" description="The age class or life stage of the biological individual(s) at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:lifeStage">
+            </item>
+            <item label="Authorship" name="scientificNameAuthorship" description="The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode." dataType="string" inputType="text" element="dwc:scientificNameAuthorship">
+            </item>
+            <item label="Phenology" name="reproductiveCondition" description="The reproductive condition of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:reproductiveCondition">
+            </item>
+            <item label="Abundance" name="occurrenceStatus" description="A statement about the presence or absence of a Taxon at a Location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="list" options="common | irregular | rare" element="dwc:occurrenceStatus">
+            </item>
+            <item label="Measurement Value" name="measurementValue" description="The value of the measurement, fact, characteristic, or assertion." dataType="string" inputType="text" element="dwc:measurementValue">
+            </item>
+            <item label="Measurement Unit" name="measurementUnit" description="The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI)." dataType="string" inputType="text" element="dwc:measurementUnit">
+            </item>
+            <item label="Measurement Type" name="measurementType" description="The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:measurementType">
+            </item>
+            <item label="Measurement Remarks" name="measurementRemarks" description="Comments or notes accompanying the MeasurementOrFact." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:measurementRemarks">
+            </item>
+            <item label="Measurement Method" name="measurementMethod" description="" dataType="string" inputType="text" element="dwc:measurementMethod">
+            </item>
+            <item label="Measurement Accurary" name="measurementAccuracy" description="The description of the potential error associated with the measurementValue." dataType="string" inputType="text" element="dwc:measurementAccuracy">
+            </item>
+            <item label="Infraspecifc Epithet" name="infraspecificEpithet" description="The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation." dataType="string" inputType="text" element="dwc:infraspecificEpithet">
+            </item>
+            <item label="Number of Individuals" name="dindividualCount" description="The number of individuals represented present at the time of the Occurrence." dataType="string" inputType="text" element="dwc:individualCount">
+            </item>
+            <item label="Identification References" name="identificationReferences" description="A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:identificationReferences">
+            </item>
+            "
+            <item label="Identification Qualifier" name="identificationQualifier" description="A brief phrase or a standard term (cf., aff.) to express the determiner's doubts about the Identification." dataType="string" inputType="text" element="dwc:identificationQualifier">
+            </item>
+            <item label="Genus" name="genus" description="The full scientific name of the genus in which the taxon is classified." dataType="string" inputType="text" element="dwc:genus">
+            </item>
+            <item label="Specific Epithet" name="specificEpithet" description="The name of the first or species epithet of the scientificName." dataType="string" inputType="text" element="dwc:specificEpithet">
+            </item>
+            <item label="Family" name="family" description="" dataType="string" inputType="text" element="dwc:family">
+            </item>
+            <item label="Establishment" name="establishmentMeans" description="The process by which the biological individual(s) represented in the Occurrence became established at the location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:establishmentMeans">
+            </item>
+            <item label="Dynamic Properties" name="dynamicProperties" description="The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record." dataType="string" inputType="text" element="dwc:dynamicProperties">
+            </item>
+            >
+            <item label="Habit" name="behavior" description="A description of the behavior shown by the subject at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:behavior">
+            </item>
+            <item label="Associated Genetic Sequences" name="associatedSequences" description="A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence." dataType="string" inputType="text" element="dwc:associatedSequences">
+            </item>
+            <item label="Associated References" name="associatedReferences" description="A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence." dataType="string" inputType="text" element="dwc:associatedReferences">
+            </item>
+            <item label="Other Annotations" name="assciatedMedia" description="" dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:assciatedMedia">
+            </item>
+            <item label="Annotation Type" name="basisOfAnnotation" description="The specific nature of the annotation record which indicates the type of annotation" dataType="string" inputType="list" options="Identification | Typification | Accession | Georeference |HumanObservation | MachineObservation | Unknown" element="ap:basisOfAnnotation">
+            </item>
+        </group>
+        <group id="group3" label="where" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Verbatim Spatial Reference System" name="verbatimSRS" description="The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:verbatimSRS">
+            </item>
+            <item label="Verbatim Longitude" name="verbatimLatitude" description="The verbatim original latitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem." dataType="string" inputType="text" element="dwc:verbatimLongitude">
+            </item>
+            <item label="Verbatim Latitude" name="verbatimLongitude" description="The verbatim original longitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem." dataType="string" inputType="text" element="dwc:verbatimLatitude">
+            </item>
+            <item label="Verbatim Coordinate System" name="verbatimCoordinateSystem" description="The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:verbatimCoordinateSystem">
+            </item>
+            <item label="Geodetic Datum" name="geodeticDatum" description="The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value unknown." dataType="string" inputType="text" element="dwc:geodeticDatum">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse2-noLabel" parseLevel="2" ROItype="noLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Standardized Annotation Date" name="dateIdentified" description="The date on which the subject was identified as representing the Taxon. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." dataType="date" inputType="text" element="dwc:dateIdentified">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Annotation Type" name="basisOfAnnotation" description="The specific nature of the annotation record which indicates the type of annotation" dataType="string" inputType="list" options="Identification | Typification | Accession | Georeference |HumanObservation | MachineObservation | Unknown" element="ap:basisOfAnnotation">
+            </item>
+        </group>
+        <group id="group3" label="where" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Continent" name="continent" description="The name of the continent in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names or the ISO 3166 Continent code" dataType="string" inputType="list" options="Africa | Antarctica | Asia | Australia | Europe | North America | South America" element="dwc:Continent">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse3-primaryLabel" parseLevel="3" ROItype="primaryLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Georeferenced By" name="georeferencedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) the Location." dataType="string" inputType="text" element="dwc:georeferencedBy">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Taxonomic Status" name="taxonomicStatus" description="The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the expert’s opinion. " dataType="string" inputType="list" options="accepted | invalid | synonym | homotypic synonym | heterotypic synonym | misapplied name" element="dwc:taxonomicStatus">
+            </item>
+            <item label="Basionym" name="originalNameUsage" description="The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names." dataType="string" inputType="text" element="dwc:originalNameUsage">
+            </item>
+            <item label="Nomenclatural Status" name="nomenclaturalStatus" description="The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion." dataType="string" inputType="text" element="dwc:nomenclaturalStatus">
+            </item>
+            <item label="Protologue Publication" name="namePublishedIn" description="A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:namePublishedIn">
+            </item>
+            <item label="Disposition" name="disposition" description="The current state of a specimen with respect to the collection identified in collectionCode or collectionID. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:disposition">
+            </item>
+            <item label="Associated Records" name="dwc:associatedOccurrences" description="A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence." dataType="string" inputType="text" element="dwc:associatedOccurrences">
+            </item>
+            <item label="Type Designation" name="typeDesignation" description="Designation as a particular kind of type, indicating the subset from a set of (usually duplicate) specimens serving as the basis for the description of a taxon." dataType="string" inputType="text" element="ap:typeDesignation">
+            </item>
+            <item label="Identification Status" name="identificationStatus" description="Indicates if the associated identification is original or subsequent and current (newest) or superseded." dataType="string" inputType="list" options="original | subsequent | current" element="ap:identificationStatus">
+            </item>
+        </group>
+        <group id="group3" label="where" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Georeference Verification Status" name="georeferenceVerificationStatus" description="A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:georeferenceVerificationStatus">
+            </item>
+            <item label="Georeference Sources" name="georeferenceSources" description="A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources." dataType="string" inputType="text" element="dwc:georeferenceSources">
+            </item>
+            <item label="Georeference Remarks" name="georeferenceRemarks" description="Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:georeferenceRemarks">
+            </item>
+            <item label="Decimal Longitude" name="decimalLogitude" description="The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive." dataType="string" inputType="text" element="dwc:decimalLogitude">
+            </item>
+            <item label="Decimal Latitude" name="decimalLatitude" description="The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive." dataType="string" inputType="text" element="dwc:decimalLatitude">
+            </item>
+            <item label="Coordinate Uncertainty in Meters" name="coordinateUncertaintyInMeters" description="" dataType="string" inputType="text" element="dwc:coordinateUncertaintyInMeters">
+            </item>
+            <item label="Coordinates" name="coordinatePrecision" description="A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude." dataType="string" inputType="text" element="dwc:coordinatePrecision">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse3-annotationLabel" parseLevel="3" ROItype="annotationLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Georeferenced By" name="georeferencedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) the Location." dataType="string" inputType="text" element="dwc:georeferencedBy">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Taxonomic Status" name="taxonomicStatus" description="The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the expert’s opinion. " dataType="string" inputType="list" options="accepted | invalid | synonym | homotypic synonym | heterotypic synonym | misapplied name" element="dwc:taxonomicStatus">
+            </item>
+            <item label="Basionym" name="originalNameUsage" description="The taxon name, with authorship and date information if known, as it originally appeared when first established under the rules of the associated nomenclaturalCode. The basionym (botany) or basonym (bacteriology) of the scientificName or the senior/earlier homonym for replaced names." dataType="string" inputType="text" element="dwc:originalNameUsage">
+            </item>
+            <item label="Nomenclatural Status" name="nomenclaturalStatus" description="The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion." dataType="string" inputType="text" element="dwc:nomenclaturalStatus">
+            </item>
+            <item label="Protologue Publication" name="namePublishedIn" description="A reference for the publication in which the scientificName was originally established under the rules of the associated nomenclaturalCode." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:namePublishedIn">
+            </item>
+            <item label="Disposition" name="disposition" description="The current state of a specimen with respect to the collection identified in collectionCode or collectionID. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:disposition">
+            </item>
+            <item label="Associated Records" name="associatedOccurrences" description="A list (concatenated and separated) of identifiers of other Occurrence records and their associations to this Occurrence." dataType="string" inputType="text" element="dwc:associatedOccurrences">
+            </item>
+            <item label="Type Designation" name="typeDesignation" description="Designation as a particular kind of type, indicating the subset from a set of (usually duplicate) specimens serving as the basis for the description of a taxon." dataType="string" inputType="text" element="ap:typeDesignation">
+            </item>
+            <item label="Identification Status" name="identificationStatus" description="Indicates if the associated identification is original or subsequent and current (newest) or superseded." dataType="string" inputType="list" options="original | subsequent | current" element="ap:identificationStatus">
+            </item>
+        </group>
+        <group id="group3" label="where" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Georeference Verification Status" name="georeferenceVerificationStatus" description="A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:georeferenceVerificationStatus">
+            </item>
+            <item label="Georeference Sources" name="georeferenceSources" description="A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources." dataType="string" inputType="text" element="dwc:georeferenceSources">
+            </item>
+            <item label="Georeference Remarks" name="georeferenceRemarks" description="Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:georeferenceRemarks">
+            </item>
+            <item label="Decimal Longitude" name="decimalLogitude" description="The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive." dataType="string" inputType="text" element="dwc:decimalLogitude">
+            </item>
+            <item label="Decimal Latitude" name="decimalLatitude" description="The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive." dataType="string" inputType="text" element="dwc:decimalLatitude">
+            </item>
+            <item label="Coordinate Uncertainty in Meters" name="coordinateUncertaintyInMeters" description="" dataType="string" inputType="text" element="dwc:coordinateUncertaintyInMeters">
+            </item>
+            <item label="Coordinates" name="coordinatePrecision" description="A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude." dataType="string" inputType="text" element="dwc:coordinatePrecision">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse3-noLabel" parseLevel="3" ROItype="noLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Owning Institution Code" name="ownerInstitutionCode" description="The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record." dataType="string" inputType="text" element="dwc:ownerInstitutionCode">
+            </item>
+            <item label="Institution Code" name="institutionCode" description="The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record." dataType="string" inputType="text" element="dwc:institutionCode">
+            </item>
+            <item label="Georeferenced By" name="georeferencedBy" description="A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) the Location." dataType="string" inputType="text" element="dwc:georeferencedBy">
+            </item>
+        </group>
+        <group id="group2" label="What" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Type Status" name="typeStatus" description="A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject." dataType="string" inputType="text" element="dwc:typeStatus">
+            </item>
+            <item label="Taxonomic Status" name="taxonomicStatus" description="The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the expert’s opinion. " dataType="string" inputType="list" options="accepted | invalid | synonym | homotypic synonym | heterotypic synonym | misapplied name" element="dwc:taxonomicStatus">
+            </item>
+            <item label="Scientific Name" name="scientificName" description="The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term." dataType="string" inputType="text" element="dwc:scientificName">
+            </item>
+            <item label="Previous Identifications" name="previousIdentification" description="A list (concatenated and separated) of previous assignments of names to the Occurrence." dataType="string" inputType="text" element="dwc:previousIdentification">
+            </item>
+            <item label="Related Preparations" name="preparation" description="A list (concatenated and separated) of preparations and preservation methods for a specimen." dataType="string" inputType="text" element="dwc:preparation">
+            </item>
+            <item label="Division" name="phylum" description="The full scientific name of the order in which the taxon is classified." dataType="string" inputType="text" element="dwc:phylum">
+            </item>
+            <item label="Order" name="order" description="The full scientific name of the order in which the taxon is classified." dataType="string" inputType="text" element="dwc:order">
+            </item>
+            <item label="Nomenclatural Status" name="nomenclaturalStatus" description="The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion." dataType="string" inputType="text" element="dwc:nomenclaturalStatus">
+            </item>
+            <item label="Nomenclatural Code" name="nomenclaturalCode" description="" dataType="string" inputType="text" element="dwc:nomenclaturalCode">
+            </item>
+            <item label="Kingdom" name="kingdom" description="The full scientific name of the kingdom in which the taxon is classified." dataType="string" inputType="text" element="dwc:kingdom">
+            </item>
+            <item label="Higher Classification" name="higherClassification" description="A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record. Recommended best practice is to order the list starting with the highest rank and separating the names for each rank with a semi-colon " dataType="string" inputType="text" element="dwc:higherClassification">
+            </item>
+            <item label="Disposition" name="disposition" description="The current state of a specimen with respect to the collection identified in collectionCode or collectionID. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:disposition">
+            </item>
+            <item label="Class" name="class" description="The full scientific name of the class in which the taxon is classified." dataType="string" inputType="text" element="dwc:class">
+            </item>
+            <item label="Kind of Specimen" name="basisOfRecord" description="The specific nature of the data record - a subtype of the dcterms:type. Recommended best practice is to use a controlled vocabulary such as the Darwin Core Type Vocabulary " dataType="string" inputType="list" options="PreservedSpecimen" element="dwc:basisOfRecord">
+            </item>
+        </group>
+        <group id="group3" label="Where" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Higher Geography" name="higherGeography" description="A list (concatenated and separated) of geographic names less specific than the information captured in the locality term." dataType="string" inputType="text" element="dwc:higherGeography">
+            </item>
+            <item label="Georeference Verification Status" name="georeferenceVerificationStatus" description="A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary." dataType="string" inputType="text" element="dwc:georeferenceVerificationStatus">
+            </item>
+            <item label="Georeference Sources" name="georeferenceSources" description="A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resources." dataType="string" inputType="text" element="dwc:georeferenceSources">
+            </item>
+            <item label="Georeference Remarks" name="georeferenceRemarks" description="Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol." dataType="string" rows='2' cols='23' inputType="textarea" element="dwc:georeferenceRemarks">
+            </item>
+            <item label="Decimal Longitude" name="decimalLogitude" description="The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive." dataType="string" inputType="text" element="dwc:decimalLogitude">
+            </item>
+            <item label="Decimal Latitude" name="decimalLatitude" description="The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive." dataType="string" inputType="text" element="dwc:decimalLatitude">
+            </item>
+            <item label="Coordinate Uncertainty in Meters" name="coordinateUncertaintyInMeters" description="" dataType="string" inputType="text" element="dwc:coordinateUncertaintyInMeters">
+            </item>
+            <item label="Coordinates" name="coordinatePrecision" description="A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude." dataType="string" inputType="text" element="dwc:coordinatePrecision">
+            </item>
+        </group>
+    </ui>
+    <ui id="parse3-stampLabel" parseLevel="3" ROItype="stampLabel">
+        <!-- each XML element represents an HTML div or span that will have the same id as the XML element. -->
+        <group id="group1" label="Who and When" description="help text goes here">
+            <!-- I'm not sure if the item name should exactly match the element name or if we need another property/attribute that is the elment name where the data will be stored on form submit -->
+            <item label="Owning Institution Code" name="ownerInstitutionCode" description="The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record." dataType="string" inputType="text" element="dwc:ownerInstitutionCode">
+            </item>
+        </group>
+    </ui>
+</apiary_ui>

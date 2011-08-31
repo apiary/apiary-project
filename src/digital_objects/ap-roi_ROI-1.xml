@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="ap-roi:ROI-1" xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ROI object"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="drupalAdmin"/>
+  </foxml:objectProperties>
+  <foxml:datastream ID="RELS-EXT" CONTROL_GROUP="X">
+    <foxml:datastreamVersion FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" ID="RELS-EXT.0" MIMETYPE="application/rdf+xml" LABEL="RDF Statements about this Object">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:fedora-model="info:fedora/fedora-system:def/model#">
+          <rdf:Description rdf:about="info:fedora/ap-roi:ROI-1">
+            <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/ap-image:Image-1"/>
+            <fedora-model:hasModel rdf:resource="info:fedora/ap-sdefcm:ocropus"/>
+            <isMemberOf xmlns="info:fedora/fedora-system:def/relations-external#" rdf:resource="info:fedora/ap-image:Image-1"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream ID="JPEG" STATE="A" CONTROL_GROUP="M">
+    <foxml:datastreamVersion ID="JPEG.0" MIMETYPE="image/jpeg" LABEL="Full size jpeg image for this ROI">
+      <foxml:contentLocation REF="http://img.apiaryproject.org/resolver?url_ver=Z39.88-2004&amp;rft_id=http://research.apiaryproject.org/images/jpeg2000/bb020.jp2&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=100&amp;svc.rotate=0&amp;svc.region=7369,4441,618,2417" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream ID="MEDIUM_SIZE" STATE="A" CONTROL_GROUP="M">
+    <foxml:datastreamVersion ID="MEDIUM_SIZE.0" MIMETYPE="image/jpeg" LABEL="Medium Size of the ROI Image">
+      <foxml:contentLocation REF="http://img.apiaryproject.org/resolver?url_ver=Z39.88-2004&amp;rft_id=http://research.apiaryproject.org/images/jpeg2000/bb020.jp2&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=100&amp;svc.rotate=0&amp;svc.region=7369,4441,618,2417&amp;svc.scale=120,0" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X">
+    <foxml:datastreamVersion ID="DC.0" MIMETYPE="text/xml" LABEL="Dublin Core Record">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <dc:title>ROI object</dc:title>
+          <dc:identifier>ap-roi:ROI-1</dc:identifier>
+          <dc:description>Apiary Region Of Interest that belongs to a specimen image.</dc:description>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream ID="roiMetadata" STATE="A" CONTROL_GROUP="M">
+    <foxml:datastreamVersion ID="roiMetadata.0" MIMETYPE="text/xml" LABEL="ROI Metadata">
+      <foxml:contentLocation REF="http://localhost/drupal/sites/default/files/roiMetadata.xml" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

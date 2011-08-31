@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Apiary Project Search</title>
+  <script type="text/javascript" src="assets/js/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.tablesorter.pager.js"></script>
+  <script type="text/javascript" src="assets/js/apiary.search.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.colorbox.js"></script>
+  <script type="text/javascript" src="assets/js/XMLDisplay.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/XMLDisplay.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/apiary.search.css" />
+  <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/colorbox.css" />
+   {literal}
+  <style type="text/css" media="screen">
+  	input {font-size:1em; padding:3px; font-weight:600; margin: 3px 0;}
+  </style>
+  <script type="text/javascript">
+    var drupal_url = '{/literal}{$drupal_url}{literal}';
+	$(document).ready(function(){
+	  get_search_options();
+	  tableSort();
+	});
+
+  </script>
+	{/literal}
+
+</head>
+<body>
+<div id="search">
+</div><!-- search -->
+<div id="search_results" style>
+</div><!-- search_results -->
+</body>

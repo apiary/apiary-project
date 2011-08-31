@@ -1,0 +1,1061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Apiary Workflow</title>
+
+	<style type="text/css">
+
+
+	</style>
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/apiary.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/progress_nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/rounded_div.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/tab_bar_nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/colorbox.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/pagination.css" />
+
+
+	<script type="text/javascript" src="assets/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui-1.8.5.custom.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.layout.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.colorbox.js"></script>
+
+
+	<script type="text/javascript">
+
+	var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+
+	$(document).ready(function () {
+		myLayout = $('body').layout({
+			west__showOverflowOnHover:	true
+	,	north: {
+	        size:                   60
+		,   spacing_open:			0			// cosmetic spacing
+		,	togglerLength_open:		0			// HIDE the toggler button
+		,	togglerLength_closed:	-1			// "100%" OR -1 = full width of pane
+		,	resizable: 				false
+		,	slidable:				false
+		,	fxName:					"none"
+		}
+	,	west: {
+			size:					250
+		,	spacing_closed:			21			// wider space when closed
+		,	spacing_open:			21			// wider space when closed
+		,	togglerLength_closed:	0			// make toggler 'square' - 21x21
+		,   togglerLength_open:     0
+		,	togglerAlign_closed:	"center"		// align to top of resizer
+		,	togglerTip_open:		"Close West Pane"
+		,	togglerTip_closed:		"Open West Pane"
+		,	resizerTip_open:		"Resize West Pane"
+		,	slideTrigger_open:		"mouseover" 	
+		,	initClosed:				true
+		,	fxSettings_open:		{ easing: "" }
+		,	resizable: 				false
+	    }
+	,	east: {
+			size:					300
+		,   minSize:                300
+		,	togglerLength_closed:	21			// make toggler 'square' - 21x21
+		,	togglerAlign_closed:	"center"		// align to top of resizer
+		,	slideTrigger_open:		"click"
+		,	initClosed:				false
+		,	fxName:					"drop"
+		,	fxSpeed:				"normal"
+		,	fxSettings:				{ easing: "" } // nullify default easing
+		}		});
+		get_current_specimen();
+		$("#roi-preview-001").colorbox({width:"480px", inline:true, href:"#roi-popup", onLoad:function(){
+        $("#roi-popup").html("<img src=\"assets/img/roi_full.png\"/>");
+        }});
+		$('button#session_statistics_link').colorbox({inline:true, href:"#session_statistics"});
+		//$('button#add_items_link').colorbox({inline:true, href:"#add_items"});
+		$('.add_items_link').colorbox({inline:true, href:"#add_items"});
+		
+		$('button#end_session_link').colorbox({inline:true, href:"#end_session"});
+        //alert(myLayout);
+        $('.ui-layout-resizer-west').addClass('needs_queue_tab'); //ui-layout-resizer-west-closed
+        $('#add_items_page_02').hide();
+ 	});
+
+	</script>
+
+</head>
+<body>
+<!-- manually attach allowOverflow method to pane -->
+<div class="ui-layout-north" onmouseover="myLayout.allowOverflow('north')" onmouseout="myLayout.resetOverflow(this)">
+
+<div id="progress_nav" class="step1">
+<div class="sub_nav">
+<ul class="breadcrumbs">
+<li class="step step1 first" onclick="select_nav('step1');">Analyze Specimen<span></span></li>
+<li class="step step2" onclick="select_nav('step2');">Transcribe Text<span></span></li>
+<li class="step step3" onclick="select_nav('step3');">Parse Text<span></span></li>
+<li class="tail" >&nbsp;<span></span></li>
+<li class="info info2 last" onclick="open_popup('help.html');">?<span></span></li>
+<li class="info info1" onclick="open_popup('getting_started.html');">Getting Started<span></span></li>
+</ul>
+<span>&nbsp;</span>
+</div><!-- .sub_nav -->
+</div><!-- #progress_nac -->
+
+
+</div><!-- .ui-layout-north -->
+
+<div class="ui-layout-south">
+    <div id="popupleft">
+    <div id="popupleft-main">
+    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+        <div id="previous_specimen"></div><!--img src="assets/img/specimen_prev.jpg"/-->
+    </div></div></div></div></div></div></div></div>
+    </div><!-- #popupleft-main -->
+    <div id="popupleft_panhandle" onclick="make_prev_specimen_current();" onmouseout="hide_popupall();">
+    <a href="#" onclick="hide_popupall();">    
+    <img src="assets/img/popupleft_bl.png"/>
+    </a>
+    </div><!-- #popupleft_panhandle -->
+    </div><!-- #popupleft -->
+    
+    <div id="popupright">
+    <div id="popupright-main">
+    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+        <div id="next_specimen"></div><!--img src="assets/img/specimen_next.jpg"/-->
+    </div></div></div></div></div></div></div></div>
+    </div><!-- #popupright-main -->
+    <div id="popupright_panhandle" onclick="make_next_specimen_current();" onmouseout="hide_popupall();">
+    <a href="#" onclick="hide_popupall();">    
+    <img src="assets/img/popupright_br.png"/>
+    </a>
+    </div><!-- #popupright_panhandle -->
+    </div><!-- #popupright -->
+
+    <div id="popupcenter">
+    <div id="popupcenter-main">
+    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">
+    <div id="popupcenter-content-top"></div>
+    <div class="roi_item" id="roi_item_001" style="background:#ddd;">
+        <img src="assets/img/roi1.jpg" height=30px onclick="activate_roi(1);" /> ROI 001
+    </div>    
+    <div class="roi_item" id="roi_item_002" style="background:#ddd;">
+        <img src="assets/img/roi2.jpg" height=30px onclick="activate_roi(2);" /> ROI 002
+    </div>    
+    <div class="roi_item" id="roi_item_003" style="background:#ddd;">
+        <img src="assets/img/roi3.jpg" height=30px onclick="activate_roi(3);" /> ROI 003
+    </div>    
+    <div class="roi_item hide" id="roi_item_004" style="background:#ddd;">
+        <img src="assets/img/roi4.jpg" height=30px onclick="activate_roi(4);" /> ROI 004
+    </div>    
+    <div class="roi_item hide" id="roi_item_005" style="background:#ddd;">
+        <img src="assets/img/roi5.jpg" height=30px onclick="activate_roi(5);" /> ROI 005
+    </div>    
+    <div id="popupcenter-content-bottom"></div>
+    <div id="popup-center-controls">
+        <div class="floatleft"><img src="assets/img/icon_up.png" onclick="roi_scroll_up();" /></div>
+        <div class="floatright"><img src="assets/img/icon_down.png" onclick="roi_scroll_down();" /></div>
+    </div>
+    <div class="clearfix"></div>
+    </div></div></div></div></div></div></div></div>
+    </div><!-- #popupright-main -->
+    </div><!-- #popupcenter -->
+
+    <div class="floatleft">
+    <div id="prev_placeholder" class="floatleft">
+        <img src="assets/img/placeholder.png"/>
+    </div>
+    <div id="prev_arrow" class="floatleft">
+        <a href="#" onmouseover="hide_popupall(); show_popupleft(this);" >
+        <img src="assets/img/PrevArrow.png"/>
+        </a>
+    </div>
+    <div id="current_specimen" class="floatleft" onmouseover="hide_popupall(); show_popupcenter(this);">        
+        <a href="#" onmouseover="hide_popupall(); show_popupcenter(this);" >
+        <img src="assets/img/specimen_current.jpg" />
+        </a>
+    </div>
+    <div id="next_arrow" class="floatleft">
+        <a href="#"  onmouseover="hide_popupall(); show_popupright(this);" >
+            <img src="assets/img/NextArrow.png"/>
+        </a>
+    </div>
+    <div id="next_add" class="floatleft">
+        <a href="#"  onclick="add_to_queue();" >
+            <img src="assets/img/NextAdd.png"/>
+        </a>
+    </div>
+   	<!--a href="#" onmouseover="myLayout.allowOverflow(this);$('#popupleft').show();" onmouseout="myLayout.resetOverflow('south');$('#popupleft').hide();"><p>This is a test for the transparent png popup test...</p></a-->
+	<div id="menu_test2" style="" >
+	    <img src="menu_test.png"/>
+    </div>
+    </div>
+    <div class="_clearfix"></div>
+
+    <div class="roundedcornr_ltgray" id="queue-info">
+    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+        <div id="queue-info-title">My Queue</div>
+        <div id="queue-info-specimen-count">X specimens</div>
+        <div id="queue-info-roi-account">X ROIs</div>
+        <div id="queue-info-control">[show/hide queue]</div>
+    </div></div></div></div></div></div></div></div>
+    </div><!-- .roundedcornr_ltgray -->
+
+
+ 	<div id="menu_test" style="position:absolute;display:none;top:-100px;" >
+	    <img src="menu_test.png"/>
+    </div>
+    <div style="display:none;">
+    <br/>current: <div id="current_specimen_id" style="display:block;"></div>
+    <br/>next: <div id="next_specimen_id" style="display:block;"></div>
+    <br/>prev: <div id="prev_specimen_id" style="display:block;"></div>
+    <br/>  
+    </div>
+
+    <div class="roundedcornr_ltgray" id="object_detail">
+    <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+            <div id="object_type">[object type]</div><div id="object_separator">&nbsp;-&nbsp;</div><div id="object_name">[object name]</div>
+            <div class="clearfix"></div>
+            <label for="status_dropdown">Status:</label>
+            <select name="status_dropdown">
+            <option value="1">status 1</option>
+            <option value="2">status 2</option>
+            <option value="3">status 3</option>
+            </select>
+            <br/><a href="#" onclick="alert('Add note');">Add note</a>
+        
+    </div></div></div></div></div></div></div></div>
+    </div><!-- .roundedcornr_ltgray -->
+        <button id="add_items_link" value="add_items_link" class="customBtn" ><span>Add Items</span></button>
+    
+
+    <div id="session_buttons">
+        <button id="session_statistics_link" value="session_statistics_link" class="customBtn" ><span>Session Statistics</span></button>
+        <button id="end_session_link" value="end_session_link" class="customBtn" ><span>End Session</span></button>
+    </div><!-- #session_buttons -->
+
+
+</div><!-- .ui-layout-south -->
+
+<div class="ui-layout-east">
+    <div id="step1_east_section">
+    	<div class="_widget-title">
+    	</div>
+    	<div class="roi-section" id="roi-001" >
+    	    <div class="roi-preview" id="roi-preview-001">
+    	        <img src="assets/img/roi.jpeg" width=60px />
+    	    </div>
+    	    <div class="roi-controls" id="roi-controls-001">
+    	        ROI Type:<span class="roi-type" id="roi-type-001">[type]</span>
+    	        Text transcription<span class="roi-transcription-status" id="roi-transcription-status-001">[type]</span>
+    	        Text parsing<span class="roi-parsing-status" id="roi-parsing-status-001">[type]</span>
+    	        <div class="clearfix"></div>
+    	        <div class="floatleft"><a href="#">Delete ROI</a></div>
+    	    </div>
+    	</div>
+
+    	<div class="_widget-footer">
+    	</div>
+    </div><!-- #analyze_panel -->
+    <div id="step2_east_section">
+        
+        <div id="tab_nav" class="tab1">
+        <div class="tab_nav">
+        <ul class="breadcrumbs">
+        <li class="tab1 first" onclick="select_tab('tab1');">Text Transcription<span></span></li>
+        <li class="tab2" onclick="select_tab('tab2');">OCR Results<span></span></li>
+        </ul>
+        <span>&nbsp;</span>
+        </div>
+        </div>
+        <div id="tab1_section">
+            <h3>Transcribe controls</h3>
+            <textarea name="transcribe_control" id="transcribe_control" onfocus="this.value=''; setbg('#fafafa');" onblur="setbg('white')">Enter your comment here...</textarea>
+        </div>
+        <div id="tab2_section">
+            <h3>OCR controls</h3>
+        </div>
+    </div>
+    <div id="step3_east_section">
+        <h3>Parse controls</h3>
+    </div>
+
+</div><!-- .ui-layout-east -->
+
+<!-- allowOverflow auto-attached by option: west__showOverflowOnHover = true -->
+<div class="ui-layout-west" onmouseover="hide_popupall();">
+	<div class="widget-title">
+	    <h3>My Task Queue</h3>
+	    <div class="widget-title-content">
+	    <a href="#" class="add_items_link" onclick="myLayout.close('west');">add new items</a>
+    	</div>
+	</div>
+
+	<div class="widget-header" id="specimen-001" onclick="toggle_specimen('content-001');">
+	    <div class="widget-header-left">
+    	    <div class="specimen_name">Specimen 001 - <span class="specimen_status">[status]</span></div>
+    		<div class="specimen_header_detail">Contains <span id="roi_count_001">X ROIs</span> - <a href="#">analyze</a></div>
+       	</div>
+       	<div class="widget-header-right">
+         	<div class="widget-control" id="control-001"><img src="assets/img/icon_closed.png"/></div>
+       	</div>
+    	<div class="clearfix" style="width:100%;"></div>
+	</div><!-- widget-header -->
+	<div class="widget-content" id="content-001">
+    	<div class="widget-subheader">
+    	    <div class="roi_name">ROI Name - <span class="roi_status" id="specimen_001_roi_001">[status]</span></div>
+    	</div>
+    	<div class="widget-subcontent">
+    	    <div class="transcribe_link"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[status]</span></div>
+    	    <div class="parse_link"><a href="#">Parse</a> - <span id="roi_001_parse_status">[status]</span></div>
+    	</div>
+    	<div class="widget-subheader">
+    	    <div class="roi_name">ROI Name - <span class="roi_status" id="specimen_001_roi_002">[status]</span></div>
+    	</div>
+    	<div class="widget-subcontent">
+    	    <div class="transcribe_link"><a href="#">Transcribe</a> - <span id="roi_002_transcribe_status">[status]</span></div>
+    	    <div class="parse_link"><a href="#">Parse</a> - <span id="roi_002_parse_status">[status]</span></div>
+    	</div>
+	</div><!-- widget-content -->
+
+	<div class="widget-header" id="specimen-002" onclick="toggle_specimen('content-002');">
+	    <div class="widget-header-left">
+    	    <div class="specimen_name">Specimen 002 - <span class="specimen_status">[status]</span></div>
+    		<div class="specimen_header_detail">Contains <span id="roi_count_002">X ROIs</span> - <a href="#">analyze</a></div>
+       	</div>
+       	<div class="widget-header-right">
+         	<div class="widget-control" id="control-002"><img src="assets/img/icon_closed.png"/></div>
+       	</div>
+	</div><!-- widget-header -->
+	<div class="widget-content" id="content-002">
+    	<div class="widget-subheader">
+    	    <div class="roi_name">ROI Name - <span class="roi_status" id="specimen_002_roi_001">[status]</span></div>
+    	</div>
+    	<div class="widget-subcontent">
+    	    <div class="transcribe_link"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[status]</span></div>
+    	    <div class="parse_link"><a href="#">Parse</a> - <span id="roi_001_parse_status">[status]</span></div>
+    	</div>
+    	<div class="widget-subheader">
+    	    <div class="roi_name">ROI Name - <span class="roi_status" id="specimen_002_roi_002">[status]</span></div>
+    	</div>
+    	<div class="widget-subcontent">
+    	    <div class="transcribe_link"><a href="#">Transcribe</a> - <span id="roi_002_transcribe_status">[status]</span></div>
+    	    <div class="parse_link"><a href="#">Parse</a> - <span id="roi_002_parse_status">[status]</span></div>
+    	</div>
+	</div><!-- widget-content -->
+
+	<div class="widget-header" id="specimen-003" onclick="toggle_specimen('content-003');">
+	    <div class="widget-header-left">
+    	    <div class="specimen_name">Specimen 003 - <span class="specimen_status">[status]</span></div>
+    		<div class="specimen_header_detail">Contains <span id="roi_count_003">X ROIs</span> - <a href="#">analyze</a></div>
+       	</div>
+       	<div class="widget-header-right">
+         	<div class="widget-control" id="control-003"><img src="assets/img/icon_closed.png"/></div>
+       	</div>
+	</div><!-- widget-header -->
+	<div class="widget-content" id="content-003">
+    	<div class="widget-subheader">
+    	    <div class="roi_name">ROI Name - <span class="roi_status" id="specimen_003_roi_001">[status]</span></div>
+    	</div>
+    	<div class="widget-subcontent">
+    	    <div class="transcribe_link"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[status]</span></div>
+    	    <div class="parse_link"><a href="#">Parse</a> - <span id="roi_001_parse_status">[status]</span></div>
+    	</div>
+    	<div class="widget-subheader">
+    	    <div class="roi_name">ROI Name - <span class="roi_status" id="specimen_003_roi_002">[status]</span></div>
+    	</div>
+    	<div class="widget-subcontent">
+    	    <div class="transcribe_link"><a href="#">Transcribe</a> - <span id="roi_002_transcribe_status">[status]</span></div>
+    	    <div class="parse_link"><a href="#">Parse</a> - <span id="roi_002_parse_status">[status]</span></div>
+    	</div>
+	</div><!-- widget-content -->
+
+	<div class="widget-footer">
+	</div>
+	
+
+	
+
+
+</div>
+
+
+<div class="ui-layout-center" onmouseover="hide_popupall();">
+    
+    <div id="step1_section">
+        <!--<h3>Analyze</h3>
+        <div id="current_specimen_image"><img src="images/00000001-C5BE-11DF-AD1A-7377DFD72085_f.jpg"/></div>-->
+		<div id="tags"></div>
+        <p id="shortdesc"></p>
+		<div id="map" class="smallmap" style="width:100%;height:100%;"></div>
+		<div id="docs"></div>
+    </div><!-- step1_section -->
+    <div id="step2_section">
+        <h3>Transcribe</h3>
+        <div id="roi_transcribe_image"><img src="assets/img/roi_full.png" width=300px /></div>
+    </div><!-- step2_section -->
+    <div id="step3_section">
+        <h3>Parse</h3>
+    </div><!-- step3_section -->
+
+</div><!-- .ui-layout-center -->
+
+<div class="_wai">
+	<div id="roi-popup" title="ROI">
+    <img src="assets/img/roi_full.png"/>
+	</div><!-- End #roi-popup -->
+</div><!-- End .wai -->
+
+<div class="nothing" style="display:none;">
+    <div class="" id="session_statistics">
+        <div class="dialog_box_title">
+            <div class="tl"><div class="tr">
+            <h3>Session Statistics</h3>
+            </div></div>
+        </div>
+        <div class="dialog_box_content">
+            Items in your queue: X<br/>
+            Specimens: Y <br/>
+            ROIs: X <br/>
+                <br/>
+            During this session you have:<br/>
+            Specimen analysis<br/>
+            Analyzed X specimens and identified Y ROIs<br/>
+                <br/>
+            Transcription <br/>
+            Transcribed X ROIs <br/>
+             <br/>
+            Parsing <br/>
+            Parsed X ROIs <br/>
+        </div>
+    </div>
+</div>
+
+<div class="nothing" style="display:none;">
+    <div class="" id="end_session">
+        <div class="dialog_box_title">
+            <div class="tl"><div class="tr">
+            <h3>End this session?</h3>
+            </div></div>
+        </div>
+        <div class="dialog_box_content">
+            Would you like to end this session?
+            <br/>
+            <br/>You have X objects that are marked as "in progress".
+            <br/>If you end this session, these will be changed to "incomplete".
+            <br/>
+            <br/>All objects in your queue will be removed so others can work on them.
+        </div>
+    </div>
+</div>
+
+<div class="nothing" style="display:none;">
+    <div class="dialog_box" id="add_items">
+        <div class="dialog_box_title">
+            <div class="tl"><div class="tr">
+            <h3>Select items to add to your queue</h3>
+            </div></div>
+        </div><!-- dialog_box_title -->
+        <div class="dialog_box_content" id="add_items_list" >
+            <div class="add_items_page" id="add_items_page_01">
+            <div class="leftpanel48">
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_1" onclick="toggle_selected('#pool_item_1');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 01]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_2" onclick="toggle_selected('#pool_item_2');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 02]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_3" onclick="toggle_selected('#pool_item_3');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 03]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_4" onclick="toggle_selected('#pool_item_4');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 04]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_5" onclick="toggle_selected('#pool_item_5');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 05]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_5a" onclick="toggle_selected('#pool_item_5a');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 05a]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_5b" onclick="toggle_selected('#pool_item_5b');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 05b]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_5c" onclick="toggle_selected('#pool_item_5c');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 05c]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="clearfix"></div>
+            
+            
+            </div><!-- .leftpanel48 -->
+            <div class="rightpanel48">
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_6" onclick="toggle_selected('#pool_item_6');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 06]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_7" onclick="toggle_selected('#pool_item_7');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 07]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_8" onclick="toggle_selected('#pool_item_8');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 08]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_9" onclick="toggle_selected('#pool_item_9');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 09]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_10" onclick="toggle_selected('#pool_item_10');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 10]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+            </div><!-- .rightpanel48 -->
+            </div><!-- #add_items_page_01 -->
+            
+            <div class="add_items_page" id="add_items_page_02">
+            <div class="leftpanel48">
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_11" onclick="toggle_selected('#pool_item_11');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 11]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_12" onclick="toggle_selected('#pool_item_12');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 12]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_13" onclick="toggle_selected('#pool_item_13');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 13]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_14" onclick="toggle_selected('#pool_item_14');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 14]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_15" onclick="toggle_selected('#pool_item_15');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_checkbox"></div>
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 15]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+                <div class="clearfix"></div>
+            
+            
+            </div><!-- .leftpanel48 -->
+            <div class="rightpanel48">
+                <div class="roundedcornr_ltgray pool_item unselected" id="pool_item_16" onclick="toggle_selected('#pool_item_16');">
+                <div class="t"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">				
+                    <div class="pool_item_area pool_item_image">
+                        <img src="assets/img/specimen_current.jpg" height=68px />
+                    </div><!-- pool_item_image -->
+                    <div class="pool_item_area pool_item_content">
+                        <strong>[x] [item 16]</strong><br/>
+                        [item detail]
+                    </div><!-- .pool_item_content -->
+                </div></div></div></div></div></div></div></div>
+                </div><!-- .roundedcornr_ltgray -->
+
+            </div><!-- .rightpanel48 -->
+            </div><!-- #add_items_page_02 -->         
+            <div class="clearfix"></div>
+            <div class="pagination" id="add_items_pagination">
+                <div style="height:4px"></div>
+            <ul>
+            <li><span class="first">first</span></li>
+            <li><span class="previous">previous</span></li>
+            <li><a href='#' id="add_items_page_01_control" class="current" onclick="select_page('#add_items_page_01'); return false;">1</a></li>
+            <li><a href='#' id="add_items_page_02_control" onclick="select_page('#add_items_page_02'); return false;">2</a></li>
+            <li><a href='#' class="next">next</a></li>
+            <li><a href='#' class="last">last</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="action" onclick="add_items_add_to_queue();">Add to queue</a></li>
+                <li><a href="#" class="action" id="cancel" onclick="add_items_cancel();">Cancel</a></li>
+            </ul>
+            </div><!-- /pagination --> 
+
+
+        </div><!-- #dialog_box_content -->
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    var current_specimen = '00000003-C5BE-11DF-AD1A-7377DFD72085';
+    var current_user = '23E9AD58-C5BE-11DF-B2AA-7A77DFD72085';
+    
+    function hide_popupall()
+    {
+        hide_popupleft();
+        hide_popupcenter();
+        hide_popupright();
+    }
+
+    function show_popupleft(_this)
+    {
+        get_prev_specimen();
+        myLayout.allowOverflow(_this);$('#popupleft').show();
+        $('#previous_specimen').html('<a href="#" onclick="get_prev_specimen();"><img src="assets/img/specimen_next.jpg"/></a>');
+    }
+    
+    function hide_popupleft()
+    {
+        myLayout.allowOverflow(this);$('#popupleft').hide();
+        $('#previous_specimen').html('');
+    }
+    
+    function show_popupright(_this)
+    {
+        get_next_specimen();
+        myLayout.allowOverflow(_this);$('#popupright').show();
+    }
+    
+    function hide_popupcenter()
+    {
+        myLayout.allowOverflow(this);$('#popupcenter').hide();
+    }
+    
+    function show_popupcenter(_this)
+    {
+        myLayout.allowOverflow(_this);$('#popupcenter').show();
+    }
+    
+    function hide_popupright()
+    {
+        myLayout.allowOverflow(this);$('#popupright').hide();
+        $('#next_specimen').html('');
+    }
+
+    function get_current_specimen()
+    {
+        $("#current_specimen_id").load('get_current_specimen.php?current_user='+current_user, function() {
+            var specimen_id = $('#current_specimen_id').html();
+            $('#current_specimen').html('<img src="images/'+specimen_id+'_t3.jpg"/>');
+            $('#current_specimen_image').html('<img src="images/'+specimen_id+'_f.jpg"/>');
+    		get_next_specimen();
+    		get_prev_specimen();
+    	});
+    }
+        
+    function get_next_specimen()
+    {
+        var current_specimen_id = $('#current_specimen_id').html();
+        $("#next_specimen_id").load('get_next_specimen.php?current_specimen='+current_specimen_id, function() {
+            var specimen_id = $('#next_specimen_id').html();
+            if ( specimen_id != '' )
+            {
+                $('#next_arrow').show();
+                $('#next_add').hide();
+                $('#next_specimen').html('<a href="#" onclick="make_next_specimen_current();"><img src="images/'+specimen_id+'_t3.jpg"/></a>');
+            }
+            else
+            {
+                hide_popupall();
+                $('#next_arrow').hide();
+                $('#next_add').show();
+                //$('#next_specimen').html('<img src="assets/img/NextAdd.png"/>');
+            }
+                
+    	});
+    }
+    
+    function get_prev_specimen()
+    {
+        var current_specimen_id = $('#current_specimen_id').html();
+        $("#prev_specimen_id").load('get_prev_specimen.php?current_specimen='+current_specimen_id, function() {
+            var specimen_id = $('#prev_specimen_id').html();
+            if ( specimen_id != '' )
+            {
+                $('#prev_arrow').show();
+                $('#prev_placeholder').hide();
+                $('#previous_specimen').html('<a href="#" onclick="make_prev_specimen_current();"><img src="images/'+specimen_id+'_t3.jpg"/></a>');
+            }
+            else
+            {
+                hide_popupall();
+                $('#prev_arrow').hide();
+                $('#prev_placeholder').show();
+                //$('#next_specimen').html('<img src="assets/img/NextAdd.png"/>');
+            }
+                
+    	});
+    }
+    
+    function make_next_specimen_current()
+    {
+        var next_specimen_id = $('#next_specimen_id').html();
+        if ( next_specimen_id != '' )
+        {
+            $('#current_specimen_id').html(next_specimen_id);
+            var specimen_id = $('#current_specimen_id').html();
+            $('#current_specimen').html('<img src="images/'+specimen_id+'_t3.jpg"/>');
+            $('#current_specimen_image').html('<img src="images/'+specimen_id+'_f.jpg"/>');
+            get_next_specimen();
+            get_prev_specimen();
+        }
+    }
+    
+    function make_prev_specimen_current()
+    {
+        var prev_specimen_id = $('#prev_specimen_id').html();
+        if ( prev_specimen_id != '' )
+        {
+            $('#current_specimen_id').html(prev_specimen_id);
+            var specimen_id = $('#current_specimen_id').html();
+            $('#current_specimen').html('<img src="images/'+specimen_id+'_t3.jpg"/>');
+            $('#current_specimen_image').html('<img src="images/'+specimen_id+'_f.jpg"/>');
+            get_next_specimen();
+            get_prev_specimen();
+        }
+    }
+    
+    function add_to_queue()
+    {
+        var current_specimen_id = $('#current_specimen_id').html();
+        if ( current_specimen_id != '' )
+        {
+            $('#prev_specimen_id').html(current_specimen_id);
+        }
+        $("#current_specimen_id").load('add_to_queue.php?current_user='+current_user, function() {
+            var specimen_id = $('#current_specimen_id').html();
+            if ( specimen_id != '' )
+            {
+                $('#prev_arrow').show();
+                $('#prev_placeholder').hide();
+                $('#current_specimen').html('<img src="images/'+specimen_id+'_t3.jpg"/>');
+                $('#current_specimen_image').html('<img src="images/'+specimen_id+'_f.jpg"/>');
+            }
+    	});
+    }
+    
+    function toggle_specimen(id_string)
+    {
+        //alert('#'+id_string);
+        if( $('#'+id_string+':visible').size() == 0 )
+            $('#'+id_string).slideDown(500,setControlIcon(id_string,true));
+        else
+            $('#'+id_string).slideUp(500,setControlIcon(id_string,false));
+            
+            
+    }
+    
+    function setControlIcon(id_string,toggle_flag)
+    {
+        //alert(id_string);
+        var control_id = id_string; 
+        control_id = control_id.replace("content-", "control-");    
+        //alert(control_id);
+        if( !toggle_flag )
+        {
+            $('#'+control_id).html('<img src="assets/img/icon_closed.png">');
+        }
+        else
+        {
+            $('#'+control_id).html('<img src="assets/img/icon_open.png">');
+        }
+    }
+    
+    function select_nav(class_string)
+    {
+        //alert(class_string);
+        $('#progress_nav').removeClass('step1');
+        $('#progress_nav').removeClass('step2');
+        $('#progress_nav').removeClass('step3');
+        $('#step1_section').hide();
+        $('#step2_section').hide();
+        $('#step3_section').hide();
+        $('#step1_east_section').hide();
+        $('#step2_east_section').hide();
+        $('#step3_east_section').hide();
+        
+        $('#progress_nav').addClass(class_string);
+        $('#'+class_string+'_section').show();
+        $('#'+class_string+'_east_section').show();
+        /*if ( class_string == 'step1' )
+            myLayout.open('east');
+        else
+            myLayout.close('east')*/
+        if ( class_string == 'step1' )
+            myLayout.sizePane('east',300);
+        if ( class_string == 'step2' )
+            myLayout.sizePane('east',500);
+        if ( class_string == 'step3' )
+            myLayout.sizePane('east',400);
+    }
+    
+    function select_tab(class_string)
+    {
+        //alert(class_string);
+        $('#tab_nav').removeClass('tab1');
+        $('#tab_nav').removeClass('tab2');
+        $('#tab1_section').hide();
+        $('#tab2_section').hide();
+        
+        $('#tab_nav').addClass(class_string);
+        $('#'+class_string+'_section').show();
+    }
+    
+    function setbg(color)
+    {
+        $('#transcribe_control').css('background-color',color);
+    }
+    
+    function open_popup(target_page)
+    {
+        if ( target_page != '' )
+        {
+            var features = 'width=540,height=600,top=30,left=30,resizable=yes,scrollbars=yes,toolbar=no,location=no,menubar=no,status=no';
+            var open_string = '';
+    
+            var noteWin = window.open(target_page,'_'+target_page, features);
+            noteWin.focus();
+        }
+    }
+    
+    var roi_scroll_index = 1;
+    function roi_scroll_down()
+    {
+        roi_item_hide_all();
+        roi_scroll_index++;
+        if ( roi_scroll_index > 5 - 2 ) 
+            roi_scroll_index = 5 - 2;
+        var index = roi_scroll_index;
+        $('#roi_item_00'+index).show();
+        index++;
+        $('#roi_item_00'+index).show();
+        index++;
+        $('#roi_item_00'+index).show();
+    }
+    
+    function roi_scroll_up()
+    {
+        roi_item_hide_all();
+        roi_scroll_index--;
+        if ( roi_scroll_index < 1 ) 
+            roi_scroll_index = 1;
+        var index = roi_scroll_index;
+        $('#roi_item_00'+index).show();
+        index++;
+        $('#roi_item_00'+index).show();
+        index++;
+        $('#roi_item_00'+index).show();
+    }
+
+    function roi_item_hide_all()
+    {
+        $('#roi_item_001').hide();
+        $('#roi_item_002').hide();
+        $('#roi_item_003').hide();
+        $('#roi_item_004').hide();
+        $('#roi_item_005').hide();
+    }
+    
+    function activate_roi(item)
+    { 
+        alert('activate roi='+item);
+    }
+        
+    function toggle_selected(item)
+    {
+        if ( $(item).hasClass('unselected') )
+        {
+            $(item).removeClass('roundedcornr_ltgray');
+            $(item).addClass('roundedcornr_dgray');
+            $(item).removeClass('unselected');
+            $(item).addClass('selected');
+        }
+        else
+        {
+            $(item).removeClass('roundedcornr_dgray');
+            $(item).addClass('roundedcornr_ltgray');
+            $(item).removeClass('selected');
+            $(item).addClass('unselected');
+        }
+    }
+    
+    function select_page(page)
+    {
+        $('#add_items_page_01').hide();
+        $('#add_items_page_02').hide();
+        $('#add_items_page_01_control').removeClass('current');
+        $('#add_items_page_02_control').removeClass('current');
+        $(page).show();
+        $(page+'_control').addClass('current');
+    }
+    
+    function add_items_cancel()
+    {
+        parent.$.fn.colorbox.close();
+    }
+    
+    function add_items_add_to_queue()
+    {
+        parent.$.fn.colorbox.close();
+    }
+</script>

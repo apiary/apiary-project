@@ -1,0 +1,174 @@
+body {
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	scrollbar-3dlight-color: #F0F0EE;
+	scrollbar-arrow-color: #676662;
+	scrollbar-base-color: #F0F0EE;
+	scrollbar-darkshadow-color: #DDDDDD;
+	scrollbar-face-color: #E0E0DD;
+	scrollbar-highlight-color: #F0F0EE;
+	scrollbar-shadow-color: #F0F0EE;
+	scrollbar-track-color: #F5F5F5;
+}
+
+p {margin:0; padding:0;}
+
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+pre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.tablerow1 {
+	background-color: #BBBBBB;
+}
+
+thead {
+	background-color: #FFBBBB;
+}
+
+tfoot {
+	background-color: #BBBBFF;
+}
+
+th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+/* Apiary Elements and Styles */
+/* Who and When Elements */
+.verbatimCollectors {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.recordedBy {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.recordNumber {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.verbatimEventDate {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.additionalRecordNumbers {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.identifiedBy {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.annotatedBy {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.verbatimAnnotators {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.verbatimDateIdentified {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.verbatimDateAnnotated {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+.eventRemarks {
+	background-color: #F086A1;
+	text-decoration: underline; 
+}
+
+/* What Elements */
+
+.verbatimScientificName {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.verbatimHigherClassification {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.taxonRemarks {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.vernacularName {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.occurrenceRemarks {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.identificationRemarks {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+
+.catalogNumber {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.otherCatalogNumbers {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.collectionCode {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.primaryLabelFooter {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+.primaryLabelHeader {
+	background-color: #A4F086;
+	text-decoration: underline; 
+}
+
+/* Where Elements */
+
+.verbatimLocality {
+	background-color: #86B2F0;
+	text-decoration: underline; 
+}
+
+.verbatimElevation {
+	background-color: #86B2F0;
+	text-decoration: underline; 
+}
+
+.verbatimCoordinates {
+	background-color: #86B2F0;
+	text-decoration: underline; 
+}
+

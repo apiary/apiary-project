@@ -1,0 +1,357 @@
+
+
+
+<div id="queue_list">
+</div><!-- queue_list -->
+<div class="widget-header" id="ap-image__Image-2_queue" onclick="toggle_specimen('content-ap-image__Image-2');">
+<div class="widget-header-left">
+<div class="specimen_name" image_pid="ap-image:Image-2" image_id="http://img.apiaryproject.org/resolver?url_ver=Z39.88-2004&amp;rft_id=apiary:jpeg2000/23527&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=3&amp;svc.rotate=0&amp;svc.region=0,0,10272,7308&amp;svc.scale=0,100" specimen_pid="ap-specimen:Specimen-2">Specimen-2<span class="specimen_status"> - [in progress]</span></div>
+<div class="specimen_header_detail">Contains <span id="roi_count_ap-image__Image-2">7</span> ROIs - <a href="#" onclick="select_specimen('ap-image:Image-2')">analyze</a></div>
+</div>
+<div class="widget-header-right">
+<div class="widget-control" id="control-ap-image__Image-2"><img src="http://dev.apiaryproject.org/drupal/modules/apiary_project/workflow/assets/img/icon_closed.png"></div>
+</div>
+</div><!-- widget-header -->
+<div class="widget-content" id="content-ap-image__Image-2">
+<div id="ap-roi__ROI-1_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-1" image_pid="ap-image:Image-2">ROI-1<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-1_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-1')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-1')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-1">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-1');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-1',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-1_queue -->
+<div id="ap-roi__ROI-11_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-11" image_pid="ap-image:Image-2">ROI-11<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-11_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-11')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-11')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-11">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-11');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-11',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-11_queue -->
+<div id="ap-roi__ROI-12_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-12" image_pid="ap-image:Image-2">ROI-12<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-12_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-12')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-12')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-12">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-12');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-12',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-12_queue -->
+<div id="ap-roi__ROI-13_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-13" image_pid="ap-image:Image-2">ROI-13<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-13_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-13')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-13')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-13">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-13');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-13',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-13_queue -->
+<div id="ap-roi__ROI-18_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-18" image_pid="ap-image:Image-2">ROI-18<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-18_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-18')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-18')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-18">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-18');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-18',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-18_queue -->
+<div id="ap-roi__ROI-19_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-19" image_pid="ap-image:Image-2">ROI-19<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-19_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-19')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-19')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-19">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-19');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-19',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-19_queue -->
+<div id="ap-roi__ROI-24_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-24" image_pid="ap-image:Image-2">ROI-24<span class="roi_status" id="ap-image__Image-2_ap-roi:ROI-24_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-2', 'ap-roi:ROI-24')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-24')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-24">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-24');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-24',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-24_queue -->
+</div><!-- widget-content -->
+<div class="widget-header" id="ap-image__Image-3_queue" onclick="toggle_specimen('content-ap-image__Image-3');">
+<div class="widget-header-left">
+<div class="specimen_name" image_pid="ap-image:Image-3" image_id="http://img.apiaryproject.org/resolver?url_ver=Z39.88-2004&amp;rft_id=apiary:jpeg2000/23535&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=3&amp;svc.rotate=0&amp;svc.region=0,0,10272,7308&amp;svc.scale=0,100" specimen_pid="ap-specimen:Specimen-3">Specimen-3<span class="specimen_status"> - [not started]</span></div>
+<div class="specimen_header_detail">Contains <span id="roi_count_ap-image__Image-3">9</span> ROIs - <a href="#" onclick="select_specimen('ap-image:Image-3')">analyze</a></div>
+</div>
+<div class="widget-header-right">
+<div class="widget-control" id="control-ap-image__Image-3"><img src="assets/img/icon_closed.png"></div>
+</div>
+</div><!-- widget-header -->
+<div style="display: none;" class="widget-content" id="content-ap-image__Image-3">
+<div id="ap-roi__ROI-7_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-7" image_pid="ap-image:Image-3">ROI-7<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-7_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-7')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-7')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-7">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-7');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-7',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-7_queue -->
+<div id="ap-roi__ROI-21_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-21" image_pid="ap-image:Image-3">ROI-21<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-21_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-21')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-21')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-21">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-21');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-21',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-21_queue -->
+<div id="ap-roi__ROI-23_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-23" image_pid="ap-image:Image-3">ROI-23<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-23_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-23')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-23')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-23">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-23');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-23',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-23_queue -->
+<div id="ap-roi__ROI-35_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-35" image_pid="ap-image:Image-3">ROI-35<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-35_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-35')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-35')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-35">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-35');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-35',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-35_queue -->
+<div id="ap-roi__ROI-36_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-36" image_pid="ap-image:Image-3">ROI-36<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-36_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-36')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-36')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-36">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-36');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-36',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-36_queue -->
+<div id="ap-roi__ROI-42_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-42" image_pid="ap-image:Image-3">ROI-42<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-42_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-42')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-42')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-42">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-42');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-42',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-42_queue -->
+<div id="ap-roi__ROI-43_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-43" image_pid="ap-image:Image-3">ROI-43<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-43_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-43')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-43')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-43">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-43');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-43',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-43_queue -->
+<div id="ap-roi__ROI-44_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-44" image_pid="ap-image:Image-3">ROI-44<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-44_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-44')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-44')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-44">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-44');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-44',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-44_queue -->
+<div id="ap-roi__ROI-214_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-214" image_pid="ap-image:Image-3">ROI-214<span class="roi_status" id="ap-image__Image-3_ap-roi:ROI-214_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-3', 'ap-roi:ROI-214')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-214')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-214">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-214');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-214',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-214_queue -->
+</div><!-- widget-content -->
+<div class="widget-header" id="ap-image__Image-4_queue" onclick="toggle_specimen('content-ap-image__Image-4');">
+<div class="widget-header-left">
+<div class="specimen_name" image_pid="ap-image:Image-4" image_id="http://img.apiaryproject.org/resolver?url_ver=Z39.88-2004&amp;rft_id=apiary:jpeg2000/23559&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=3&amp;svc.rotate=0&amp;svc.region=0,0,10212,7212&amp;svc.scale=0,100" specimen_pid="ap-specimen:Specimen-4">Specimen-4<span class="specimen_status"> - [in progress]</span></div>
+<div class="specimen_header_detail">Contains <span id="roi_count_ap-image__Image-4">8</span> ROIs - <a href="#" onclick="select_specimen('ap-image:Image-4')">analyze</a></div>
+</div>
+<div class="widget-header-right">
+<div class="widget-control" id="control-ap-image__Image-4"><img src="http://dev.apiaryproject.org/drupal/modules/apiary_project/workflow/assets/img/icon_closed.png"></div>
+</div>
+</div><!-- widget-header -->
+<div class="widget-content" id="content-ap-image__Image-4">
+<div id="ap-roi__ROI-9_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-9" image_pid="ap-image:Image-4">ROI-9<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-9_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-9')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-9')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-9">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-9');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-9',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-9_queue -->
+<div id="ap-roi__ROI-53_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-53" image_pid="ap-image:Image-4">ROI-53<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-53_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-53')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-53')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-53">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-53');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-53',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-53_queue -->
+<div id="ap-roi__ROI-178_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-178" image_pid="ap-image:Image-4">ROI-178<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-178_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-178')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-178')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-178">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-178');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-178',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-178_queue -->
+<div id="ap-roi__ROI-179_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-179" image_pid="ap-image:Image-4">ROI-179<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-179_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-179')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-179')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-179">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-179');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-179',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-179_queue -->
+<div id="ap-roi__ROI-180_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-180" image_pid="ap-image:Image-4">ROI-180<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-180_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-180')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-180')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-180">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-180');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-180',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-180_queue -->
+<div id="ap-roi__ROI-181_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-181" image_pid="ap-image:Image-4">ROI-181<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-181_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-181')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-181')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-181">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-181');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-181',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-181_queue -->
+<div id="ap-roi__ROI-182_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-182" image_pid="ap-image:Image-4">ROI-182<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-182_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-182')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-182')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-182">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-182');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-182',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-182_queue -->
+<div id="ap-roi__ROI-213_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-213" image_pid="ap-image:Image-4">ROI-213<span class="roi_status" id="ap-image__Image-4_ap-roi:ROI-213_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-4', 'ap-roi:ROI-213')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-213')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-213">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-213');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-213',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-213_queue -->
+</div><!-- widget-content -->
+<div class="widget-header" id="ap-image__Image-5_queue" onclick="toggle_specimen('content-ap-image__Image-5');">
+<div class="widget-header-left">
+<div class="specimen_name" image_pid="ap-image:Image-5" image_id="http://img.apiaryproject.org/resolver?url_ver=Z39.88-2004&amp;rft_id=apiary:jpeg2000/23579&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=3&amp;svc.rotate=0&amp;svc.region=0,0,10272,7308&amp;svc.scale=0,100" specimen_pid="ap-specimen:Specimen-5">Specimen-5<span class="specimen_status"> - [not started]</span></div>
+<div class="specimen_header_detail">Contains <span id="roi_count_ap-image__Image-5">4</span> ROIs - <a href="#" onclick="select_specimen('ap-image:Image-5')">analyze</a></div>
+</div>
+<div class="widget-header-right">
+<div class="widget-control" id="control-ap-image__Image-5"><img src="http://dev.apiaryproject.org/drupal/modules/apiary_project/workflow/assets/img/icon_closed.png"></div>
+</div>
+</div><!-- widget-header -->
+<div class="widget-content" id="content-ap-image__Image-5">
+<div id="ap-roi__ROI-26_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-26" image_pid="ap-image:Image-5">ROI-26<span class="roi_status" id="ap-image__Image-5_ap-roi:ROI-26_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-5', 'ap-roi:ROI-26')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-26')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-26">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-26');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-26',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-26_queue -->
+<div id="ap-roi__ROI-27_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-27" image_pid="ap-image:Image-5">ROI-27<span class="roi_status" id="ap-image__Image-5_ap-roi:ROI-27_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-5', 'ap-roi:ROI-27')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-27')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-27">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-27');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-27',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-27_queue -->
+<div id="ap-roi__ROI-28_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-28" image_pid="ap-image:Image-5">ROI-28<span class="roi_status" id="ap-image__Image-5_ap-roi:ROI-28_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-5', 'ap-roi:ROI-28')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-28')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-28">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-28');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-28',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-28_queue -->
+<div id="ap-roi__ROI-183_queue">
+<div class="widget-subheader">
+<div class="roi_name" roi_pid="ap-roi:ROI-183" image_pid="ap-image:Image-5">ROI-183<span class="roi_status" id="ap-image__Image-5_ap-roi:ROI-183_queue"> -- </span><span class="queue_add_link" onclick="add_queue_roi_to_queue('ap-image:Image-5', 'ap-roi:ROI-183')" style="display: none;">not in queue <a href="#">[add]</a></span><span class="queue_remove_link" onclick="remove_queue_item_from_queue('ap-roi:ROI-183')">in queue <a href="#">[remove]</a></span>
+<span class="queue_locked_by" style="display: none;">locked by drupalAdmin</span>
+</div><!-- roi-name -->
+</div><!-- widget-subheader -->
+<div class="widget-subcontent" id="widget-subcontent-ap-roi__ROI-183">
+<div class="transcribe_link" onclick="select_nav('step2');load_transcribe_content('ap-roi:ROI-183');"><a href="#">Transcribe</a> - <span id="roi_001_transcribe_status">[not started]</span></div>
+<div class="parse_link" onclick="select_nav('step3');get_parse_elements('ap-roi:ROI-183',1)"><a href="#">Parse</a> - <span id="roi_001_parse_status">[not started]</span></div>
+</div><!-- widget-subcontent -->
+</div><!-- ap-roi__ROI-183_queue -->
+</div><!-- widget-content -->

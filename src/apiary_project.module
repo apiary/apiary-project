@@ -1,0 +1,231 @@
+<?php
+
+
+/*
+ * Created on Dec 4, 2009
+ * Sean Murphy
+ * Apiary Project http://www.apiaryproject.org
+ */
+/**
+ * Drupal hook for admin form
+ * Stores info in the drupal variables table.
+ */
+require_once('metadata_elements.php');
+function apiary_project_admin() {
+	module_load_include('php', 'Apiary_Project', 'apiaryAdminClass');
+	$adminForm = new apiaryAdminClass();
+	return $adminForm->createAdminForm();
+}
+
+/**
+ * drupal hook
+ * calls the apiary_projects_menu form
+ */
+function apiary_project_menu() {
+	//add/update our apiary page
+	create_apiary_page();
+	create_apiary_admin_page();
+	module_load_include('php', 'Apiary_Project', 'apiaryAdminClass');
+	$adminMenu = new apiaryAdminClass();
+	$items = $adminMenu->createMenu();
+	$items["apiary/workflow/%"] = array(
+		'title' => "Apiary Workspace",
+		'page callback' => "define_workspace",
+		'page arguments'=> array(2),
+		'access arguments' => TRUE,
+		'file' => 'workspace.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/ajaxrequest/%/%/%"] = array(
+		'title' => "Response",
+		'page callback' => "send_response",
+		'page arguments' => array(2, 3, 4),
+		'access arguments' => TRUE,
+		'file' => 'workspace.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/workflow_ajax/%/%/%/%"] = array(
+		'title' => "Request",
+		'page callback' => "send_request",
+		'page arguments' => array(2, 3, 4, 5),
+		'access arguments' => TRUE,
+		'file' => 'workspace.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/comparer/%/%/%/%"] = array(
+		'title' => "Request",
+		'page callback' => "send_request",
+		'page arguments' => array(2, 3, 4, 5),
+		'access arguments' => TRUE,
+		'file' => 'comparer.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/search/%/%/%/%"] = array(
+		'title' => "Request",
+		'page callback' => "send_request",
+		'page arguments' => array(2, 3, 4, 5),
+		'access arguments' => TRUE,
+		'file' => 'search.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/workflow_editor/%/%/%/%"] = array(
+		'title' => "Request",
+		'page callback' => "send_request",
+		'page arguments' => array(2, 3, 4, 5),
+		'access arguments' => TRUE,
+		'file' => 'workflow.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/user/%/%/%/%"] = array(
+		'title' => "Request",
+		'page callback' => "send_request",
+		'page arguments' => array(2, 3, 4, 5),
+		'access arguments' => TRUE,
+		'file' => 'user.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+	
+	$items["apiary/object_pool/%/%/%/%"] = array(
+		'title' => "Request",
+		'page callback' => "send_request",
+		'page arguments' => array(2, 3, 4, 5),
+		'access arguments' => TRUE,
+		'file' => 'object_pool.functions.php',
+		'type' => MENU_CALLBACK,
+	);
+		
+	return $items;
+}
+
+
+/**
+ * drupal hook to show help
+ */
+function apiary_project_help($path, $arg) {
+	switch ($path) {
+		//case 'admin/help#apiary_project':
+		case 'admin/modules#description' :
+			$output = '<p>'. t("The Apiary Project module allows for the digital analysis of specimen images.") .'</p>';
+			$output .= '<p>'. t('For more information, see the project website <a href="@apiary_project">Apiary Project module</a>.', array('@apiary_project' => url('http://www.apiaryproject.org'))) .'</p>';
+			return $output;
+	}
+}
+
+/**
+ * drupal hook
+ * creates a new permission than can be assigned to roles
+ */
+function apiary_project_perm() {
+	module_load_include('php', 'Apiary_Project', 'apiaryPermissionsClass');
+	return array (apiaryPermissionsClass::$ADMINISTER_APIARY,
+	apiaryPermissionsClass::$VIEW_APIARY,
+	apiaryPermissionsClass::$CREATE_APIARY_SPECIMENS,
+	apiaryPermissionsClass::$CREATE_APIARY_IMAGESS,
+	apiaryPermissionsClass::$CREATE_APIARY_ROIS,
+	apiaryPermissionsClass::$OCR_APIARY,
+	apiaryPermissionsClass::$PARSE_APIARY
+	);
+}
+
+function create_apiary_page() {
+	global $user;
+	$path = 'apiary';
+	//check for existing page
+	$node_path = drupal_get_normal_path($path);
+	if(substr($node_path,0,5)=='node/') {
+		$node_id = substr($node_path,5);
+	}
+	$node = node_load($node_id, null, true);
+	$node->type = 'page';
+	$node->path = $path;
+	$node->uid = $user->uid;
+	$node->format = '3';
+	$node->title = 'Apiary Project';
+	$node->body = '<?php
+  $file = \'./\'.drupal_get_path(\'module\', \'apiary_project\').\'/apiary_project.php\';
+  include_once("$file");
+?>';
+	$node = node_save($node); //overwrites node if it existed before
+}
+
+function create_apiary_admin_page() {
+	global $user;
+	$path = 'apiary/admin';
+	//check for existing page
+	$node_path = drupal_get_normal_path($path);
+	if(substr($node_path,0,5)=='node/') {
+		$node_id = substr($node_path,5);
+	}
+	$node = node_load($node_id, null, true);
+	$node->type = 'page';
+	$node->path = $path;
+	$node->uid = $user->uid;
+	$node->format = '3';
+	$node->title = 'Apiary Project Administration';
+	$node->body = '<?php
+  $file = \'./\'.drupal_get_path(\'module\', \'apiary_project\').\'/apiary_project_admin.php\';
+  include_once("$file");
+?>';
+	$node = node_save($node); //overwrites node if it existed before
+}
+
+/**
+ * Apiary Module Messages
+ * @return array An array of form data.
+ */
+function apiary_project_message() {
+	$page_content = '';
+	$page_content .= drupal_get_form('apiary_project_message_form');
+	return $page_content;
+}
+
+function apiary_project_help_text() {
+	$page_content = '';
+	$page_content .= drupal_get_form('apiary_project_help_text_form');
+	return $page_content;
+}
+
+function remove_apiary_page() {
+	$path = 'apiary';
+	$node_path = drupal_get_normal_path($path);
+	if(substr($node_path,0,5)=='node/') {
+		$node_id = substr($node_path,5);
+		//  remove if exists
+		node_delete($node_id);
+		return true;
+	}
+	return false;
+}
+
+function apiary_project_workspace_drupal() {
+	module_load_include('php', 'Apiary_Project', 'apiaryPermissionsClass');
+	if(!user_access(apiaryPermissionsClass::$VIEW_APIARY)){
+		drupal_set_message(t('Unauthorized access to administer site configuration'),'error');
+		return;
+	}
+	drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
+	$filename = "/var/www/drupal/modules/apiary_project/apiary_project.php";
+	$handle = fopen($filename, "r");
+	$contents = fread($handle, filesize($filename));
+	return $contents;
+}
+
+function apiary_project_workspace() {
+	module_load_include('php', 'Apiary_Project', 'apiaryPermissionsClass');
+	if(!user_access(apiaryPermissionsClass::$VIEW_APIARY)){
+		drupal_set_message(t('Unauthorized access to view Apiary Project workflow.'),'error');
+		return;
+	}
+	drupal_goto('apiary');
+}
+
+/**
+ * The callback function (form constructor) that creates the HTML form for apiary_project_message().
+ * @return form an array of form data.
+ */

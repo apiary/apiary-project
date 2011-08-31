@@ -1,0 +1,8 @@
+; $Id$
+name = Apiary Research Project
+dependencies[] = fedora_repository
+dependencies[] = path
+description = Project to analyze scanned-in mounted specimens
+package = Apiary Project
+version = 6.x
+core = 6.x

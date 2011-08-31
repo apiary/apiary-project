@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Apiary Help</title>
+</head>
+<body>
+<input type="button" value="Close" onclick="javascript:closeWindow();" />
+
+<h1>Specimen Workbench - Analyze Specimen</h1>
+
+In this stage of the workflow, you can identify the areas within the specimen image. We call each of these areas "Regions of Interest". You designate these regions by drawing them on the specimen image then you classify them according to the type of region they represent. This help document will help you become familiar with the tools for creating these regions and then will provide details about how to identify the different types of regions. To begin the specimen analysis process, you must first add a specimen to your queue, then select it. If you need further details on this step, select the help icon in the My Queue area of the interface.
+
+<h2>Tool overview</h2>
+<p>The analyze specimen interface displays the specimen image in a way that lets you zoom in and out of the image and move it around, much like Google Maps. The zoom tool has  plus and minus icons that let you click to zoom in or out of the image. In order to position the image in the window so you can see various parts of the specimen, you can select the pan tool which looks like a hand. This lets you click and "grab" the image while dragging your cursor to move the image to the best position for you to see the regions. Once you see a region that you want to define, you select the "draw" tool which lets you draw a box around the region. You do this by clicking at a point near the text then dragging your cursor across the area until all the text is within the box you've made. Then you release your mouse button and a small window will appear where you can select the type of region. You'll learn more about these regions types later in this tutorial. After you have defined this region, you'll see a notification that the region was created and it will display in the region list to the right of the specimen image.</p>
+
+<h2>Types of Regions of Interest</h2>
+
+<p>(more information about how to identify the different types will be provided at [URL])</p>
+
+<p>Generally a specimen can have three types of regions on it: a primary label, one or more annotations and a barcode label.</p> 
+
+<p>The primary label includes information that was recorded when the botanist first saw the plant and collected it in the field. These notes include information about where the specimen was found and who found it, the habitat around it and the the species the botanist believed the plant belonged to. These labels are usually the largest label and are typically located in the bottom right area of a specimen sheet.</p> 
+
+<p>An annotation is a note added to the  specimen by a researcher or a member of the herbarium staff. There are a number of types of annotations but the most common is one that a researcher writes when he or she has identified the species to which the plant specimen belongs. These annotations include the new scientific name, the researcher's name and the date. Because the concept and naming of a species can change over time, you may see many annotations of this type on one specimen. Often these annotations are written on small labels and then affixed to the specimen sheet but sometimes you'll see these annotations written directly on the sheet.</p>
+
+<p>Another piece of information you will often see is a barcode. The barcode gives the specimen a unique number that an herbarium can use to track the specimen and data about it and provides a way to quickly scan the barcode number from the specimen sheet. In addition to the barcode and number itself, the label often contains text that we would like to capture so when defining a barcode region, draw the box around the whole label.</p> 
+
+<p>If you are unsure of the region type or the type is not one of the primary three, you can always classify the region as "unknown".</p>
+
+</body>
+</html>
+<script type="text/javascript">
+
+    function closeWindow()
+    {
+        //alert ('opener:'+opener.location);
+        //opener.location.href = opener.location;
+        window.close();
+    }
+</script>
+
+

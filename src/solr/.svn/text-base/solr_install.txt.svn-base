@@ -1,0 +1,9 @@
+sudo cp solr.sh /etc/init.d/solr
+sudo update-rc.d solr defaults
+sudo chmod a+rx /etc/init.d/solr
+To Start:
+/etc/init.d/solr start
+To Restart:
+/etc/init.d/solr restart
+To Stop:
+/etc/init.d/solr stop

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Apiary Help</title>
+</head>
+<body>
+<input type="button" value="Close" onclick="javascript:closeWindow();" />
+
+<h1>My Queue Summary Help</h1>
+
+The My Queue Summary area in the workflow tools gives you a brief overview of the items you currently have in your queue. In addition to giving you a count of the number of specimens and regions in your queue, you can use the add button to add more items to your queue.
+
+
+</body>
+</html>
+<script type="text/javascript">
+
+    function closeWindow()
+    {
+        //alert ('opener:'+opener.location);
+        //opener.location.href = opener.location;
+        window.close();
+    }
+</script>
+
+

@@ -1,0 +1,17 @@
+
+.ui-layout-pane { /* all 'panes' */ 
+	background: #FFF; 
+	border: 1px solid #BBB; 
+}
+.ui-layout-resizer { /* all 'resizer-bars' */ 
+	background: #DDD; 
+} 
+.ui-layout-toggler { /* all 'toggler-buttons' */ 
+	background: #AAA; 
+} 
+
+
+
+
+
+	

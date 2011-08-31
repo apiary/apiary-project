@@ -1,0 +1,596 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the Apiary Project module.
+ */
+ // $Id: comment.install,v 1.2 2006/12/13 22:44:54 unconed Exp $
+
+/**
+ * Implementation of hook_enable().
+ */
+function apiary_project_enable() {
+	//nothing to do as we do not currently touch the drupal database.
+	//other than the variables table
+  }
+  
+function apiary_project_install() {
+    drupal_install_schema('apiary_project');
+    db_query("DELETE FROM {cache}");
+	insert_terms();
+}
+
+/**
+* Implementation of hook_uninstall()
+*/
+function apiary_project_uninstall() {
+    drupal_uninstall_schema('apiary_project');
+}
+
+function apiary_project_schema() {
+    $schema['apiary_project'] = array(
+        'fields' => array(
+            'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+            'required' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term required?"),
+          ),
+        'primary key' => array('term')
+    );
+   
+    return $schema;
+}
+
+function apiary_project_update_6100(){
+	$schema['apiary_project'] = array(
+        'fields' => array(
+            'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+            'required' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term required?"),
+          ),
+        'primary key' => array('term')
+    );
+	
+	$ret = array();
+	db_create_table($ret, 'apiary_project', $schema['apiary_project']);
+	insert_terms();
+	return $ret;
+}
+function apiary_project_update_6110(){
+	$schema['apiary_project'] = array(
+        'fields' => array(
+            'id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Serial Number"),
+			'display_category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'display_label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+			'class' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "DwC/AP Class"),
+			'roi_association' => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE, 'description'=> "ROI Association"),
+			'parse_level' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Parse Level"),
+			'input_rules' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Input Rules"),
+            'frequent' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term frequently used?"),
+			'counter' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Counter for analytics"),
+          ),
+        'primary key' => array('id')
+    );
+	$del = array();	
+	if(db_table_exists('apiary_project'))
+	db_drop_table($del, 'apiary_project');
+	//echo $del;
+	$ret = array();
+	db_create_table($ret, 'apiary_project', $schema['apiary_project']);
+	insert_terms();
+	return $ret;
+}
+function apiary_project_update_6135(){
+	$schema['apiary_project'] = array(
+        'fields' => array(
+            'id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Serial Number"),
+			'display_category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'display_label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+			'class' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "DwC/AP Class"),
+			'roi_association' => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE, 'description'=> "ROI Association"),
+			'parse_level' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Parse Level"),
+			'input_rules' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Input Rules"),
+			'ui_categories' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "UI Categories"),
+            'frequent' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term frequently used?"),
+			'counter' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Counter for analytics"),
+			'section_level1' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Who and When, What, Where or Barcode")
+          ),
+        'primary key' => array('id')
+    );
+    $help_text_schema['apiary_project'] = array(
+    	'fields' => array(
+            'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+            'category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'help_text' => array('type' => 'text', 'length' => 65535, 'description'=> "Help Text"),
+		),
+        'primary key' => array('term')
+    );
+	$del = array();	
+	if(db_table_exists('apiary_project'))
+	db_drop_table($del, 'apiary_project');
+	$ret = array();
+	db_create_table($ret, 'apiary_project', $schema['apiary_project']);
+	if(db_table_exists('apiary_project_help_text'))
+	db_drop_table($del, 'apiary_project_help_text');
+	$help_ret = array();
+	db_create_table($help_ret, 'apiary_project_help_text', $help_text_schema['apiary_project']);
+	insert_terms();
+	return $ret;
+}
+function apiary_project_update_6145(){
+	$schema['apiary_project'] = array(
+        'fields' => array(
+            'id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Serial Number"),
+			'display_category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'display_label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+			'class' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "DwC/AP Class"),
+			'roi_association' => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE, 'description'=> "ROI Association"),
+			'parse_level' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Parse Level"),
+			'input_rules' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Input Rules"),
+			'ui_categories' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "UI Categories"),
+            'frequent' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term frequently used?"),
+			'counter' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Counter for analytics"),
+			'section_level1' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Who and When, What, Where or Barcode")
+          ),
+        'primary key' => array('id')
+    );
+    $help_text_schema['apiary_project'] = array(
+    	'fields' => array(
+            'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+            'category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'help_text' => array('type' => 'text', 'length' => 65535, 'description'=> "Help Text"),
+		),
+        'primary key' => array('term')
+    );
+    $workflow_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Workflow ID"),
+            'workflow_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Workflow Name"),
+            'workflow_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Workflow Description"),
+            'object_pool_id' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Strategy ID"),
+            'workflow_added_by' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Added By ID"),
+            'workflow_added_date' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Added By Date"),
+            'workflow_updated_by' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Updated By ID"),
+            'workflow_updated_date' => array('type' => 'varchar', 'length' => 32, 'not null' => FALSE, 'description'=> "Updated By Date")
+		),
+        'primary key' => array('workflow_id')
+    );
+    $permission_schema['apiary_project'] = array(
+    	'fields' => array(
+            'permission_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Permission ID"),
+            'permission_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Permission Name"),
+            'permission_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Permission Description")
+		),
+        'primary key' => array('permission_id')
+    );
+    $object_pool_schema['apiary_project'] = array(
+    	'fields' => array(
+            'object_pool_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Object Pool ID"),
+            'object_pool_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Object Pool Name"),
+            'object_pool_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Object Pool Description"),
+            'object_pool_type' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Either a specimen or ROI pool"),
+            'object_pool_query_type' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Object Pool Query Type"),
+            'object_pool_query' => array('type' => 'text', 'length' => 65535, 'not null' => TRUE, 'description'=> "Object Pool Query"),
+            'object_pool_added_by' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Added By ID"),
+            'object_pool_added_date' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Added By Date"),
+            'object_pool_updated_by' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Updated By ID"),
+            'object_pool_updated_date' => array('type' => 'varchar', 'length' => 32, 'not null' => FALSE, 'description'=> "Updated By Date")
+		),
+        'primary key' => array('object_pool_id')
+    );
+    $workflow_permission_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Workflow ID"),
+            'permission_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Permission ID")
+		)
+    );
+    $workflow_users_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Workflow ID"),
+            'user_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "User ID")
+		)
+    );
+	$del = array();	
+	if(db_table_exists('apiary_project')) {
+	  db_drop_table($del, 'apiary_project');
+	}
+	$ret = array();
+	db_create_table($ret, 'apiary_project', $schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_help_text')) {
+	  db_drop_table($del, 'apiary_project_help_text');
+	}
+	$help_ret = array();
+	db_create_table($help_ret, 'apiary_project_help_text', $help_text_schema['apiary_project']);
+	insert_terms();
+	
+	if(db_table_exists('apiary_project_workflow')) {
+	  db_drop_table($del, 'apiary_project_workflow');
+	}
+	$workflow_ret = array();
+	db_create_table($workflow_ret, 'apiary_project_workflow', $workflow_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_permission')) {
+	  db_drop_table($del, 'apiary_project_permission');
+	}	
+	$permission_ret = array();
+	db_create_table($permission_ret, 'apiary_project_permission', $permission_schema['apiary_project']);
+	insert_permissions();
+	
+	if(db_table_exists('apiary_project_object_pool')) {
+	  db_drop_table($del, 'apiary_project_object_pool');
+	}
+	$object_pool_ret = array();
+	db_create_table($object_pool_ret, 'apiary_project_object_pool', $object_pool_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_workflow_permission')) {
+	  db_drop_table($del, 'apiary_project_workflow_permission');
+	}
+	$workflow_permission_ret = array();
+	db_create_table($workflow_permission_ret, 'apiary_project_workflow_permission', $workflow_permission_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_workflow_users')) {
+	  db_drop_table($del, 'apiary_project_workflow_users');
+	}
+	$workflow_users_ret = array();
+	db_create_table($workflow_users_ret, 'apiary_project_workflow_users', $workflow_users_schema['apiary_project']);
+
+	return $ret;
+}
+function apiary_project_update_6150(){
+	$schema['apiary_project'] = array(
+        'fields' => array(
+            'id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Serial Number"),
+			'display_category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'display_label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+			'class' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "DwC/AP Class"),
+			'roi_association' => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE, 'description'=> "ROI Association"),
+			'parse_level' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Parse Level"),
+			'input_rules' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Input Rules"),
+			'ui_categories' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "UI Categories"),
+            'frequent' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term frequently used?"),
+			'counter' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Counter for analytics"),
+			'section_level1' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Who and When, What, Where or Barcode")
+          ),
+        'primary key' => array('id')
+    );
+    $help_text_schema['apiary_project'] = array(
+    	'fields' => array(
+            'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+            'category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'help_text' => array('type' => 'text', 'length' => 65535, 'description'=> "Help Text"),
+		),
+        'primary key' => array('term')
+    );
+    $workflow_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Workflow ID"),
+            'workflow_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Workflow Name"),
+            'workflow_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Workflow Description"),
+            'object_pool_id' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Strategy ID"),
+            'workflow_added_by' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Added By ID"),
+            'workflow_added_date' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Added By Date"),
+            'workflow_updated_by' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Updated By ID"),
+            'workflow_updated_date' => array('type' => 'varchar', 'length' => 32, 'not null' => FALSE, 'description'=> "Updated By Date")
+		),
+        'primary key' => array('workflow_id')
+    );
+    $permission_schema['apiary_project'] = array(
+    	'fields' => array(
+            'permission_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Permission ID"),
+            'permission_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Permission Name"),
+            'permission_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Permission Description")
+		),
+        'primary key' => array('permission_id')
+    );
+    $object_pool_schema['apiary_project'] = array(
+    	'fields' => array(
+            'object_pool_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Object Pool ID"),
+            'object_pool_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Object Pool Name"),
+            'object_pool_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Object Pool Description"),
+            'object_pool_type' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Either a specimen or ROI pool"),
+            'object_pool_query_type' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Object Pool Query Type"),
+            'object_pool_query' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Object Pool Query"),
+            'object_pool_added_by' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Added By ID"),
+            'object_pool_added_date' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Added By Date"),
+            'object_pool_updated_by' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Updated By ID"),
+            'object_pool_updated_date' => array('type' => 'varchar', 'length' => 32, 'not null' => FALSE, 'description'=> "Updated By Date")
+		),
+        'primary key' => array('object_pool_id')
+    );
+    $workflow_permission_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Workflow ID"),
+            'permission_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Permission ID")
+		)
+    );
+    $workflow_users_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Workflow ID"),
+            'user_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "User ID")
+		)
+    );
+	$del = array();	
+	if(db_table_exists('apiary_project')) {
+	  db_drop_table($del, 'apiary_project');
+	}
+	$ret = array();
+	db_create_table($ret, 'apiary_project', $schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_help_text')) {
+	  db_drop_table($del, 'apiary_project_help_text');
+	}
+	$help_ret = array();
+	db_create_table($help_ret, 'apiary_project_help_text', $help_text_schema['apiary_project']);
+	insert_terms();
+	
+	if(db_table_exists('apiary_project_workflow')) {
+	  db_drop_table($del, 'apiary_project_workflow');
+	}
+	$workflow_ret = array();
+	db_create_table($workflow_ret, 'apiary_project_workflow', $workflow_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_permission')) {
+	  db_drop_table($del, 'apiary_project_permission');
+	}	
+	$permission_ret = array();
+	db_create_table($permission_ret, 'apiary_project_permission', $permission_schema['apiary_project']);
+	insert_permissions();
+	
+	if(db_table_exists('apiary_project_object_pool')) {
+	  db_drop_table($del, 'apiary_project_object_pool');
+	}
+	$object_pool_ret = array();
+	db_create_table($object_pool_ret, 'apiary_project_object_pool', $object_pool_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_workflow_permission')) {
+	  db_drop_table($del, 'apiary_project_workflow_permission');
+	}
+	$workflow_permission_ret = array();
+	db_create_table($workflow_permission_ret, 'apiary_project_workflow_permission', $workflow_permission_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_workflow_users')) {
+	  db_drop_table($del, 'apiary_project_workflow_users');
+	}
+	$workflow_users_ret = array();
+	db_create_table($workflow_users_ret, 'apiary_project_workflow_users', $workflow_users_schema['apiary_project']);
+	
+	insertFirstWorkflow();
+
+	return $ret;
+}
+
+function apiary_project_update_6155(){
+	$schema['apiary_project'] = array(
+        'fields' => array(
+            'id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Serial Number"),
+			'display_category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'display_label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+			'class' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "DwC/AP Class"),
+			'roi_association' => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE, 'description'=> "ROI Association"),
+			'parse_level' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Parse Level"),
+			'input_rules' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Input Rules"),
+			'ui_categories' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "UI Categories"),
+            'frequent' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Is this term frequently used?"),
+			'counter' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'default' => 0, 'description'=> "Counter for analytics"),
+			'section_level1' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Who and When, What, Where or Barcode")
+          ),
+        'primary key' => array('id')
+    );
+    $help_text_schema['apiary_project'] = array(
+    	'fields' => array(
+            'term' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Apiary Term Name"),
+            'category' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Category"),
+			'label' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary Display Label"),
+			'help_text' => array('type' => 'text', 'length' => 65535, 'description'=> "Help Text"),
+		),
+        'primary key' => array('term')
+    );
+    $workflow_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Workflow ID"),
+            'workflow_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Workflow Name"),
+            'workflow_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Workflow Description"),
+            'object_pool_id' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Strategy ID"),
+            'workflow_added_by' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Added By ID"),
+            'workflow_added_date' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Added By Date"),
+            'workflow_updated_by' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Updated By ID"),
+            'workflow_updated_date' => array('type' => 'varchar', 'length' => 32, 'not null' => FALSE, 'description'=> "Updated By Date")
+		),
+        'primary key' => array('workflow_id')
+    );
+    $permission_schema['apiary_project'] = array(
+    	'fields' => array(
+            'permission_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Permission ID"),
+            'permission_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Permission Name"),
+            'permission_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Permission Description")
+		),
+        'primary key' => array('permission_id')
+    );
+    $object_pool_schema['apiary_project'] = array(
+    	'fields' => array(
+            'object_pool_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'type' => 'serial', 'description'=> "Object Pool ID"),
+            'object_pool_name' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Object Pool Name"),
+            'object_pool_description' => array('type' => 'varchar', 'length' => 512, 'not null' => TRUE, 'description'=> "Object Pool Description"),
+            'object_pool_type' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Either a specimen or ROI pool"),
+            'object_pool_query_type' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Object Pool Query Type"),
+            'object_pool_query' => array('type' => 'text', 'length' => 65535, 'not null' => TRUE, 'description'=> "Object Pool Query"),
+            'object_pool_added_by' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Added By ID"),
+            'object_pool_added_date' => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'description'=> "Added By Date"),
+            'object_pool_updated_by' => array('type' => 'int', 'not null' => FALSE, 'unsigned' => TRUE, 'description'=> "Updated By ID"),
+            'object_pool_updated_date' => array('type' => 'varchar', 'length' => 32, 'not null' => FALSE, 'description'=> "Updated By Date")
+		),
+        'primary key' => array('object_pool_id')
+    );
+    $workflow_permission_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Workflow ID"),
+            'permission_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Permission ID")
+		)
+    );
+    $workflow_users_schema['apiary_project'] = array(
+    	'fields' => array(
+            'workflow_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Workflow ID"),
+            'user_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "User ID")
+		)
+    );
+    $workflow_sessions_schema['apiary_project'] = array(
+    	'fields' => array(
+            'session_id' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary workflow Session ID"),
+            'session_expiration' => array('type' => 'int', 'size' => 'big', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "When the session should expire")
+		)
+    );
+    $workflow_log_schema['apiary_project'] = array(
+    	'fields' => array(
+            'user_id' => array('type' => 'int', 'not null' => TRUE, 'unsigned' => TRUE, 'description'=> "Drupal User ID"),
+            'session_id' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Apiary workflow Session ID"),
+            'action_taken' => array('type' => 'varchar', 'length' => 64, 'not null' => TRUE, 'description'=> "Action made in workflow"),
+            'action_date' => array('type' => 'int', 'size' => 'big', 'not null' => TRUE, 'description'=> "When the action was performed")
+		)
+    );
+	$del = array();	
+	
+	if(db_table_exists('apiary_project')) {
+	  db_drop_table($del, 'apiary_project');
+	}
+	if(!db_table_exists('apiary_project')) {
+	  $ret = array();
+	  db_create_table($ret, 'apiary_project', $schema['apiary_project']);
+	}
+	if(db_table_exists('apiary_project_help_text')) {
+	  db_drop_table($del, 'apiary_project_help_text');
+	}
+	if(!db_table_exists('apiary_project_help_text')) {
+	  $help_ret = array();
+	  db_create_table($help_ret, 'apiary_project_help_text', $help_text_schema['apiary_project']);
+	  insert_terms();
+	}
+	insert_terms();
+	
+	if(!db_table_exists('apiary_project_workflow')) {
+	  $workflow_ret = array();
+	  db_create_table($workflow_ret, 'apiary_project_workflow', $workflow_schema['apiary_project']);
+	}
+	
+	if(!db_table_exists('apiary_project_permission')) {
+	  $permission_ret = array();
+	  db_create_table($permission_ret, 'apiary_project_permission', $permission_schema['apiary_project']);
+	  insert_permissions();
+	}
+	
+	if(!db_table_exists('apiary_project_object_pool')) {
+	  $object_pool_ret = array();
+	  db_create_table($object_pool_ret, 'apiary_project_object_pool', $object_pool_schema['apiary_project']);
+	}
+	
+	if(!db_table_exists('apiary_project_workflow_permission')) {
+	  $workflow_permission_ret = array();
+	  db_create_table($workflow_permission_ret, 'apiary_project_workflow_permission', $workflow_permission_schema['apiary_project']);
+	}
+	
+	if(!db_table_exists('apiary_project_workflow_users')) {
+	  $workflow_users_ret = array();
+	  db_create_table($workflow_users_ret, 'apiary_project_workflow_users', $workflow_users_schema['apiary_project']);
+	}
+	
+	if(db_table_exists('apiary_project_workflow_sessions')) {
+	  db_drop_table($del, 'apiary_project_workflow_sessions');
+	}
+	$workflow_sessions_ret = array();
+	db_create_table($workflow_sessions_ret, 'apiary_project_workflow_sessions', $workflow_sessions_schema['apiary_project']);
+	
+	if(db_table_exists('apiary_project_workflow_log')) {
+	  db_drop_table($del, 'apiary_project_workflow_log');
+	}
+	$workflow_log_ret = array();
+	db_create_table($workflow_log_ret, 'apiary_project_workflow_log', $workflow_log_schema['apiary_project']);
+	
+	insertFirstWorkflow();
+
+	return $ret;
+}
+
+function insertFirstWorkflow() {
+  insertAllSpecimenObjectPool();
+  insertAllSpecimenWorkflow();
+  insertAllSpecimenWorkflowPermissions();
+  insertAllSpecimenWorkflowUsers();
+}
+
+function insertAllSpecimenObjectPool() {
+  global $user;
+  $object_pool_name = 'All_Objects';
+  $object_pool_description = 'All specimen, image and roi objects as generated from the Fedora Resource Index.';
+  $object_pool_query_type = 'Resource Index Query';
+  $object_pool_query = 'select $sp_pid from <#ri> where $sp_pid<fedora-rels-ext:isMemberOf> <info:fedora/apiary:SpecimenBinders>';
+  $object_pool_added_by = $user->uid;
+  $object_pool_added_date = date("Y-m-d H:i:s");
+  $insert_record = db_query("INSERT into {apiary_project_object_pool} (object_pool_name, object_pool_description, object_pool_query_type, object_pool_query, object_pool_added_by, object_pool_added_date)
+                            VALUES ('%s', '%s', '%s', '%s', '%s', '%s')", $object_pool_name, $object_pool_description, $object_pool_query_type, $object_pool_query, $object_pool_added_by, $object_pool_added_date);
+}
+
+function insertAllSpecimenWorkflow() {
+  global $user;
+  $workflow_name = 'All Objects, All Permissions';
+  $workflow_description = 'Workflow containing all permissions to specimen, image and roi objects.';
+  $object_pool_id = '1';
+  $workflow_added_by = $user->uid;
+  $workflow_added_date = date("Y-m-d H:i:s");
+  $insert_record = db_query("INSERT into {apiary_project_workflow} (workflow_name, workflow_description, object_pool_id, workflow_added_by, workflow_added_date)
+  			     VALUES ('%s', '%s', '%s', '%s', '%s')", $workflow_name, $workflow_description, $object_pool_id, $workflow_added_by, $workflow_added_date);
+}
+
+function insertAllSpecimenWorkflowPermissions() {
+  $workflow_id = '1';
+  $permission_id_list = array("1", "2", "3", "4", "5", "6");
+  for($i=0;$i<count($permission_id_list);$i++) {
+    $permission_id = $permission_id_list[$i];
+    db_query("INSERT INTO {apiary_project_workflow_permission} (workflow_id, permission_id) Values('%s','%s')", $workflow_id, $permission_id);
+  }
+}
+
+function insertAllSpecimenWorkflowUsers() {
+  $workflow_id = '1';
+  $user_id = '1';
+  db_query("INSERT INTO {apiary_project_workflow_users} (workflow_id, user_id) Values('%s','%s')", $workflow_id, $user_id);
+}
+
+function insert_terms(){
+	require_once("metadata_elements.php");
+	$meta = new metadata_elements();
+	for($i=0; $i<$meta->current_row-2; $i++)
+	{
+		if(strcmp($meta->data_array[$i]["DwC/AP Term Name"], "")!=0){
+			if($meta->data_array[$i]["Parse level"]=="1")
+			$freq = 1;
+			else
+			$freq = 0;
+			$exe_query = db_query("INSERT INTO {apiary_project} (display_category, display_label, term, 
+			class, roi_association, parse_level, 
+			input_rules, ui_categories, frequent, counter, section_level1) 
+			VALUES('%s','%s','%s','%s','%s','%d','%s','%s','%d','%d', '%s')", 
+			$meta->data_array[$i]["Apiary Display Category"], $meta->data_array[$i]["Apiary Display Label"], $meta->data_array[$i]["DwC/AP Term Name"],
+			$meta->data_array[$i]["DwC/AP Class"], $meta->data_array[$i]["ROI association"], strval($meta->data_array[$i]["Parse level"]),
+			$meta->data_array[$i]["Input rules"],$meta->data_array[$i]["UI Category"], $freq,0, $meta->data_array[$i]["Parse Section Level 1"]);
+			
+			$insert_help_text_record = db_query("INSERT INTO {apiary_project_help_text} (term, category, label) VALUES
+												('%s', '%s', '%s')", 
+												$meta->data_array[$i]["DwC/AP Term Name"],
+												$meta->data_array[$i]["Apiary Display Category"],
+												$meta->data_array[$i]["Apiary Display Label"]); 
+		}
+	}
+}
+
+function insert_permissions(){
+  $permissions = array("canAnalyzeSpecimen", "canTranscribe", "canParseL1", "canParseL2", "canParseL3", "canQC"); 
+  $permission_descriptions = array("User is allowed to use the interfaces for specimen image analysis.", "User is allowed to use the interfaces for transcription of ROI text.", "User is allowed to use the interfaces for parsing text at Level 1.", "User is allowed to use the interfaces for parsing text at Level 2.", "User is allowed to use the interfaces for parsing text at Level 3.", "User is allowed to use the interfaces for performing quality control.");
+  for($i=0; $i<count($permissions); $i++) {
+    $permission_query = db_query("INSERT INTO {apiary_project_permission} (permission_name, permission_description) 
+                           VALUES('%s','%s')", $permissions[$i], $permission_descriptions[$i]);
+  }
+}
